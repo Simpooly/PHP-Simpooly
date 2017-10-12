@@ -1,8 +1,8 @@
 <?php
 
-include('data.php');
-include('functions.php');
-include('header.php'); ?>
+include('inc/data.php');
+include('inc/functions.php');
+include('inc/header.php'); ?>
 
 
 <div>
@@ -17,4 +17,4 @@ include('header.php'); ?>
     </ul>   
 </div>
 
-<?php include('footer.php'); ?>
+<?php include('inc/footer.php'); ?>

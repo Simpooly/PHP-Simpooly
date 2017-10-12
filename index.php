@@ -1,9 +1,9 @@
 <?php 
-include('data.php');
-include('functions.php');
+include('inc/data.php');
+include('inc/functions.php');
 
 
-include('header.php'); ?>
+include('inc/header.php'); ?>
 
     <div class="jumbotron">
     <h2>It's SimpOoly delightful to meet you!</h2>
@@ -29,4 +29,4 @@ include('header.php'); ?>
     
 </body>
 
-<?php include('footer.php'); ?>
+<?php include('inc/footer.php'); ?>
