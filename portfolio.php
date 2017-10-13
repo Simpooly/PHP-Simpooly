@@ -8,7 +8,7 @@ include('inc/header.php'); ?>
 <div>
     <h1>portfolio</h1>
 
-    <ul>
+    <ul id="gallery">
         <?php 
             foreach($project as $id => $item){
                  echo get_item_html($id, $item);

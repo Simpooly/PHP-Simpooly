@@ -1,0 +1,204 @@
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+
+html, body { margin:0; padding:0;}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:normal;
+	font-style:normal;
+	font-size:100%;
+	line-height:1;
+	font-family:inherit;
+	text-align:left;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+ol, ul { list-style:none; }
+
+blockquote:before, blockquote:after { content:""; }
+
+a { outline:none; }
+
+input[type=search] {
+   -moz-appearance:none;
+   -webkit-appearance:none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Genreal css
+/* -------------------------------------------------------------------------------- */
+html, body {
+	height: 100%;
+	margin: 0;
+  }
+
+html { font-size: 16px;}
+
+body {
+
+
+	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	-webkit-text-size-adjust: 100%;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	2. CSS nav-bar
+/* -------------------------------------------------------------------------------- */
+.nav-toggle { display: none; }
+
+.navigation { background: #1d1d1d; }
+
+.main-menu { text-align: center; }
+
+.main-menu li { position: relative; }
+
+.main-menu > li { display: inline-block; }
+
+.main-menu > li + li { margin-left: 40px; }
+
+.main-menu > li + li:before {
+	content: "/";
+	font-size: 14px;
+	color: #3d3d3d;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	left: -25px;
+}
+
+.main-menu a { 
+	display: block;
+	padding: 23px 0;
+	font-size: 14px;
+	color: #999;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 10000;
+}
+
+.main-menu li:hover > a { color: #fff; }
+
+/* -------------------------------------------------------------------------------- */
+/*	2. Layout
+/* -------------------------------------------------------------------------------- */
+
+#jumbotron{
+	font-size: 1.5em;
+	padding: 10%;
+	margin: 2% auto;
+	border: solid lightgray 1px;
+	width: 40%;
+
+}
+
+#front-gallery li{
+	display: inline-block;
+	text-align: center;
+	border: solid lightgray 1px;
+	padding: 5%;
+	
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	2. footer
+/* -------------------------------------------------------------------------------- */
+p {
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	2. buttons
+/* -------------------------------------------------------------------------------- */
+.buttons{
+	width:60%;
+	margin: 2% auto;
+
+}
+button{
+	display: inline-block;
+	text-align: center;
+
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Responsive
+/* -------------------------------------------------------------------------------- */
+
+
+@media ( max-width: 500px ) {
+	
+	
+	
+	/* Nav toggle --------------------------------------- */
+	
+	
+	.nav-toggle {
+		display: block;
+		padding: 16px 0;
+		background: rgba(0,0,0,0.1);
+		color: #fff;
+	}
+	
+	.nav-toggle .bars {
+		margin: 0 auto;
+		height: 12px;
+		width: 20px;
+		position: relative;
+	}
+	
+	.nav-toggle .bar {
+		height: 2px;
+		background: #fff;
+		border-radius: 2px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+		-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
+		-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
+		transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
+	}
+	
+	.nav-toggle .bar:nth-child(1) { top: 0px; }
+	.nav-toggle .bar:nth-child(2) { top: 5px; }
+	.nav-toggle .bar:nth-child(3) { top: 10px; }
+	
+	.nav-toggle:hover { cursor: pointer; }
+
+	
+	/* Navigation --------------------------------------- */
+	
+	
+	.main-menu { display: none; }
+
+	/* Buttons -------------------------------------------*/
+
+buttons{
+	display: block;
+
+}
+
+}
