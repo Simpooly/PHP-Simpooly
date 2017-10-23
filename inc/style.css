@@ -29,17 +29,6 @@ blockquote:before, blockquote:after { content:""; }
 
 a { outline:none; }
 
-input[type=search] {
-   -moz-appearance:none;
-   -webkit-appearance:none;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
-}
 
 
 
@@ -53,11 +42,16 @@ html, body {
 	margin: 0;
   }
 
-html { font-size: 16px;}
+html { 
+	font-size: 16px;
+	
+
+	
+}
 
 body {
 
-
+	background-image: url("inc/img/4bae3da6864016941ee23272808b25df.jpg");
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
 
@@ -69,7 +63,7 @@ body {
 /* -------------------------------------------------------------------------------- */
 .nav-toggle { display: none; }
 
-.navigation { background: #1d1d1d; }
+.navigation { background: #242424; }
 
 .main-menu { text-align: center; }
 
@@ -99,7 +93,11 @@ body {
 	z-index: 10000;
 }
 
-.main-menu li:hover > a { color: #fff; }
+.main-menu li.on > a { color: white; }
+.main-menu li:hover > a { color: rgb(109, 108, 108); }
+
+
+
 
 /* -------------------------------------------------------------------------------- */
 /*	2. Layout
@@ -127,21 +125,37 @@ body {
 /* -------------------------------------------------------------------------------- */
 p {
 	text-align: center;
+	
 }
-
-/* -------------------------------------------------------------------------------- */
-/*	2. buttons
-/* -------------------------------------------------------------------------------- */
-.buttons{
-	width:60%;
-	margin: 2% auto;
+.footer{
+	background: #242424;
+	height:200px;
+	margin: 0 auto;
 
 }
-button{
+buttons{
+	padding: 5px;
+	margin: 0 auto;
+	width:40;
+	height: auto;
+	
+}
+.social{
 	display: inline-block;
-	text-align: center;
+	padding: 5px;
 
 }
+
+/* -------------------------------------------------------------------------------- */
+/*	2. gallery
+/* -------------------------------------------------------------------------------- */
+ #front-gallery li:nth-child(1) { 
+	 background-color: purple; 
+	 border-radius: 10px;
+}
+ #front-gallery li:nth-child(2) { color: blue; }
+ #front-gallery li:nth-child(3) { color:green; }
+
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
@@ -192,13 +206,7 @@ button{
 	/* Navigation --------------------------------------- */
 	
 	
-	.main-menu { display: none; }
+	
 
 	/* Buttons -------------------------------------------*/
 
-buttons{
-	display: block;
-
-}
-
-}

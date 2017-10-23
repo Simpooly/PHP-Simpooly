@@ -1,10 +1,11 @@
-<footer>
-<p>&copy <?php date('Y'); ?> simpooly</p>
+<footer calss="footer">
+<p>&copy <?php echo date('Y'); ?> <?php echo $company_name; ?></p>
     <div class="buttons">
-        <button>LinkedIn</button>
-        <button>Github</button>
-        <button>CodePen</button>
-        <button>Facebook</button>
+        <a><img class="social" src="img/Facebook.png"></a>
+        <img class="social" src="img/Linkedin.png">
+        <img class="social" src="img/Github.png">
+        <img class="social" src="img/Twitter.png">
+        <img class="social" src="img/Email.png">
     </div>
 </footer>
 

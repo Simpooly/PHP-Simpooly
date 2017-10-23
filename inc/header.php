@@ -1,7 +1,14 @@
+<?php 
+$company_name = 'SimpOoly';
+
+
+//
+?>
+
 <!doctype>
 <html>
 <head>
-    <title>SimpOoly</title>
+    <title><?php echo $company_name; ?> </title>
     <link rel="stylesheet" href="inc/style.css" type="text/css">
 </head>
 
@@ -10,10 +17,10 @@
         <div class="navigation">
             
             <ul class="main-menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="about.php">About me</a></li>
-                <li><a href="contact.php">Contact</a></li>            
+                <li class="<?php if ($section == "home"){echo "on";}?>"><a href="index.php">Home</a></li>
+                <li class="<?php if ($section == "portfolio"){echo "on";}?>"><a href="portfolio.php">Portfolio</a></li>
+                <li class="<?php if ($section == "about"){echo "on";}?>"><a href="about.php">About me</a></li>
+                <li class="<?php if ($section == "contact"){echo "on";}?>"><a href="contact.php">Contact</a></li>            
             </ul>
 
             <div class="nav-toggle">

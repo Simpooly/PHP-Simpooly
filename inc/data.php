@@ -4,28 +4,37 @@ $project = [];
 $project[01] = [ 
     "title" => "Tribute Page",
       "img" => "#",
-      "src" => "#"
+      "src" => "https://codepen.io/Simpooly/full/WEyaam/",
+      "goal" => "yo",
+      "process" => "yo",
+      "troubles" => "yo",
+      "outcome" => "yo",
+      "catagory" => " basic"  
 ];
 $project[02] = [
     "title" => "Photography",
       "img" => "#",
-      "src" => "#"
+      "src" => "https://codepen.io/Simpooly/full/RZqMNR/",
+      "catagory" => " basic"
 ];
 $project[03] = [
     "title" => "Old Photography",
       "img" => "#",
-      "src" => "#"
+      "src" => "#",
+      "catagory" => " basic"
 ];
 $project[04] = [
-    "title" => "tuby",
+    "title" => "Randome Quote",
       "img" => "#",
-      "src" => "#"
+      "src" => "https://codepen.io/Simpooly/full/KXyoeV/",
+      "catagory" => "javascript"
 ];
 
 $project[05] = [
-    "title" => "JavaScript",
+    "title" => "Weather App",
       "img" => "#",
-      "src" => "#"
+      "src" => "https://codepen.io/Simpooly/pen/qPMjwG",
+      "catagory" => "javascript"
 ];
 
 ?>

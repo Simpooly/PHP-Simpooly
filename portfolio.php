@@ -1,12 +1,15 @@
 <?php
 
+
+$pageTitle = "Portfolio";
+$section = "portfolio";
 include('inc/data.php');
 include('inc/functions.php');
 include('inc/header.php'); ?>
 
 
 <div>
-    <h1>portfolio</h1>
+    <h1><?php echo $pageTitle; ?></h1>
 
     <ul id="gallery">
         <?php 
