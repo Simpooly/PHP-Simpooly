@@ -28,15 +28,20 @@
 
         <h1><?php echo $pageTitle; ?></h1>
 
-        <!--<div class="project-picture">
-            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
-        </div> -->
+        <div class="project-picture">
+            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
+        </div>
+
+       <!-- if there is a second picture..or make js slideshow
+       <div class="project-picture">
+            <img src="<?php echo $item["img2"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
+        </div>-->
 
         <p class ="goal"><?php echo $item["goal"]; ?></p><br>
 
         <p class ="trouble"><?php echo $item["troubles"]; ?></p><br>
 
-        <p class ="thoughts"><?php echo $item["thoughts"]; ?></p><br>
+        <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
 
     </div>
 </div>
