@@ -109,7 +109,7 @@ body {
 	padding: 10%;
 	margin: 2% auto;
 	border: solid lightgray 1px;
-	width: 40%;
+	width: 70%;
 
 }
 
@@ -137,53 +137,37 @@ p {
 	
 }
 .footer{
-	position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-	background: #242424;
+	background-color: #242424;
 	height:200px;
 	width:100%;
+}
 
 
-}
-buttons{
-	padding: 5px;
-	margin: 0 auto;
-	width:40%;
-	height: auto;
-	
-}
+
 .social{
 	display: inline-block;
 	padding: 5px;
 
+
 }
 
 /* -------------------------------------------------------------------------------- */
-/*	2. gallery
+/*	2. 
 /* -------------------------------------------------------------------------------- */
-/*
- #front-gallery li:nth-child(1) { 
-	 background-color: purple; 
-	 border-radius: 10px;
-}
- #front-gallery li:nth-child(2) { color: blue; }
- #front-gallery li:nth-child(3) { color:green; }
 
-*/
+
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
+	
 
-
-@media ( max-width: 500px ) {
+@media ( max-width: 700px ) {
 	
 	
 	
 	/* Nav toggle --------------------------------------- */
+	.main-menu { display: none; }
 	
-	/*
 	.nav-toggle {
 		display: block;
 		padding: 16px 0;
@@ -216,12 +200,18 @@ buttons{
 	.nav-toggle .bar:nth-child(3) { top: 10px; }
 	
 	.nav-toggle:hover { cursor: pointer; }
-*/
+
 	
-	/* Navigation --------------------------------------- */
+	/* gallery --------------------------------------- */
 	
+	#gallery li{
+	display:block;
+	margin:1%;
+	width: 100%;
 	
+	}
 	
 
-	/* Buttons -------------------------------------------*/
-
+	/* Jumbotron -------------------------------------------*/
+	#jumbotron{ width:80%;}
+}
