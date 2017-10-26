@@ -1,11 +1,11 @@
 <footer calss="footer">
 <p>&copy <?php echo date('Y'); ?> <?php echo $company_name; ?></p>
     <div class="buttons">
-        <a><img class="social" src="img/Facebook.png"></a>
-        <img class="social" src="img/Linkedin.png">
-        <img class="social" src="img/Github.png">
-        <img class="social" src="img/Twitter.png">
-        <img class="social" src="img/Email.png">
+        <a><img class="social" src="inc/img/Facebook.png"></a>
+        <a><img class="social" src="inc/img/Linkedin.png"></a>
+        <a><img class="social" src="inc/img/Github.png"></a>
+        <a><img class="social" src="inc/img/Twitter.png"></a>
+        <a><img class="social" src="inc/img/Email.png"></a>
     </div>
 </footer>
 

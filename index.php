@@ -7,7 +7,7 @@ include('inc/header.php');
 
 
 ?>
-
+<div class="wrapper">
     <div id="jumbotron">
     <h2>It's <?php  echo $company_name; ?> delightful to meet you!</h2>
     <h3>Desribe what you are/ do, web developer</h3>
@@ -16,7 +16,7 @@ include('inc/header.php');
 
 
     <div id="projects">
-        <ul id="front-gallery">
+        <ul id="gallery">
             <?php 
             $random = array_rand($project, 3);
             
@@ -26,7 +26,7 @@ include('inc/header.php');
             ?>
         </ul> 
     </div> 
-    
+    </div><!-- wrapper end -->
 </body>
 
 <?php include('inc/footer.php'); ?>

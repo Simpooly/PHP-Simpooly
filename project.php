@@ -27,12 +27,12 @@
     <div class="wrapper">
 
         <h1><?php echo $pageTitle; ?></h1>
-
+<!-- 
         <div class="project-picture">
             <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
         </div>
 
-       <!-- if there is a second picture..or make js slideshow
+       if there is a second picture..or make js slideshow
        <div class="project-picture">
             <img src="<?php echo $item["img2"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
         </div>-->

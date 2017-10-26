@@ -51,7 +51,7 @@ html {
 
 body {
 
-	background-image: url("inc/img/4bae3da6864016941ee23272808b25df.jpg");
+	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
 
@@ -61,6 +61,7 @@ body {
 /* -------------------------------------------------------------------------------- */
 /*	2. CSS nav-bar
 /* -------------------------------------------------------------------------------- */
+
 .nav-toggle { display: none; }
 
 .navigation { background: #242424; }
@@ -112,12 +113,19 @@ body {
 
 }
 
-#front-gallery li{
+#gallery li{
 	display: inline-block;
 	text-align: center;
 	border: solid lightgray 1px;
-	padding: 5%;
+	width:30%;
+	margin:1%;
+	height: auto;
 	
+}
+.wrapper{
+	width: 85%;
+	height: 100%;
+	margin: 0 auto;
 }
 
 
@@ -129,15 +137,20 @@ p {
 	
 }
 .footer{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 	background: #242424;
 	height:200px;
-	margin: 0 auto;
+	width:100%;
+
 
 }
 buttons{
 	padding: 5px;
 	margin: 0 auto;
-	width:40;
+	width:40%;
 	height: auto;
 	
 }
@@ -150,6 +163,7 @@ buttons{
 /* -------------------------------------------------------------------------------- */
 /*	2. gallery
 /* -------------------------------------------------------------------------------- */
+/*
  #front-gallery li:nth-child(1) { 
 	 background-color: purple; 
 	 border-radius: 10px;
@@ -157,7 +171,7 @@ buttons{
  #front-gallery li:nth-child(2) { color: blue; }
  #front-gallery li:nth-child(3) { color:green; }
 
-
+*/
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
@@ -169,7 +183,7 @@ buttons{
 	
 	/* Nav toggle --------------------------------------- */
 	
-	
+	/*
 	.nav-toggle {
 		display: block;
 		padding: 16px 0;
@@ -202,7 +216,7 @@ buttons{
 	.nav-toggle .bar:nth-child(3) { top: 10px; }
 	
 	.nav-toggle:hover { cursor: pointer; }
-
+*/
 	
 	/* Navigation --------------------------------------- */
 	

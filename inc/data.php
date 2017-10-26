@@ -4,8 +4,8 @@ $project = [];
 
 $project[101] = [ 
     "title" => "Tribute Page",
-      "img" => "inc/img/Screenshot1.png",
-      "img2" => "inc/img/Screenshot4.png",
+     // "img" => "inc/img/Screenshot1.png",
+      //"img2" => "inc/img/Screenshot4.png",
       "url" => "https://codepen.io/Simpooly/full/WEyaam/",
 
       "goal" => "The purpose of this project was tp practice HTML and CSS basics, This is the first project where both languages were used together.",
@@ -19,8 +19,8 @@ $project[101] = [
 
 $project[102] = [
     "title" => "Photography",
-      "img" => "inc/img/Screenshot2.png",
-      "img2" => "inc/img/Screenshot5.png",
+     // "img" => "inc/img/Screenshot2.png",
+     // "img2" => "inc/img/Screenshot5.png",
       "url" => "https://codepen.io/Simpooly/full/RZqMNR/",
       "goal" => "Mock site for simple static web page",
 
@@ -33,8 +33,8 @@ $project[102] = [
 
 $project[103] = [
     "title" => "#",
-      "img" => "#",
-      "img2" => "#",
+      //"img" => "#",
+      //"img2" => "#",
       "url" => "#",
       "goal" => "My first project dabbling in javascript",
 
@@ -47,8 +47,8 @@ $project[103] = [
 
 $project[201] = [
     "title" => "Random Quote",
-      "img" => "inc/img/Screenshot3.png",
-      "img2" => "#",
+      //"img" => "inc/img/Screenshot3.png",
+      //"img2" => "#",
       "src" => "https://codepen.io/Simpooly/full/KXyoeV/",
       "goal" => "This was my first introduction to API interface and interactiong with data from databases",
 
@@ -60,8 +60,8 @@ $project[201] = [
 
 $project[202] = [
     "title" => "Weather App",
-      "img" => "#",
-      "img2" => "#",
+     // "img" => "#",
+      //"img2" => "#",
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
       "goal" => "",
 

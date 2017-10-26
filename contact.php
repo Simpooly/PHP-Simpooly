@@ -7,7 +7,8 @@ include('inc/header.php');
 ?>
 
 
-<div>
+<div class="wrapper">
+	
     <h1><?php echo $pageTitle; ?></h1>
 
     <form> 
@@ -20,6 +21,7 @@ include('inc/header.php');
 
 
     </form>
-</div>
+
+</div><!-- wrapper end -->
 
 <?php include('inc/footer.php'); ?>

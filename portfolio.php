@@ -7,11 +7,12 @@ include('inc/data.php');
 include('inc/functions.php');
 include('inc/header.php'); ?>
 
-<div class="gallery">
-    <div class="wrapper">
-        <h1><?php echo $pageTitle; ?></h1>
+<div class="wrapper">
 
-        <ul class="item">
+    <div id="gallery">
+            <h1><?php echo $pageTitle; ?></h1>
+
+             <ul class="item">
             <?php 
                 foreach($project as $id => $item){
                     echo get_item_html($id, $item);
