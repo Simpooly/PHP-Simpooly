@@ -37,26 +37,17 @@ a { outline:none; }
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
 /* -------------------------------------------------------------------------------- */
-html, body {
-	height: 100%;
-	margin: 0;
-  }
 
 html { 
 	font-size: 16px;
-	
-
-	
 }
 
 body {
-
 	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
+	background-attachment: fixed;
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
-
 }
-
 
 /* -------------------------------------------------------------------------------- */
 /*	2. CSS nav-bar
@@ -64,7 +55,12 @@ body {
 
 .nav-toggle { display: none; }
 
-.navigation { background: #242424; }
+.navigation { 
+	background: #242424;
+	width: 100%;
+	position: fixed;
+	top: 0; 
+}
 
 .main-menu { text-align: center; }
 
@@ -105,19 +101,26 @@ body {
 /* -------------------------------------------------------------------------------- */
 
 #jumbotron{
+	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 1.5em;
 	padding: 10%;
 	margin: 2% auto;
 	border: solid lightgray 1px;
+	border-radius: 10px;
 	width: 70%;
+	color: white;
+
 
 }
 
 #gallery li{
+	background-color: rgba(0, 0, 0, 0.5);
 	display: inline-block;
 	text-align: center;
 	border: solid lightgray 1px;
+	border-radius: 5px;
 	width:30%;
+	height:100px;
 	margin:1%;
 	height: auto;
 	
@@ -125,36 +128,43 @@ body {
 .wrapper{
 	width: 85%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 85px auto 0 auto;
 }
 
 
 /* -------------------------------------------------------------------------------- */
 /*	2. footer
 /* -------------------------------------------------------------------------------- */
-p {
-	text-align: center;
-	
-}
+p { text-align: center; }
+
 .footer{
-	background-color: #242424;
-	height:200px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #1f1e1e;
+	height:90px;
 	width:100%;
+	text-align: center;
 }
-
-
 
 .social{
 	display: inline-block;
-	padding: 5px;
-
-
+	padding: 10px 10px 5px 10px;
+	margin: 0 1%;
 }
 
-/* -------------------------------------------------------------------------------- */
-/*	2. 
-/* -------------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------------- */
+/*	2. Form
+/* -------------------------------------------------------------------------------- */
+ form input{
+	 display: block;
+	 width: 50%;
+	 margin: 0 auto;
+	 padding: 15px;
+
+ }
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
