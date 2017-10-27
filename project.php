@@ -25,7 +25,7 @@
 
 <div>
     <div class="wrapper">
-        
+
         <!-- if you want breadcrumbs -->
         <div class="breadcrumbs">
             <a href="portfolio.php">Full Portfolio</a>
@@ -33,11 +33,11 @@
         </div>
 
         <h1><?php echo $pageTitle; ?></h1>
-<!-- 
+
         <div class="project-picture">
             <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
         </div>
-
+<!--
        if there is a second picture..or make js slideshow
        <div class="project-picture">
             <img src="<?php echo $item["img2"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
