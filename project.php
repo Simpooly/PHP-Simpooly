@@ -2,7 +2,7 @@
 <?php
     include('inc/data.php');
     include('inc/functions.php');
-    //project.php?id=01
+    //project.php?id=101
 
     if(isset($_GET["id"])){
         $id = $_GET["id"];
@@ -25,6 +25,12 @@
 
 <div>
     <div class="wrapper">
+        
+        <!-- if you want breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="portfolio.php">Full Portfolio</a>
+            &gt;<?php echo $item["title"]; ?>
+        </div>
 
         <h1><?php echo $pageTitle; ?></h1>
 <!-- 

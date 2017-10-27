@@ -71,7 +71,7 @@ body {
 .main-menu > li + li { margin-left: 40px; }
 
 .main-menu > li + li:before {
-	content: "/";
+	content: "|";
 	font-size: 14px;
 	color: #3d3d3d;
 	position: absolute;
@@ -112,7 +112,9 @@ body {
 
 
 }
-
+#gallery{
+	text-align:center;
+}
 #gallery li{
 	background-color: rgba(0, 0, 0, 0.5);
 	display: inline-block;
@@ -120,11 +122,14 @@ body {
 	border: solid lightgray 1px;
 	border-radius: 5px;
 	width:30%;
-	height:100px;
+	position: relative;
+	height: 0;
+	padding-bottom: 25%;
 	margin:1%;
 	height: auto;
-	
 }
+
+
 .wrapper{
 	width: 85%;
 	height: 100%;
@@ -164,6 +169,14 @@ p { text-align: center; }
 	 margin: 0 auto;
 	 padding: 15px;
 
+ }
+ .contact-form{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+ }
+ .contact-form label{
+	color: white;
  }
 
 /* -------------------------------------------------------------------------------- */
