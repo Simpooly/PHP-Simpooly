@@ -100,8 +100,22 @@ body {
 
 .main-menu li.on > a { color: white; }
 .main-menu li:hover > a { color: rgb(109, 108, 108); }
+.nav-small li.on > a { color: white; }
+.nav-small li:hover > a { color: rgb(109, 108, 108); }
 
 
+/* ---------------------Nav toggle-------------------*/
+
+.nav-small a { 
+	display: block;
+	padding-top: 10px ;
+	font-size: 14px;
+	color: #999;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 10000;
+	text-align: center;
+}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -109,14 +123,15 @@ body {
 /* -------------------------------------------------------------------------------- */
 
 #jumbotron{
+	padding: 10%;
 	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 1.5em;
-	padding: 10%;
-	margin: 2% auto;
+	margin: 1.5% auto;
 	border: solid lightgray 1px;
 	border-radius: 10px;
-	width: 70%;
+	width: 80%;
 	color: white;
+	text-align: center;
 
 
 }
@@ -127,7 +142,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.5);
 	display: inline-block;
 	text-align: center;
-	border: solid black 1px;
+	border: solid black 2px;
 	border-radius: 5px;
 	width:30%;
 	margin:1%;
@@ -141,8 +156,7 @@ body {
 
 .wrapper{
 	width: 85%;
-	height: 100%;
-	margin: 85px auto 0 auto;
+	margin: 85px auto 90px auto;
 }
 
 
@@ -152,34 +166,24 @@ body {
 p { text-align: center; }
 
 .footer{
+	bottom:0;
+    position:fixed;
 	background-color: #1f1e1e;
-	height:90px;
+	height:80px;
 	width:100%;
 	text-align: center;
+
 }
 
 .social{
 	display: inline-block;
-	padding: 10px 10px 5px 10px;
+	padding: 5px 5px 5px 5px;
 	margin: 0 1%;
 }
 
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-
-.content{
-width: 60%;
-}
-
-.image{
-width: 30%;
-float: left;
-}
-
-.image img{
-	max-width: 90%;
-}
 
 
 
