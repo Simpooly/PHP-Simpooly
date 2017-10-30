@@ -49,6 +49,9 @@
 
         <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
 
+        <p class ="thoughts"><?php //echo implode(", ",$item["category"]); ?></p><br>
+        
+
     </div>
 </div>
 
