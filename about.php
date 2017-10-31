@@ -46,6 +46,6 @@ include('inc/header.php');
 	</div>
 
 </div><!--wrapper end -->
-<script src="inc/js/reportcard/js/reportcard.js"></script>
+
 
 <?php include('inc/footer.php'); ?>
