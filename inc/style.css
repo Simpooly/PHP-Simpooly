@@ -26,8 +26,17 @@ table {
 ol, ul { list-style:none; }
 
 blockquote:before, blockquote:after { content:""; }
-
-a { outline:none; }
+/*
+.general a:link {
+	text-decoration: none;
+	color:#999;
+}
+.general a:visited {
+	text-decoration: none;	
+}
+.general a:hover {
+	color: white;
+}*/
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
@@ -56,7 +65,11 @@ body {
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 	}
-
+h1{
+	font-size: 2em;
+	text-align: center;
+	text-shadow: 2px 5px 5px #999;;
+}
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
@@ -100,6 +113,7 @@ body {
 
 .main-menu li.on > a { color: white; }
 .main-menu li:hover > a { color: rgb(109, 108, 108); }
+
 .nav-small li.on > a { color: white; }
 .nav-small li:hover > a { color: rgb(109, 108, 108); }
 
@@ -123,10 +137,10 @@ body {
 /* -------------------------------------------------------------------------------- */
 
 #jumbotron{
-	padding: 10%;
+	padding: 8%;
 	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 1.5em;
-	margin: 1.5% auto;
+	margin: 1% auto;
 	border: solid lightgray 1px;
 	border-radius: 10px;
 	width: 80%;
@@ -159,7 +173,9 @@ body {
 	margin: 85px auto 90px auto;
 }
 
-
+.content{
+	background-color: rgba(0, 0, 0, 0.5);
+}
 /* -------------------------------------------------------------------------------- */
 /*	4. footer
 /* -------------------------------------------------------------------------------- */
@@ -184,9 +200,21 @@ p { text-align: center; }
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
+.image img{
+	width: 30%;
+	float:right;
+}
+.content{
+	width: 60%;
+	margin: 0;
+}
 
-
-
+/* -------------------------------------------------------------------------------- */
+/*	4. project page
+/* -------------------------------------------------------------------------------- */
+.project-picture img{
+	margin: 0 auto;
+}
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */

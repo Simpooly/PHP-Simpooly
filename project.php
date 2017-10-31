@@ -26,13 +26,13 @@
 <div>
     <div class="wrapper">
 
+        <h1><?php echo $pageTitle; ?></h1>
+
         <!-- if you want breadcrumbs -->
         <div class="breadcrumbs">
-            <a href="portfolio.php">Full Portfolio</a>
+            <a class="general" href="portfolio.php">Full Portfolio</a>
             &gt;<?php echo $item["title"]; ?>
         </div>
-
-        <h1><?php echo $pageTitle; ?></h1>
 
         <div class="project-picture">
             <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
@@ -43,14 +43,21 @@
             <img src="<?php echo $item["img2"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
         </div>-->
 
-        <p class ="goal"><?php echo $item["goal"]; ?></p><br>
 
-        <p class ="trouble"><?php echo $item["troubles"]; ?></p><br>
 
-        <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
-
-        <p class ="thoughts"><?php //echo implode(", ",$item["category"]); ?></p><br>
         
+        <div class="contact-form">
+            
+            <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">Visit site here</a>
+
+            <p class ="goal"><?php echo $item["goal"]; ?></p><br>
+
+            <p class ="trouble"><?php echo $item["troubles"]; ?></p><br>
+
+            <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
+
+            <p class ="thoughts"><?php //echo implode(", ",$item["category"]); ?></p><br>
+        </div>
 
     </div>
 </div>

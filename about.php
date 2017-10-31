@@ -11,7 +11,7 @@ include('inc/header.php');
 	    <h1><?php echo $pageTitle; ?></h1>
 	</div>
 
-	<div class="Content">
+	<div class="contact-form content">
 		<div>
 			<p>Simplicity with a quirk. As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills I had the opportunity to provide web updates and data entry into various websites.
 			<br>
@@ -25,26 +25,27 @@ include('inc/header.php');
 			<br>
 			<br>
 
-			<p>Life and work philosophy- simple and efficuant with a quirk. well desinged simple makes getting around easier...simple as a design element</p>
+			<p>Testamonial page? Open badges?Life and work <b>philosophy</b>- simple and efficuant with a quirk. well desinged simple makes getting around easier...simple as a design element</p>
 		</div>
 
 		<table>
 			<tr>
-				<td><button>resume model box</button></td>
-				<td><button>Skills model box</button></td>			
+				<td><button>resume button</button></td>
+				<td><button>Skills model box</button></td>		
 			</tr>
 				<td><a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"></a></td>
 				<td> <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"></a></td>
 				<td><a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a></td>			
 			<tr></tr>
 		</table>
+		
 	</div>
 
 	<div class="image">
-		<img src="inc/img/self.jpg" alt="Krista Jekel" height="500">
+		<img src="inc/img/self.jpg" alt="Krista Jekel">
 	</div>
 
 </div><!--wrapper end -->
-
+<script src="inc/js/reportcard/js/reportcard.js"></script>
 
 <?php include('inc/footer.php'); ?>

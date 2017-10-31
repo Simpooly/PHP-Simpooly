@@ -11,7 +11,7 @@ include('inc/header.php');
     <div class="wrapper">
         <div id="jumbotron">
         <h2>It's <?php  echo $company_name; ?> delightful to meet you!</h2>
-        <h3>Desribe what you are/ do, web developer</h3>
+        <h3>Desribe what you are/ do, web developer Update, code, create,</h3>
         </div> 
         
 
