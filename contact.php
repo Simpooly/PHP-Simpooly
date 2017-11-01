@@ -8,26 +8,48 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //make sure fields are valid
     if( $name == "" || $email == "" || $message == "" ){
-        echo "Please fill out required fields";
-        exit;
+        $error_message = "Please fill out required fields";
     }
 
     //see if hidden field is filled out--ROBOTS!!
     if ( $_POST["address"] != ""){
-       echo "Bad form input";
-       exit;
+       $error_message = "Bad form input";
     }
 
-    echo "<pre>";
-    $email_body = "";
-    $email_body .= "Name: " . $name . "\n";
-    $email_body .= "Email: " . $email . "\n";
-    $email_body .= "Message: " . $message . "\n";
-    echo $email_body;
-    echo "</pre>";
+    //php mailer info
+    require("inc/phpmailer/PHPMailer.php");
+    require("inc/phpmailer/SMTP.php");
+    require("inc/phpmailer/Exception.php");
 
-    //To Do send email!!
-    header("location:contact.php?status=thanks");
+    $mail = new PHPMailer\PHPMailer\PHPMailer;
+
+    //check if email address is valid
+    if (!$mail->ValidateAddress($email)) {
+        $error_message = "Invalid Email Address";
+    }
+
+    if(!isset($error_message)) {
+        //building the email
+        $email_body = "";
+        $email_body .= "Name: " . $name . "\n";
+        $email_body .= "Email: " . $email . "\n";
+        $email_body .= "Message: " . $message . "\n";
+        $mail->setFrom($email, $name);
+        $mail->addAddress('krista.t.jekel@gmail.com', 'Krista'); 
+
+        //Content
+        $mail->isHTML(false); //set to html or text
+        $mail->Subject = 'Web Development inquiry from ' . $name;
+        $mail->Body    = $email_body;
+
+        //send the email
+        if (!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            exit;
+        }
+        header("location:contact.php?status=thanks");
+    } 
 }
 
 $pageTitle = "Contact";
