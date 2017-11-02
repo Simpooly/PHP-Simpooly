@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //see if hidden field is filled out--ROBOTS!!
     if ( $_POST["address"] != ""){
-       $error_message = "Bad form input";
+    $error_message = "Bad form input";
     }
 
     //php mailer info
@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "Invalid Email Address";
     }
 
-    if(!isset($error_message)) {
+    if(!isset($error_message)){
         //building the email
         $email_body = "";
         $email_body .= "Name: " . $name . "\n";
@@ -38,26 +38,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->addAddress('krista.t.jekel@gmail.com', 'Krista'); 
 
         //Content
-        $mail->isHTML(false); //set to html or text
+        $mail->isHTML(false);
         $mail->Subject = 'Web Development inquiry from ' . $name;
         $mail->Body    = $email_body;
 
         //send the email
-        if (!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-            exit;
+        if ($mail->send()) {
+            header("location:contact.php?status=thanks"); 
+            exit;   
         }
-        header("location:contact.php?status=thanks");
-    } 
+        $error_message = 'Message could not be sent.';
+        $error_message .='Mailer Error: ' . $mail->ErrorInfo;
+    }
 }
 
 $pageTitle = "Contact";
 $section = "contact";
 
 include('inc/header.php'); 
-
 ?>
+
+
 
 
 <div class="wrapper">
@@ -71,8 +72,14 @@ include('inc/header.php');
     ?>
     <p>If you have any questions or want to contact me, please feel free to send me an email.
     </p>
+    <div><?php
+            if(isset($error_message)) {
+                echo "<p class='error'>" . $error_message . "</p>";
+            }
+        ?>
+    </div>
 
-    <div class="contact-form">
+    <!--<div class="contact-form">-->
         <form action="contact.php" method="post">
             <table>
                 <tr>
@@ -98,7 +105,7 @@ include('inc/header.php');
             <input type="submit" value="Submit">
         </form>
         <?php } ?>
-    <div>
+   <!-- <div>-->
 </div><!-- wrapper end -->
 
 <?php include('inc/footer.php'); ?>

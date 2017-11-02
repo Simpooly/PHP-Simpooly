@@ -42,7 +42,7 @@ include('inc/header.php');
 	</div>
 
 	<div class="image">
-		<img src="inc/img/self.jpg" alt="Krista Jekel">
+		<img src="inc/img/self.jpg" alt="Krista Jekel" style="width:500px">
 	</div>
 
 </div><!--wrapper end -->

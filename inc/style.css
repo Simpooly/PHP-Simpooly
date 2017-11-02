@@ -55,8 +55,8 @@ html {
 	}
 
 body {
-	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
-	background-attachment: fixed;
+	/*background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
+	background-attachment: fixed;*/
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
@@ -200,14 +200,15 @@ p { text-align: center; }
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-.image img{
+
+/*.image img{
 	width: 30%;
 	float:right;
 }
 .content{
 	width: 60%;
 	margin: 0;
-}
+}*/
 
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
