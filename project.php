@@ -46,7 +46,7 @@
 
 
         
-        <div class="contact-form">
+        <div class="box">
             
             <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">Visit site here</a>
 

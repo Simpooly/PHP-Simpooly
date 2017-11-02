@@ -55,8 +55,8 @@ html {
 	}
 
 body {
-	/*background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
-	background-attachment: fixed;*/
+	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
+	background-attachment: fixed;
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
@@ -66,6 +66,7 @@ body {
 	box-sizing: inherit;
 	}
 h1{
+	color: #241035;
 	font-size: 2em;
 	text-align: center;
 	text-shadow: 2px 5px 5px #999;;
@@ -138,10 +139,10 @@ h1{
 
 #jumbotron{
 	padding: 8%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(10, 10, 10, 0.747);
 	font-size: 1.5em;
 	margin: 1% auto;
-	border: solid lightgray 1px;
+	border: solid black 1px;
 	border-radius: 10px;
 	width: 80%;
 	color: white;
@@ -153,7 +154,7 @@ h1{
 	text-align:center;
 }
 #gallery li{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(10, 10, 10, 0.747);
 	display: inline-block;
 	text-align: center;
 	border: solid black 2px;
@@ -219,22 +220,50 @@ p { text-align: center; }
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */
- form input{
+form textarea,
+form input{
 	 display: block;
-	 width: 50%;
-	 margin: 0 auto;
+	 width: 60%;
+	 margin: 1% auto;
 	 padding: 15px;
-
+	 border-radius: 3px;
+	 box-shadow: 5px 5px 2px black;
  }
- .contact-form{
-	background-color: rgba(0, 0, 0, 0.5);
+ form input[type=submit]{
+	 background-color: #241035;
+	 border: solid #241035;
+ }
+
+ .box{
+	background-color: rgba(10, 10, 10, 0.747);
+	color: white;
+	text-align: center;
+	padding: 2%;
+ }
+ form label{
 	color: white;
 	text-align: center;
  }
- .contact-form label{
-	color: white;
- }
-
+.error{
+	border-color:rgb(105, 1, 1);
+	background-color: rgb(133, 1, 1);
+	border-radius: 5px;
+	padding:10px;
+	width:30%;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px black;
+}
+.thanks{
+	font-size: 2em;
+	text-align: center;
+	min-height: 60%;
+}
+form{
+	width: 100%;
+}
+.row{
+	text-align: center;
+}
 /* -------------------------------------------------------------------------------- */
 /*	6. Responsive
 /* -------------------------------------------------------------------------------- */
@@ -287,10 +316,18 @@ p { text-align: center; }
 	display:block;
 	margin:1%;
 	width: 100%;
-	
 	}
 	
 
 	/* Jumbotron -------------------------------------------*/
 	#jumbotron{ width:80%;}
+	
+
+	/* form -------------------------------------------*/
+	
+	form textarea,
+	form input{
+		width: 100%;
+		padding: 10px;
+	}
 }

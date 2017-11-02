@@ -10,8 +10,8 @@ include('inc/header.php');
 
     <div class="wrapper">
         <div id="jumbotron">
-        <h2>It's <?php  echo $company_name; ?> delightful to meet you!</h2>
-        <h3>Desribe what you are/ do, web developer Update, code, create,</h3>
+        <h2> Create | Code</h2>
+        <h3>Web Development...logo</h3>
         </div> 
         
 

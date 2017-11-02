@@ -11,8 +11,9 @@ include('inc/header.php');
 	    <h1><?php echo $pageTitle; ?></h1>
 	</div>
 
-	<div class="contact-form content">
+	<div class="box">
 		<div>
+			<h2>It's SimpOoly delightful to meet you!</h2>
 			<p>Simplicity with a quirk. As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills I had the opportunity to provide web updates and data entry into various websites.
 			<br>
 			<br>
@@ -33,10 +34,11 @@ include('inc/header.php');
 				<td><button>resume button</button></td>
 				<td><button>Skills model box</button></td>		
 			</tr>
+			<!--<tr>
 				<td><a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"></a></td>
 				<td> <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"></a></td>
 				<td><a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a></td>			
-			<tr></tr>
+			</tr>-->
 		</table>
 		
 	</div>
