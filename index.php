@@ -10,8 +10,11 @@ include('inc/header.php');
 
     <div class="wrapper">
         <div id="jumbotron">
+            <div>
+				<img src="inc/img/glasses3.png" alt="Krista Jekel">
+			</div>
         <h2> Create | Code</h2>
-        <h3>Web Development...logo</h3>
+        <h3>Web Development...logo, javascript, front end...</h3>
         </div> 
         
 
@@ -29,5 +32,5 @@ include('inc/header.php');
         </div> 
     </div><!-- wrapper end -->
 
-
+    
 <?php include('inc/footer.php'); ?>

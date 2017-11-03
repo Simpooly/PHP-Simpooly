@@ -1,3 +1,5 @@
+<script type="text/javascript" src="inc/script.js"></script>
+<script src="inc/reportcard/js/reportcard.js"></script>
 </body>
 <footer class="footer">
 

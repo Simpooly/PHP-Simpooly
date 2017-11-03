@@ -8,12 +8,18 @@ include('inc/header.php');
 <div class="wrapper">
 
 	<div>
-	    <h1><?php echo $pageTitle; ?></h1>
+		<h1><?php echo $pageTitle; ?></h1>
+		
 	</div>
 
-	<div class="box">
-		<div>
-			<h2>It's SimpOoly delightful to meet you!</h2>
+	<div class="box parent" style="overflow: auto;">
+		<h2>It's SimpOoly delightful to meet you!</h2>
+
+		
+
+		<div class="about-text">
+		
+			
 			<p>Simplicity with a quirk. As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills I had the opportunity to provide web updates and data entry into various websites.
 			<br>
 			<br>
@@ -27,24 +33,44 @@ include('inc/header.php');
 			<br>
 
 			<p>Testamonial page? Open badges?Life and work <b>philosophy</b>- simple and efficuant with a quirk. well desinged simple makes getting around easier...simple as a design element</p>
+			
+			<button class="btn" href="#">Skills</button>
+
+			
+
 		</div>
 
-		<table>
-			<tr>
-				<td><button>resume button</button></td>
-				<td><button>Skills model box</button></td>		
-			</tr>
-			<!--<tr>
-				<td><a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"></a></td>
-				<td> <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"></a></td>
-				<td><a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a></td>			
-			</tr>-->
-		</table>
+		<div class="image">
+				<img src="inc/img/self2.jpg" alt="Krista Jekel" style="width:400px">
+		</div>
+		
+
+		
 		
 	</div>
 
-	<div class="image">
-		<img src="inc/img/self.jpg" alt="Krista Jekel" style="width:500px">
+	<!--popup-->
+	<div id="popup" class="hide">
+		<div class="popup-inner">
+		<div class="report-card treehouse"></div>
+			<!--<h2>Skills</h2>
+			<ul>
+				<li>HTML</li>
+				<li>HTML5</li>
+				<li>CSS</li>
+				<li>CSS3</li>					
+				<li>JQUERY</li>
+				<li>JavaScript</li>
+				<li>SASS</li>
+				<li>Wordpress</li>
+				<li>PHP</li>
+				<li>Bootstrap</li>
+				<li>GitHub</li>
+				
+			</ul>-->
+			<p><a class="close" href="#">Close</a></p>
+			<a class="close ex" href="#">x</a>
+		</div>
 	</div>
 
 </div><!--wrapper end -->

@@ -10,6 +10,9 @@ $company_name = 'SimpOoly';
 <head>
     <title><?php echo $company_name; ?> </title>
     <link rel="stylesheet" href="inc/style.css" type="text/css">
+    <link rel="stylesheet" href="inc/reportcard/css/badges.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
