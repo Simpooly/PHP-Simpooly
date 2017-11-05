@@ -34,7 +34,8 @@ include('inc/header.php');
 
 			<p>Testamonial page? Open badges?Life and work <b>philosophy</b>- simple and efficuant with a quirk. well desinged simple makes getting around easier...simple as a design element</p>
 			
-			<button class="btn" href="#">Skills</button>
+			<button class="treehouse-btn" href="#">Team Treehouse</button>
+			<button class="skills-btn" href="#">Skills</button>
 
 			
 
@@ -49,11 +50,18 @@ include('inc/header.php');
 		
 	</div>
 
-	<!--popup-->
+	<!--popup treehouse-->
 	<div id="popup" class="hide">
 		<div class="popup-inner">
 		<div class="report-card treehouse"></div>
-			<!--<h2>Skills</h2>
+			<p><a class="close" href="#">Close</a></p>
+			<a class="close ex" href="#">x</a>
+		</div>
+	</div>
+
+	<div id="skills-popup" class="hide">
+		<div class="popup-inner">
+			<h2>Skills</h2>
 			<ul>
 				<li>HTML</li>
 				<li>HTML5</li>
@@ -66,8 +74,7 @@ include('inc/header.php');
 				<li>PHP</li>
 				<li>Bootstrap</li>
 				<li>GitHub</li>
-				
-			</ul>-->
+			</ul>
 			<p><a class="close" href="#">Close</a></p>
 			<a class="close ex" href="#">x</a>
 		</div>
