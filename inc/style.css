@@ -26,17 +26,6 @@ table {
 ol, ul { list-style:none; }
 
 blockquote:before, blockquote:after { content:""; }
-/*
-.general a:link {
-	text-decoration: none;
-	color:#999;
-}
-.general a:visited {
-	text-decoration: none;	
-}
-.general a:hover {
-	color: white;
-}*/
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
@@ -48,6 +37,12 @@ html {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+html p{
+	line-height: 140%;
+	letter-spacing: 1px;
+}
+}
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
@@ -57,7 +52,7 @@ html {
 body {
 	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
 	background-attachment: fixed;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Palanquin', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
   *, *:before, *:after {
@@ -66,10 +61,12 @@ body {
 	box-sizing: inherit;
 	}
 h1{
+	font-weight: bold;
 	color: #241035;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
-	text-shadow: 2px 5px 5px #999;;
+	text-shadow: 2px 5px 5px #999;
+	margin-bottom: 20px;
 }
 h2{
 	font-size: 1.5em;
@@ -84,11 +81,12 @@ h2{
 }
 * a:visited{
 	text-decoration: none;
-	color: white;
+	color:white;
 }
 * a:hover{
 	color: rgb(156, 155, 154);
 }
+
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
@@ -269,6 +267,7 @@ p { text-align: center; }
     border-radius:3px;
     background:#fff;
 }
+
  .btn{
 	 border: 1px solid white;
 	 border-radius: 3px;
@@ -285,7 +284,9 @@ p { text-align: center; }
 	height:20px;
 	width: 20px; 
 	padding: 3px;
+	
  }
+
  .skills{
 	 margin: 0 auto;
  }
