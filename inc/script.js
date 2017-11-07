@@ -21,6 +21,8 @@ $(document).ready(function(){
         $("#skills-popup").addClass("hide").fadeOut(3500);
     });
 
+
+    //toggle nav menue small
     $( ".nav-toggle" ).click(function() {
         $( ".nav-small" ).toggle();
       });
@@ -31,6 +33,15 @@ $(document).ready(function(){
         site: 'treehouse',
         badgesAmount: 7
     });
+
+    // width height same
+    //var cw = $('.child').width();
+   // $('.child').css({'height':cw+'px'});
 });
 
-
+/*
+font-family: 'Cutive Mono', monospace;
+font-family: 'PT Mono', monospace;
+font-family: 'Merienda', cursive;
+font-family: 'Montez', cursive;
+*/

@@ -1,4 +1,5 @@
 <?php
+$skills = ["HTML", "HTML5", "CSS", "CSS3", "JQuery", "JavaScript", "SASS", "WordPress", "PHP", "Bootstrap","GitHub", ];
 
 $project = [];
 
@@ -42,7 +43,7 @@ $project[201] = [
     "title" => "Random Quote",
         "img" => "inc/img/Screenshot3.png",
         //"img2" => "#",
-        "src" => "https://codepen.io/Simpooly/full/KXyoeV/",
+        "url" => "https://codepen.io/Simpooly/full/KXyoeV/",
         "goal" => "This was my first introduction to API interface and interactiong with data from databases",
 
         "troubles" => "Learning to interact with API's were definately a learning curve. I was overwhelmed wtih the amount of different API's out there, some gave a list of quotes others automatically generated them, some needed keys, others didnt. Then the process if actually getting the key and putting it in propery.",
@@ -59,7 +60,7 @@ $project[201] = [
 
 $project[202] = [
     "title" => "Weather App",
-     "img" => "#",
+     "img" => "inc/img/Screenshot6.png",
       //"img2" => "#",
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
       "goal" => "",

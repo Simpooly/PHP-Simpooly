@@ -74,8 +74,20 @@ h1{
 h2{
 	font-size: 1.5em;
 	text-align: center;
-	padding: 2px;
-	
+	padding: 2px;	
+}
+
+* a:link{
+	text-decoration: none;
+	color: white;
+	padding:5px;
+}
+* a:visited{
+	text-decoration: none;
+	color: white;
+}
+* a:hover{
+	color: rgb(156, 155, 154);
 }
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
@@ -164,7 +176,7 @@ h2{
 	border: solid black 2px;
 	border-radius: 5px;
 	width:30%;
-	margin:1%;
+	margin:1% 1% 0 1%;
 	height: auto;
 	padding: 1%;
 }
@@ -180,6 +192,15 @@ h2{
 
 .content{
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-picture{
+	text-align: center;
+	margin: 3%;
+}
+
+.breadcrumbs{
+	color:white;
 }
 /* -------------------------------------------------------------------------------- */
 /*	4. footer
@@ -223,7 +244,7 @@ p { text-align: center; }
 	display:none;
 }
 
-#popup {
+#popup, #skills-popup {
     width:100%;
     height:100%;
     position:fixed;
@@ -234,13 +255,14 @@ p { text-align: center; }
 }
  
 /* Inner */
+
 .popup-inner {
-    max-width:700px;
-    width:90%;
+    width:80%;
     padding:40px;
     position:absolute;
     top:50%;
-    left:50%;
+	left:50%;
+	background-color: rgb(150, 149, 149); 
     -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%);
     box-shadow:0px 2px 6px rgba(0,0,0,1);
@@ -264,6 +286,28 @@ p { text-align: center; }
 	width: 20px; 
 	padding: 3px;
  }
+ .skills{
+	 margin: 0 auto;
+ }
+ .skills td{
+	 width:30%;
+	 height:100px;
+	 text-align: center;
+	 background-color: #241035;
+	 border-radius: 50%;
+	 color: white;
+	 font-weight: 700;
+
+ }
+ #skills-popup table{
+	border-collapse: separate;
+	border-spacing: 30px;
+ }
+
+ #skills-popup .popup-inner{
+	 max-width:35%;
+ }
+
 /* Close Button */
 /*.popup-close {
     width:30px;
@@ -404,6 +448,14 @@ form{
 	margin:1%;
 	width: 100%;
 	}
+
+	#gallery a:link{
+		text-decoration: none;
+		color: white;
+	}
+	#gallery a:hover{
+		color: rgb(88, 88, 88);
+	}
 	
 
 	/* Jumbotron -------------------------------------------*/
@@ -417,4 +469,14 @@ form{
 		width: 100%;
 		padding: 10px;
 	}
+
+	/* popup--------------------------------*/
+	#skills-popup .popup-inner{
+		max-width:90%;
+	}
+	.skills td{
+		width:50px;
+		height:50px;  
+	}
+   
 }

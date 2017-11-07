@@ -60,21 +60,30 @@ include('inc/header.php');
 	</div>
 
 	<div id="skills-popup" class="hide">
-		<div class="popup-inner">
+		<div class="popup-inner skills">
 			<h2>Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>HTML5</li>
-				<li>CSS</li>
-				<li>CSS3</li>					
-				<li>JQUERY</li>
-				<li>JavaScript</li>
-				<li>SASS</li>
-				<li>Wordpress</li>
-				<li>PHP</li>
-				<li>Bootstrap</li>
-				<li>GitHub</li>
-			</ul>
+			<table class="skills">
+				<tr>
+					<td>HTML</td>
+					<td>HTML5</td>
+					<td>CSS</td>					
+				</tr>
+				<tr>
+					<td>CSS3</td>
+					<td>JQuery</td>
+					<td>JavaScript</td>					
+				</tr>
+				<tr>
+					<td>SASS</td>
+					<td>Wordpress</td>
+					<td>PHP</td>					
+				</tr>
+				<tr>
+					<td>Bootstrap</td>
+					<td>GitHub</td>
+					<td>PHP</td>					
+				</tr>
+			</table>
 			<p><a class="close" href="#">Close</a></p>
 			<a class="close ex" href="#">x</a>
 		</div>

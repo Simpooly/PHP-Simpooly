@@ -13,8 +13,8 @@ include('inc/header.php');
             <div>
 				<img src="inc/img/glasses3.png" alt="Krista Jekel">
 			</div>
-        <h2> Create | Code</h2>
-        <h3>Web Development...logo, javascript, front end...</h3>
+        <h2> Front End Web Development</h2>
+        <h2> Create | Code</h2>        
         </div> 
         
 
