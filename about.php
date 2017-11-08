@@ -16,6 +16,8 @@ include('inc/header.php');
 		<h2>It's SimpOoly delightful to meet you!</h2>
 
 		
+		<img src="inc/img/self2.jpg" alt="Krista Jekel">
+	
 
 		<div class="about-text">
 		
@@ -43,9 +45,7 @@ include('inc/header.php');
 
 		</div>
 
-		<div class="image">
-				<img src="inc/img/self2.jpg" alt="Krista Jekel" style="width:400px">
-		</div>
+	
 		
 
 		
@@ -55,10 +55,11 @@ include('inc/header.php');
 	<!--popup treehouse-->
 	<div id="popup" class="hide">
 		<div class="popup-inner">
-		<div class="report-card treehouse"></div>
-			<p><a class="close" href="#">Close</a></p>
-			<a class="close ex" href="#">x</a>
-		</div>
+			<div class="report-card treehouse"></div>
+				<p><a class="close" href="#">Close</a></p>
+				<a class="close ex" href="#">x</a>
+			</div>
+		</div>	
 	</div>
 
 	<div id="skills-popup" class="hide">

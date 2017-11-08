@@ -11,7 +11,7 @@ include('inc/header.php');
     <div class="wrapper">
         <div id="jumbotron">
             <div>
-				<img src="inc/img/glasses3.png" alt="Krista Jekel">
+				<p class="logo">Simpooly</p>
 			</div>
         <h2> Front End Web Development</h2>
         <h2> Create | Code</h2>        

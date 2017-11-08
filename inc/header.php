@@ -14,7 +14,9 @@ $company_name = 'SimpOoly';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cagliostro|Dosis|Inconsolata|Palanquin|Tenor+Sans|Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Milonga|Monofett|Monoton|Oleo+Script+Swash+Caps" rel="stylesheet">
 </head>
+
 
 <body>
     <head>
