@@ -64,23 +64,25 @@ h1{
 	color: #241035;
 	font-size: 4em;
 	text-align: center;
-	text-shadow: 5px 5px 10px rgb(153, 151, 151);
+	text-shadow: 1px 1px 5px rgb(194, 193, 193);;
 	margin-bottom: 20px;
 }
 h2{
 	font-size: 1.5em;
 	text-align: center;
 	padding: 2px;	
+	color:rgb(194, 193, 193);
 }
 
 * a:link{
+	text-transform: uppercase;
 	text-decoration: none;
 	color: rgb(82, 81, 81);
 	padding:5px;
 }
 * a:visited{
 	text-decoration: none;
-	color:rgb(87, 86, 86);
+	color:rgb(82, 81, 81);;
 }
 * a:hover{
 	color: rgb(12, 12, 12);
@@ -123,7 +125,7 @@ h2{
 .main-menu a { 
 	display: block;
 	padding: 23px 0;
-	font-size: 17px;
+	font-size: 18px;
 	color: #999;
 	text-transform: uppercase;
 	position: relative;
@@ -169,9 +171,16 @@ h2{
 
 #jumbotron .logo{
 	font-size: 7em;
-	color: rgb(136, 4, 4);
+	color: #241035;
 	font-family: 'Milonga', cursive;
-	text-shadow: 5px 5px 7px black;
+	text-shadow: 1px 2px 7px rgb(194, 193, 193);
+}
+#jumbotron .logo2{
+	text-transform: uppercase;
+	position: relative;
+	left: 121px;
+	bottom:40px;
+	font-size: 1.35em;
 }
 /* #241035*/
 #gallery{
@@ -186,7 +195,7 @@ h2{
 	width:30%;
 	margin:1% 1% 0 1%;
 	height: auto;
-	padding: 1%;
+	padding: 1.15%;
 }
 
 #gallery img{
@@ -205,7 +214,7 @@ h2{
 	color:rgb(87, 86, 86);
 }
 .wrapper{
-	width: 85%;
+	width: 90%;
 	margin: 85px auto 90px auto;
 }
 
@@ -220,6 +229,13 @@ h2{
 
 .breadcrumbs a{
 	color:white;
+}
+.breadcrumbs a:hover{
+	color:rgb(173, 173, 173);
+}
+.breadcrumbs{
+	color: white;
+	text-transform: uppercase;
 }
 
 #gallery p{
@@ -437,6 +453,11 @@ form{
 	#jumbotron .logo{
 		font-size: 5em;
 	}
+	#jumbotron .logo2{
+		font-size: 1em;
+		bottom: 30px;
+		left: 87px;
+	}
 
 	#gallery li{
 		display:block;
@@ -513,6 +534,11 @@ form{
 	#jumbotron .logo{
 		font-size: 4em;
 	}
+	#jumbotron .logo2{
+		font-size: .75em;
+		bottom: 23px;
+		left: 70px;
+	}
 
 	/* form -------------------------------------------*/
 	
@@ -544,6 +570,11 @@ form{
 @media ( max-width: 550px ) {
 	#jumbotron .logo{
 		font-size: 2.60em;
+	}
+	#jumbotron .logo2{
+		font-size: .55em;
+		bottom: 15px;
+		left: 47px;
 	}
 
 	#skills-popup td{

@@ -84,7 +84,7 @@ include('inc/header.php');
 				<tr>
 					<td>Bootstrap</td>
 					<td>GitHub</td>
-					<td>PHP</td>					
+								
 				</tr>
 			</table>
 			<p><a class="close" href="#">Close</a></p>

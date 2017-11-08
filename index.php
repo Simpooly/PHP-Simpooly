@@ -13,8 +13,7 @@ include('inc/header.php');
             <div>
 				<p class="logo">Simpooly</p>
 			</div>
-        <h2> Front End Web Development</h2>
-        <h2> Create | Code</h2>        
+        <h2 class="logo2"> Web Development</h2>        
         </div> 
         
 
