@@ -7,7 +7,7 @@ function get_item_html($id, $item){
     . $id . "'><img src='"
                  . $item["img"] ."' alt='"
                  . $item["title"] ."'/>" 
-                 . "<p> View Details </p>" 
+                 . "<p>" . $item["title"] . "</p>" 
                  . "</a></li>";
     return $output;
 }

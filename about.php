@@ -21,23 +21,17 @@ include('inc/header.php');
 
 		<div class="about-text">
 		
-			
-			<p>Simplicity with a quirk. As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills I had the opportunity to provide web updates and data entry into various websites.
-			<br>
-			<br><p>
-			I am currently spending time working on personal projects to perfect and practice the detail orienting skills of HTML, CSS, JavaScript, jQuery. I was exposed to the world of PHP and Wordpress development and would like to dive in deeper into those topics as well. Through learning development on my own I have become conscious of soft skills such as time-management, habit forming, and self-motivation. 'Id like to develope...skill, i would consider myself well versed at..., i am familiar with..., presentations.. preperation is where i excell, not quick on your feet, time management is about prioritizing'
-</p>
+		
+			<p>As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills, I had the opportunity to provide web updates and data entry into various websites upon customer needs.
 			<br>
 			<br>
-			<p>
-			Eager to learn more and gain skill sets in the development community I am planning on seeking out an internship or student position while taking on individual clients and opportunities in my free time.'something about direction you want to go, javascript?  profeshinal enthusiasm, enthusiastic, coordinated, develope, applications, bugs,algorithms, programming, coding, computer systems, customer needs, data aquisition, data entry,data migration, data processing, troubleshooting, deadlines, implementation, documentation,organizing, integration, systems,prototype, reliability, security, source code,statistical knowledge, configuration, servers,maitained, analyzed,contributed, created, designed, developed, formulated, identified,preformed, provided, resolved,'</p>
-</p>
-
+			<p>I am currently spending time working on personal projects to perfect and practice the detail orienting skills of HTML, CSS, JavaScript, jQuery. I was exposed to the world of PHP and Wordpress development and would like to dive in deeper into those topics as well. I have also found JavaScript developing fulfilling and plan to explore the different facets of that language as well. Through learning development on my own I have become conscious of soft skills such as time-management, habit forming, and self-motivation. 
 			<br>
 			<br>
-
-			<p>Testamonial page? Open badges?Life and work <b>philosophy</b>- simple and efficuant with a quirk. well desinged simple makes getting around easier...simple as a design element</p>
-			
+			<h2 class="accent">Simplicity  |  Curiosity  |  Quirky</h2>
+			<p>Over the years these three things, simplicity, curiosity, and quirkiness have become extremely important to who I am and what I put out in the world. Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximises efficiency and allows the user to not get caught up in too many excessive details. Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand. Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting. My life philosophies translate into my work. Simple design well thought out and reliable user face with just the right about of spice! </p>
+			<br>
+			<br>			
 			<button class="treehouse-btn" href="#">Team Treehouse</button>
 			<button class="skills-btn" href="#">Skills</button>
 
@@ -84,7 +78,11 @@ include('inc/header.php');
 				<tr>
 					<td>Bootstrap</td>
 					<td>GitHub</td>
-								
+					<td> API </td>	
+				</tr>
+				<tr>
+					<td>JSON</td>
+										
 				</tr>
 			</table>
 			<p><a class="close" href="#">Close</a></p>

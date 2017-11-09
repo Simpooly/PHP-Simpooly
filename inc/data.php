@@ -9,11 +9,11 @@ $project[101] = [
       //"img2" => "inc/img/Screenshot4.png",
       "url" => "https://codepen.io/Simpooly/full/WEyaam/",
 
-      "goal" => "The purpose of this project was tp practice HTML and CSS basics, This is the first project where both languages were used together.",
+      "goal" => "Designed a static page dedicated to one of my idols Alain de BottonDesigned a static page dedicated to one of my idols Alain de Botton. Inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
 
-      "troubles" => "I had spent many weeeks learning the basics of HTML, CSS, PHP, JavaScript, JQuery and more. As my first real project it was intersting to find that knowing the different parts and making the different parts work together were two completely different things. I struggled getting the images of the books to link properly. I was doing what the documantation was telling me to, but it still wasnt working. In the end I found out it was not my code, but the URL. I found that Barns & Noble had a more helpful url to link to and used that instead.",
+      "troubles" => "I had spent many weeks learning the basics of HTML, CSS, PHP, JavaScript, JQuery and more. As my first real project, it was interesting to find that knowing the documentation and making it work together were two completely different things. I struggled getting the images of the books to link properly. In the end I found it was not my code, but the URL.",
 
-      "outcome" => "I learned a lot on this first simple project. Experimentation and trial and error is a must. Being a perfectionist is both a great strength and a hinderance. Problem solve more instead of getting stuck on the problem.",
+      "outcome" => "I learned a lot from this first simple project. Experimentation and trial and error is a must. ",
 
       "catagory" => [
         "HTML",
@@ -26,11 +26,11 @@ $project[102] = [
      "img" => "inc/img/Screenshot2.png",
      // "img2" => "inc/img/Screenshot5.png",
       "url" => "https://codepen.io/Simpooly/full/RZqMNR/",
-      "goal" => "Mock site for simple static web page",
+      "goal" => "Developed a mock photography scrolling static page.",
 
-      "troubles" => "",
+      "troubles" => "As a second project, I found myself not needing to look up documentation as often, I had much more CSS information ingrained and was able to implement style quicker. In my process of being excited about my speed, my lack of organization was my downfall. It taught me how important it was to label and know where things were, and how much design and layout can break if I'm not careful.",
 
-      "outcome" => "As a second project I found myself not needing to look up documentation as often, I had much more information ingraned",
+      "outcome" => "",
 
       "catagory" => [
         "HTML",
@@ -44,11 +44,11 @@ $project[201] = [
         "img" => "inc/img/Screenshot3.png",
         //"img2" => "#",
         "url" => "https://codepen.io/Simpooly/full/KXyoeV/",
-        "goal" => "This was my first introduction to API interface and interactiong with data from databases",
+        "goal" => "Performed my first API project by acquiring JSON data, and displaying a random quote from API.",
 
-        "troubles" => "Learning to interact with API's were definately a learning curve. I was overwhelmed wtih the amount of different API's out there, some gave a list of quotes others automatically generated them, some needed keys, others didnt. Then the process if actually getting the key and putting it in propery.",
+        "troubles" => "Learning to interact with an API was definitely a learning curve. I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data selecting the correct information was the downhill slide.",
 
-        "outcome" => "I was happy becasue I found true growth with basics of HTML and CSS, Creating both took me a total of 15 minutes. I was proud that I could focus on the javascript part of the project.",
+        "outcome" => "During this project I found true growth going beyond basic HTML and CSS. It taught me that interacting with API's can take time, but as long as I have patience and keep with it I will succeed.",
         "catagory" => [
             "HTML",
             "CSS",
@@ -63,11 +63,11 @@ $project[202] = [
      "img" => "inc/img/Screenshot6.png",
       //"img2" => "#",
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
-      "goal" => "",
+      "goal" => "Provided a basic weather application that accesses users geolocation and displays according to data. ",
 
-      "troubles" => "With this project i have learned that finding a good database is important. I used the database that FreeCodeCamp provided because they didnt want API keys in codeCamp for protection/ privacy. I got most of the way through the project and found out that database did not provide the name of the sity or state, just the longitude and latitude, what i have alreay had. It was not a requirement to have what city you were located, but i would have to foind a different database, to just generate that one piece of info. ",
+      "troubles" => "With this project I have learned that finding a good database is important. I used the database FreeCodeCamp provided. They didnt want API keys in CodePen for security and privacy reasons. I got the majority of the project and found out that database did not provide all the information required (ie. city, state). Using a different database such as google maps would have provided more information than just the longitude and latitude.",
 
-      "outcome" => "In the futuure I will learn to find a database that has all or most of the info i need to reduce needing to connect with multiple places. Efficancy is a goal I have in all work I do, it makes things simple and eventually easier, even if the process leading up to that is a little messy",
+      "outcome" => "In the future, I will learn to do extra research to find the best API and information for my needs. Efficiency is a goal I have in all work I do, it makes things simple and eventually easier, even if the process leading up to that is a little messy.",
       "catagory" => [
         "HTML",
         "CSS",

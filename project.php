@@ -34,8 +34,8 @@
             &gt;<?php echo $item["title"]; ?>
         </div>
 
-        <div class="project-picture">
-            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>" width="700px">
+        <div class="project-picture box">
+            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
         </div>
 <!--
        if there is a second picture..or make js slideshow
@@ -48,13 +48,15 @@
         
         <div class="box">
             
-            <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">Visit site here</a>
+        
 
             <p class ="goal"><?php echo $item["goal"]; ?></p><br>
 
             <p class ="trouble"><?php echo $item["troubles"]; ?></p><br>
 
             <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
+
+            <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">Visit Project Here</a>
 
             <p class ="thoughts"><?php //echo implode(", ",$item["category"]); ?></p><br>
         </div>
