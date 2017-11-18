@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_body .= "Email: " . $email . "\n";
         $email_body .= "Message: " . $message . "\n";
         $mail->setFrom($email, $name);
-        $mail->addAddress('krista.t.jekel@gmail.com'); 
+        $mail->addAddress('krista.t.jekel@gmail.com');
 
         //Content
         $mail->isHTML(false);
@@ -44,8 +44,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //send the email
         if ($mail->send()) {
-            header("location:contact.php?status=thanks"); 
-            exit;   
+            header("location:contact.php?status=thanks");
+            exit;
         }else{
             $error_message = 'Message could not be sent.';
             $error_message .='Mailer Error: ' . $mail->ErrorInfo;
@@ -56,26 +56,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 $pageTitle = "Contact";
 $section = "contact";
 
-include('inc/header.php'); 
+include('inc/header.php');
 ?>
 
 
 
 
 <div class="wrapper">
-	
+
     <h1><?php echo $pageTitle; ?></h1>
 
     <div class="box">
-        
-        <?php 
+
+        <?php
             if(isset($_GET["status"]) && $_GET["status"] == "thanks") {
-                echo "<h2 class='thanks'>Thank You! <br> animation?</h2>";
+                //echo "<h2 class='thanks'>Thank You! <br> animation?</h2>";
+                echo "<img  class='thanks' src='inc/img/thanks.png'>";
 
             } else{
         ?>
 
-        
+
         <div><?php
                 if(isset($error_message)) {
                     echo "<p class='error'>" . $error_message . "</p>";
@@ -88,10 +89,10 @@ include('inc/header.php');
         <div class="buttons">
             <a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"></a>
             <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"></a>
-            <a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a>			
+            <a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a>
         </div>
 
-    
+
         <form action="contact.php" method="post">
             <div class="row">
                 <label for="name">Name:</label><br>
@@ -112,7 +113,7 @@ include('inc/header.php');
             </div>
             <input type="submit" value="Submit">
         </form>
-		
+
         <?php } ?>
     </div>
 </div><!-- wrapper end -->
