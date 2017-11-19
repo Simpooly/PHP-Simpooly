@@ -27,6 +27,8 @@ ol, ul { list-style:none; }
 
 blockquote:before, blockquote:after { content:""; }
 
+
+
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
 /* -------------------------------------------------------------------------------- */
@@ -100,14 +102,53 @@ h2{
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
 
-.nav-toggle { display: none; }
-
 .navigation {
 	background: #242424;
 	width: 100%;
 	position: fixed;
 	top: 0;
+	text-align: center;
+	z-index:1000;
 }
+
+.main-menu { display: none;}
+
+.nav-toggle {
+	display: block;
+	padding: 16px 0;
+	background: rgba(0,0,0,0.1);
+	color: #fff;
+}
+
+.nav-toggle .bars {
+	margin: 0 auto;
+	height: 12px;
+	width: 20px;
+	position: relative;
+}
+
+.nav-toggle .bar {
+	height: 2px;
+	background: #fff;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+	-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
+	-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
+	transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
+}
+
+.nav-toggle .bar:nth-child(1) { top: 0px; }
+.nav-toggle .bar:nth-child(2) { top: 5px; }
+.nav-toggle .bar:nth-child(3) { top: 10px; }
+
+.nav-toggle:hover { cursor: pointer; }
+
+/* -------old nav---------------
+.nav-toggle { display: none; }
+
 
 .main-menu {
 	text-align: center;}
@@ -142,15 +183,15 @@ h2{
 .main-menu li:hover > a { color: rgb(109, 108, 108); }
 
 .nav-small li.on > a { color: white; }
-.nav-small li:hover > a { color: rgb(109, 108, 108); }
+.nav-small li:hover > a { color: rgb(109, 108, 108); } */
 
 
 /* ---------------------Nav toggle-------------------*/
 
 .nav-small a {
 	display: block;
-	padding-top: 10px ;
-	font-size: 14px;
+	padding: 10px 0;
+	font-size: 16px;
 	color: #999;
 	text-transform: uppercase;
 	position: relative;
@@ -170,13 +211,14 @@ h2{
 	margin: 1% auto;
 	border: solid black 1px;
 	border-radius: 10px;
-	width: 85%;
+	width: 100%;
 	color: white;
 	text-align: center;
 }
 
 #jumbotron .logo{
-	font-size: 7em;
+	font-size: 2.60em;
+	/* font-size: 7em; */
 	color: #241035;
 	font-family: 'Milonga', cursive;
 	text-shadow: 1px 2px 7px rgb(194, 193, 193);
@@ -184,42 +226,72 @@ h2{
 #jumbotron .logo2{
 	text-transform: uppercase;
 	position: relative;
-	left: 121px;
-	bottom:40px;
-	font-size: 1.35em;
+	font-size: .55em;
+	bottom: 15px;
+	left: 47px;
+/* 	left: 121px;
+bottom:40px;
+font-size: 1.35em; */
 }
+
 /* #241035*/
+
 #gallery{
 	text-align:center;
 }
+
 #gallery li{
-	background-color: rgba(10, 10, 10, 0.671);
-	display: inline-block;
-	text-align: center;
-	border: solid black 2px;
-	border-radius: 5px;
-	width:30%;
-	margin:1% 1% 0 1%;
-	height: auto;
-	padding: 1.15%;
+background-color: rgba(10, 10, 10, 0.671);
+display:block;
+margin: 25px auto;
+width: 100%;
+border: solid black 2px;
+border-radius: 5px;
+margin:20px auto ;
+height: auto;
+padding: 1.15%;
 }
 
 #gallery img{
 	max-width: 100%;
+	padding: 5px;
 }
+
 #gallery a:link{
 	text-decoration: none;
 	color: white;
 	padding:5px;
 }
-#gallery a:visited{
-	text-decoration: none;
-	color: white;
-}
+
 #gallery a:hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+#gallery a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#gallery p{
+	margin: 10px 0 -15px 0;
+}
+
+/* gallery old
+
+#gallery li{
+	margin:1% 1% 0 1%;
+	display: inline-block;
+	text-align: center;
+	width:30%;
+}
+
+
+
+
+
+
+*/
 .wrapper{
 	width: 90%;
 	margin: 85px auto 90px auto;
@@ -249,9 +321,7 @@ h2{
 
 }
 
-#gallery p{
-	margin: 10px 0 -15px 0;
-}
+
 
 /* -------------------------------------------------------------------------------- */
 /*	4. footer
@@ -283,19 +353,34 @@ p { text-align: center; }
 /* -------------------------------------------------------------------------------- */
 
 .parent img{
-	width: 400px;
+	width: 300px;
+	padding: 20px;
+	/* width: 400px;
 	padding-top: 75px;
-	/*position: absolute;
+	position: absolute;
 	top:35%;
-	right:11%;*/
+	right:11%; */
 }
 .about-text{
-	width: 63%;
+	width: 100%;
+	/* width: 63%; */
 	margin: 0;
 	float:left;
 }
 .parent h2{
 	margin-bottom: 20px;
+}
+
+.about-text{
+	width: 100%;
+}
+.parent img{
+	width: 300px;
+	padding: 20px;
+
+}
+.parent img{
+
 }
 
 /*------------------------model box---------------------*/
@@ -352,12 +437,19 @@ p { text-align: center; }
 
  }
 
+ #skills-popup table{
+ 	border-spacing: 20px;
+  }
+
+
  .skills{
 	 margin: 0 auto;
  }
  .skills td{
-	 width:100px;
-	 height:100px;
+ 	width: 60px;
+ 	height: 72px;
+/* 	width:100px;
+	height:100px; */
 	 text-align: center;
 	 background-color: #241035;
 	 border-radius: 50%;
@@ -365,17 +457,28 @@ p { text-align: center; }
 	 font-weight: 700;
 
  }
+
+ #skills-popup td{
+ 	width: 75px;
+ 	height: 75px;
+ }
+
  #skills-popup table{
 	border-collapse: separate;
-	border-spacing: 30px;
+	border-spacing: 20px;
+	/* border-spacing: 10px;
+		 */	/* border-spacing: 30px; */
  }
 
  #skills-popup .popup-inner{
-	 max-width:50%;
+	 /* max-width:50%; */
+	 /* max-width:90%; */
 	 max-height:85%;
 	 padding: 10px 20px;
 	 overflow:scroll;
+	 max-width:100%;
  }
+
 
  .popup-inner a:link{
 	color: black;
@@ -402,9 +505,12 @@ button:hover{
 /* -------------------------------------------------------------------------------- */
 .project-picture{
 	text-align: center;
-	margin: 0 auto -50 auto;
-	width:70%;
+	width:100%;
+	margin: 0 auto;
+	/* width:70%;
+ */
 }
+
 .project-picture img{
 	width:95%
 
@@ -421,12 +527,16 @@ button:hover{
 form textarea,
 form input{
 	 display: block;
-	 width: 60%;
+	 width: 100%;
+	 padding: 10px;
 	 margin: 20px auto;
-	 padding: 15px;
+/* 	 width: 60%;
+padding: 15px; */
 	 border-radius: 3px;
 	 box-shadow: 5px 5px 2px black;
  }
+
+
  form textarea{
 	 height: 200px;
  }
@@ -490,17 +600,106 @@ form{
 .row{
 	text-align: center;
 }
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Responsive
+/* -------------------------------------------------------------------------------- */
+@media screen and ( min-width: 760px ) {
+
+	#gallery li{
+		margin:1% 1% 0 1%;
+		display: inline-block;
+		text-align: center;
+		width:30%;
+	}
+	#jumbotron{
+		width: 90%;
+	}
+	#jumbotron .logo{
+		font-size: 7em;
+	}
+	#jumbotron .logo2{
+	left: 121px;
+	bottom:40px;
+	font-size: 1.35em;
+	}
+
+	/* #jumbotron .logo{
+		font-size: 5em;
+	}
+	#jumbotron .logo2{
+		font-size: 1em;
+		bottom: 30px;
+		left: 87px;
+	} */
+
+	.nav-toggle { display: none; }
+
+
+	.main-menu {
+		display: inline-block;
+
+
+	}
+
+	.main-menu li { position: relative; }
+
+	.main-menu > li { display: inline-block; }
+
+	.main-menu > li + li { margin-left: 40px; }
+
+	.main-menu > li + li:before {
+		content: "|";
+		font-size: 14px;
+		color: #3d3d3d;
+		position: absolute;
+		top: 50%;
+		margin-top: -7px;
+		left: -25px;
+	}
+
+	.main-menu a {
+		display: block;
+		padding: 23px 0;
+		font-size: 18px;
+		color: #999;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 10000;
+	}
+
+	.main-menu li.on > a { color: white; }
+	.main-menu li:hover > a { color: rgb(109, 108, 108); }
+
+	.nav-small li.on > a { color: white; }
+	.nav-small li:hover > a { color: rgb(109, 108, 108); }
+}
+
+@media screen and ( min-width: 450px )and (max-width: 860px ) {
+	#jumbotron{ width:95%;}
+
+	#jumbotron .logo{
+		font-size: 4em;
+	}
+	#jumbotron .logo2{
+		font-size: .75em;
+		bottom: 23px;
+		left: 70px;
+	}
+}
 /* -------------------------------------------------------------------------------- */
 /*	6. Responsive
 /* -------------------------------------------------------------------------------- */
-
+/*
 @media ( max-width: 1290px ) {
 	.about-text{
 		width: 100%;
 	}
 	.parent img{
 		padding: 20px;
+
 	}
+
 }
 
 
@@ -533,7 +732,7 @@ form{
 
 
 
-	/* Nav toggle --------------------------------------- */
+	Nav toggle ---------------------------------------
 	.main-menu { display: none; }
 
 	.nav-toggle {
@@ -570,7 +769,7 @@ form{
 	.nav-toggle:hover { cursor: pointer; }
 
 
-	/* gallery --------------------------------------- */
+	gallery ---------------------------------------
 
 	#gallery li{
 	display:block;
@@ -590,7 +789,7 @@ form{
 
 
 
-	/* Jumbotron -------------------------------------------*/
+	Jumbotron -------------------------------------------
 	#jumbotron{ width:100%;}
 
 	#jumbotron .logo{
@@ -602,7 +801,7 @@ form{
 		left: 70px;
 	}
 
-	/* form -------------------------------------------*/
+	form -------------------------------------------
 
 	form textarea,
 	form input{
@@ -610,7 +809,7 @@ form{
 		padding: 10px;
 	}
 
-	/* popup--------------------------------*/
+	popup--------------------------------
 	#skills-popup .popup-inner{
 		max-width:90%;
 	}
@@ -656,6 +855,6 @@ form{
 		width: 300px;
 	}
 
-}
+} */
 
 

@@ -9,6 +9,7 @@ $company_name = 'Simpooly';
 <html>
 <head>
     <title><?php echo $company_name; ?> </title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="http://www.southeastpsych.com/wp-content/uploads/2015/05/s-no-background-1024x1024.png">
     <link rel="stylesheet" href="inc/style.css" type="text/css">
     <link rel="stylesheet" href="inc/reportcard/css/badges.css">
