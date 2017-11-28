@@ -294,7 +294,7 @@ padding: 1.15%;
 */
 .wrapper{
 	width: 90%;
-	margin: 85px auto 90px auto;
+	margin: 50px auto 90px auto;
 }
 
 .content{
@@ -441,22 +441,39 @@ p { text-align: center; }
  	border-spacing: 20px;
   }
 
+.skills{
+	margin: 0 auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 550px;
+}
 
- .skills{
-	 margin: 0 auto;
+.skills li{
+	margin: auto;
+	width: 100px;
+	height:100px;
+	background-color: #241035;
+	border-radius: 50%;
+	font-weight: 700;
+	color:white;
+
+}
+ /* .skills{
+ 	 margin: 0 auto;
  }
  .skills td{
  	width: 60px;
  	height: 72px;
-/* 	width:100px;
-	height:100px; */
-	 text-align: center;
-	 background-color: #241035;
-	 border-radius: 50%;
-	 color: white;
-	 font-weight: 700;
+ width:100px;
+ 	height:100px;
+ 	 text-align: center;
+ 	 background-color: #241035;
+ 	 border-radius: 50%;
+ 	 color: white;
+ 	 font-weight: 700;
 
- }
+ } */
 
  #skills-popup td{
  	width: 75px;
@@ -475,7 +492,7 @@ p { text-align: center; }
 	 /* max-width:90%; */
 	 max-height:85%;
 	 padding: 10px 20px;
-	 overflow:scroll;
+	/*  overflow:scroll; */
 	 max-width:100%;
  }
 
@@ -605,6 +622,10 @@ form{
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
 @media screen and ( min-width: 760px ) {
+
+	.wrapper{
+		margin: 80px auto 90px auto;
+	}
 
 	#gallery li{
 		margin:1% 1% 0 1%;

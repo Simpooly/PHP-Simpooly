@@ -59,7 +59,26 @@ include('inc/header.php');
 	<div id="skills-popup" class="hide">
 		<div class="popup-inner skills">
 			<h2>Skills</h2>
-			<table class="skills">
+
+			<ul class="skills">
+				<li>HTML</li>
+				<li>HTML5</li>
+				<li>CSS</li>
+				<li>CSS3</li>
+				<li>JQuery</li>
+				<li>Javascript</li>
+				<li>SASS</li>
+				<li>WordPress</li>
+				<li>PHP</li>
+				<li>Bootstrap</li>
+				<li>Flexbox</li>
+				<li>GitHub</li>
+				<li>API</li>
+				<li>JSON</li>
+				<li>AJAX</li>
+			</ul>
+			<!-- <table class="skills">
+
 				<tr>
 					<td>HTML</td>
 					<td>HTML5</td>
@@ -84,7 +103,7 @@ include('inc/header.php');
 					<td>JSON</td>
 
 				</tr>
-			</table>
+			</table> -->
 			<p><a class="close" href="#">Close</a></p>
 			<a class="close ex" href="#">x</a>
 		</div>
