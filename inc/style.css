@@ -32,6 +32,7 @@ blockquote:before, blockquote:after { content:""; }
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
 /* -------------------------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 html {
 	font-size: 16px;
@@ -63,17 +64,19 @@ body {
 	}
 h1{
 	font-weight: bold;
+	width: 45%;
+	border-bottom: 2px solid white;
+	font-family: Playfair Display,serif;
 	color: #241035;
 	font-size: 3.75em;
 	text-align: center;
 	text-shadow: 1px 1px 5px rgb(194, 193, 193);
-	margin-bottom: 40px;
+	margin: 0 auto 40px auto;
 }
 h2{
 	font-size: 1.5em;
-	text-align: center;
 	padding: 2px;
-	color:rgb(194, 193, 193);
+	color: white /* rgb(194, 193, 193) */;
 }
 h3{
 	text-transform: uppercase;
@@ -98,7 +101,7 @@ h3{
 .accent{
 	text-transform: uppercase;
 	font-size: 2em;
-	color: rgb(82, 81, 81);
+	color: grey;
 	text-shadow: 1px 1px 5px black;
 }
 
@@ -209,28 +212,33 @@ h3{
 /* -------------------------------------------------------------------------------- */
 /*	3. Layout
 /* -------------------------------------------------------------------------------- */
-
+/* font-family: Playfair Display,serif; */
 #jumbotron{
 	padding: 3%;
-	background-color: rgba(10, 10, 10, 0.671);
+	height: 65%;
+	/* background-color: rgba(10, 10, 10, 0.671); */
 	font-size: 1.25em;
 	margin: 1% auto;
-	border: solid black 1px;
-	border-radius: 10px;
+	/* border: solid black 1px; */
+	/* border-radius: 10px; */
 	width: 100%;
 	color: white;
-	text-align: center;
+	/* text-align: center; */
 }
 
 #jumbotron .logo{
 	font-size: 2.60em;
-	/* font-size: 7em; */
+	font-weight: 600;
+	font-size: 5em;
 	color: #241035;
 	font-family: 'Milonga', cursive;
 	text-shadow: 1px 2px 7px rgb(194, 193, 193);
+	position: relative;
+
 }
 #jumbotron .logo2{
 	text-transform: uppercase;
+	text-shadow: 2px 2px 5px black;
 	position: relative;
 	font-size: .55em;
 	bottom: 15px;
@@ -241,7 +249,13 @@ font-size: 1.35em; */
 }
 
 /* #241035*/
-
+.home-logo{
+	width: 900px;
+	border-bottom: 2px solid white;
+	position: relative;
+	top:25px;
+	left: 30px;
+}
 /* #gallery{
 	text-align:center;
 } */
@@ -250,25 +264,26 @@ font-size: 1.35em; */
 background-color: rgba(10, 10, 10, 0.671);
 display:block;
 margin: 25px auto;
-width: 100%;
+width: 90%;
 border: solid black 2px;
 border-radius: 5px;
 margin:20px auto ;
 height: auto;
-padding: 1.15%;
 }
 
+
+
 #gallery-port li{
-	text-align: center;
-background-color: rgba(10, 10, 10, 0.671);
+text-align: center;
+background-color:rgba(10, 10, 10, 0.671);
 display:block;
 margin: 25px auto;
 width: 100%;
-border: solid black 2px;
-border-radius: 5px;
-margin:20px auto ;
+border: solid black 3px;
+/* border-radius: 5px; */
+margin:25px auto ;
 height: 350px;
-padding: 1.15%;
+padding: 5px;
 line-height: 30%;
 }
 
@@ -281,29 +296,39 @@ line-height: 30%;
 
 #gallery-port img{
 	max-height: 70%;
-
 	border: 2px solid black;
 }
 
-.gallery a:link{
+#gallery-port a{
+	max-height: 70%;
 	text-decoration: none;
-	color: white;
-	padding:5px;
 }
 
-.gallery a:hover{
+#gallery-port a:hover{
+	cursor: pointer;
+}
+
+#gallery a:link{
+	text-decoration: none;
+	color: white;
+}
+
+#gallery a:hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
 
-.gallery a:visited{
+#gallery a:visited{
 	text-decoration: none;
 	color: white;
 }
-
 .gallery p{
-	margin: 10px 0 -15px 0;
+	 margin: 0 auto;
 	color: white;
+	padding: 15px;
+	/* font-family: 'Titillium Web', sans-serif; */
+	/* border: 5px solid;
+	padding: 30px; */
 }
 
 /* gallery old
@@ -314,11 +339,6 @@ line-height: 30%;
 	text-align: center;
 	width:30%;
 }
-
-
-
-
-
 
 */
 .wrapper{
@@ -333,6 +353,13 @@ line-height: 30%;
 	border-radius: 5px;
 }
 
+.home-projects{
+	font-family: Playfair Display,serif;
+	font-size: 3em;
+	padding-left: 30px;
+	text-shadow: 2px 2px 5px black;
+	/* color: #241035; */
+}
 /* .content{
 	background-color: rgba(0, 0, 0, 0.5);
 } */
@@ -371,9 +398,28 @@ line-height: 30%;
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-
+.mato{
+	font-family: Playfair Display,serif;
+	font-size: 2em;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.mato-box{
+	width: 70%;
+	background-color: #241035;
+	margin: 0 auto;
+}
+.box{
+	position: relative;
+	z-index: -100;
+	overflow: hidden;
+}
+.parent{
+	overflow: hidden;
+}
 .parent img{
-	width: 300px;
+	width: 100%;
 	padding: 20px;
 	/* width: 400px;
 	padding-top: 75px;
@@ -381,9 +427,9 @@ line-height: 30%;
 	top:35%;
 	right:11%; */
 }
+
 .about-text{
 	width: 100%;
-	/* width: 63%; */
 	margin: 0;
 }
 .about-text p{
@@ -397,14 +443,7 @@ line-height: 30%;
 .about-text{
 	width: 100%;
 }
-.parent img{
-	width: 300px;
-	padding: 20px;
 
-}
-.parent img{
-
-}
 
 /*------------------------model box---------------------*/
 
@@ -543,6 +582,11 @@ button:hover{
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
+#projects{
+	border-top: 4px solid white;
+	margin-bottom: 100px;
+}
+
 .project-picture{
 	text-align: center;
 }
@@ -633,17 +677,17 @@ padding: 15px; */
 	 cursor: pointer;
  }
 
- .row input,
- .row textarea{
+ .rows input,
+ .rows textarea{
  	padding-left: 43px;
  }
 
-.row{
+.rows{
 	color: white;
 	width: 95%;
 	margin-bottom:15px;
 }
-.row i{
+.rows i{
 	position: relative;
 	top: 36px;
 	left: 7px;
@@ -723,6 +767,27 @@ animation-fill-mode: forwards; */
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
+@media screen and ( min-width: 1200px ) {
+	.mato{
+		font-size: 4.5em;
+		width: 100%;
+		position: relative;
+		text-align: left;
+	}
+	.mato-box{
+		width: 65%;
+		position: absolute;
+		top: -20px;
+		right: 23%;
+		z-index: -50;
+		height: 550px;
+	}
+	.parent img{
+		position: relative;
+		top: 35px;
+	}
+}
+
 @media screen and ( min-width: 1060px ) {
 	/* ------------Email Form----------- */
 	.email{
@@ -736,12 +801,18 @@ animation-fill-mode: forwards; */
 		padding-top: 30px; /* fix when you get a font for email us */
 	}
 
-	.face p{
-		bottom:45px;
-		left: 75px;
-	}
+	/* --------------------	About */
+
+
+
+/* 	.face p{
+	bottom:45px;
+	left: 75px;
+} */
+
 
 }
+
 
 @media screen and ( min-width: 760px ) {
 
@@ -766,6 +837,9 @@ animation-fill-mode: forwards; */
 
 
 /* ------------Individual Projects-------------- */
+#projects{
+	margin-bottom: 85px;
+}
 	.project-picture img{
 		width:80%;
 	}
@@ -775,17 +849,23 @@ animation-fill-mode: forwards; */
 		margin: 40px auto 30px auto;
 	}
 
+	/* ------------------------------Home */
+#gallery{
+	border-top: 2px solid white;
+	margin-top: 4px;
+}
 
 	#gallery li{
 		margin:1% 1% 0 1%;
 		display: inline-block;
 		text-align: center;
-		width:30%;
+		width:22%;
 	}
 
 	#gallery-port img{
  		float: right;
- 		max-height: 95%;
+ 		max-height: 100%;
+
 	}
 	#gallery-port li{
 		height: 230px;
@@ -798,12 +878,22 @@ animation-fill-mode: forwards; */
 		width: 90%;
 	}
 	#jumbotron .logo{
-		font-size: 7em;
+		top: 60px;
+		left: 50px;
+		font-size: 8.5em;
 	}
 	#jumbotron .logo2{
-	left: 121px;
-	bottom:40px;
-	font-size: 1.35em;
+	left: 401px;
+	bottom:1px;
+	font-size: 1.45em;
+	}
+
+	.home-logo{
+		width: 850px;
+		border-bottom: 2px solid white;
+		position: relative;
+		top:25px;
+		left: 30px;
 	}
 
 	/* #jumbotron .logo{
@@ -814,7 +904,7 @@ animation-fill-mode: forwards; */
 		bottom: 30px;
 		left: 87px;
 	} */
-
+/* --------------------------------Navigation */
 	.nav-toggle { display: none; }
 
 
@@ -855,6 +945,9 @@ animation-fill-mode: forwards; */
 
 	.nav-small li.on > a { color: white; }
 	.nav-small li:hover > a { color: rgb(109, 108, 108); }
+
+
+
 }
 
 @media screen and ( min-width: 450px )and (max-width: 860px ) {

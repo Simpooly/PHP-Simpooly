@@ -8,24 +8,20 @@ include('inc/header.php');
 
 ?>
 
-    <div class="wrapper2">
+    <!-- <div class="wrapper2"> -->
         <div id="jumbotron">
-            <div>
+            <div class="home-logo">
 				<p class="logo">Simpooly</p>
+                <h2 class="logo2"> Web Development</h2>
 			</div>
-
-
-
-
-        <h2 class="logo2"> Web Development</h2>
         </div>
 
 
-
+        <h2 class="home-projects">Projects</h2>
         <div id="projects">
             <ul id="gallery" class="gallery">
                 <?php
-                $random = array_rand($project, 3);
+                $random = array_rand($project, 4);
 
                     foreach($random as $id){
                         echo get_item_html($id, $project[$id]);
@@ -33,7 +29,7 @@ include('inc/header.php');
                 ?>
             </ul>
         </div>
-    </div><!-- wrapper end -->
+  <!--   </div>wrapper end -->
 
 
 <?php include('inc/footer.php'); ?>

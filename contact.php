@@ -82,7 +82,7 @@ include('inc/header.php');
                 if(isset($error_message)) {
                     echo "<p class='error'>" . $error_message . "</p>";
                 } else {
-                    echo "<p class='email-me'>Email Us</p>";
+                    echo "<h1>Email Us</h1>";
                 }
             ?>
         </div>
@@ -91,27 +91,27 @@ include('inc/header.php');
         <div class="email">
 
             <form action="contact.php" method="post">
-                <div class="row">
+                <div class="rows">
                     <label for="name">Name:</label><br>
                     <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                     <input  id="name" type="text" name="name" value="<?php if(isset($name)) { echo $name;} ?>" ></input>
                 </div>
-                <div class="row">
+                <div class="rows">
                     <label for="email">Email Address:</label><br>
                     <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                     <input id="email" type="text" name="email" value="<?php if(isset($name)) { echo $email;} ?>"></input>
                 </div>
-                <div class="row" style="display:none">
+                <div class="rows" style="display:none">
                     <p>Please leave blank</p></input>
                     <label for="address fa-2x">Address:</label><br>
                     <input id="address" type="text" name="address" value="<?php if(isset($name)) { echo $address;} ?>">
                 </div>
-                <div class="row">
+                <div class="rows">
                     <label for="message">Message:</label><br>
                     <i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
                     <textarea id="message" type="textarea" name="message"><?php if(isset($name)) { echo $message;} ?></textarea>
                 </div>
-                <input class="row" type="submit" value="Submit">
+                <input class="rows" type="submit" value="Submit">
             </form>
 
             <div class="buttons contact">

@@ -8,7 +8,6 @@ include('inc/functions.php');
 include('inc/header.php'); ?>
 
 <div class="wrapper2">
-
     <div id="gallery-port" class="gallery">
             <h1><?php echo $pageTitle; ?></h1>
 

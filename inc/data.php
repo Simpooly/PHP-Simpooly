@@ -15,10 +15,10 @@ $project[101] = [
 
       "outcome" => "I learned a lot from this first simple project. Experimentation and trial and error is a must. ",
 
-      "catagory" => [
+/*      "catagory" => [
         "HTML",
         "CSS"
-        ]
+        ]*/
 ];
 
 $project[102] = [
@@ -32,10 +32,10 @@ $project[102] = [
 
       "outcome" => "",
 
-      "catagory" => [
+/*      "catagory" => [
         "HTML",
         "CSS"
-        ]
+        ]*/
 ];
 
 
@@ -49,13 +49,13 @@ $project[201] = [
         "troubles" => "Learning to interact with an API was definitely a learning curve. I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data selecting the correct information was the downhill slide.",
 
         "outcome" => "During this project I found true growth going beyond basic HTML and CSS. It taught me that interacting with API's can take time, but as long as I have patience and keep with it I will succeed.",
-        "catagory" => [
+/*        "catagory" => [
             "HTML",
             "CSS",
             "JQuery",
             "javascript",
             "API"
-            ]
+            ]*/
 ];
 
 $project[202] = [
@@ -68,13 +68,13 @@ $project[202] = [
       "troubles" => "With this project I have learned that finding a good database is important. I used the database FreeCodeCamp provided. They didnt want API keys in CodePen for security and privacy reasons. I got the majority of the project and found out that database did not provide all the information required (ie. city, state). Using a different database such as google maps would have provided more information than just the longitude and latitude.",
 
       "outcome" => "In the future, I will learn to do extra research to find the best API and information for my needs. Efficiency is a goal I have in all work I do, it makes things simple and eventually easier, even if the process leading up to that is a little messy.",
-      "catagory" => [
+/*      "catagory" => [
         "HTML",
         "CSS",
         "JQuery",
         "javascript",
         "API"
-        ]
+        ]*/
 ];
 
 ?>
