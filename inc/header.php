@@ -15,6 +15,9 @@ $company_name = 'Simpooly';
     <link rel="stylesheet" href="inc/reportcard/css/badges.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="inc/img/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> <!-- Email font font-family: 'Monoton', cursive;-->
     <link href="https://fonts.googleapis.com/css?family=Cagliostro|Dosis|Inconsolata|Palanquin|Tenor+Sans|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Milonga|Monofett|Monoton|Oleo+Script+Swash+Caps" rel="stylesheet">
 

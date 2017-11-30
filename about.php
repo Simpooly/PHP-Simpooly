@@ -21,6 +21,7 @@ include('inc/header.php');
 
 		<div class="about-text">
 
+			<h3>Experience</h3>
 
 			<p>As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills, I had the opportunity to provide web updates and data entry into various websites upon customer needs.
 			<br>
@@ -29,6 +30,8 @@ include('inc/header.php');
 			<br>
 			<br>
 			<h2 class="accent">Simplicity  |  Curiosity  |  Quirky</h2>
+
+			<h3>Philosophy</h3>
 			<p>Over the years these three things, simplicity, curiosity, and quirkiness have become extremely important to who I am and what I put out in the world. Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details. Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand. Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting. My life philosophies translate into my work. Simple design well thought out and reliable user face with just the right amount of spice! </p>
 			<br>
 			<br>

@@ -3,13 +3,13 @@ $skills = ["HTML", "HTML5", "CSS", "CSS3", "JQuery", "JavaScript", "SASS", "Word
 
 $project = [];
 
-$project[101] = [ 
+$project[101] = [
     "title" => "Tribute Page",
      "img" => "inc/img/Screenshot1.png",
       //"img2" => "inc/img/Screenshot4.png",
       "url" => "https://codepen.io/Simpooly/full/WEyaam/",
 
-      "goal" => "Designed a static page dedicated to one of my idols Alain de BottonDesigned a static page dedicated to one of my idols Alain de Botton. Inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
+      "goal" => "Designed a static page dedicated to one of my idols Alain de Botton. Inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
 
       "troubles" => "I had spent many weeks learning the basics of HTML, CSS, PHP, JavaScript, JQuery and more. As my first real project, it was interesting to find that knowing the documentation and making it work together were two completely different things. I struggled getting the images of the books to link properly. In the end I found it was not my code, but the URL.",
 
@@ -52,8 +52,8 @@ $project[201] = [
         "catagory" => [
             "HTML",
             "CSS",
-            "JQuery", 
-            "javascript", 
+            "JQuery",
+            "javascript",
             "API"
             ]
 ];
@@ -71,8 +71,8 @@ $project[202] = [
       "catagory" => [
         "HTML",
         "CSS",
-        "JQuery", 
-        "javascript", 
+        "JQuery",
+        "javascript",
         "API"
         ]
 ];

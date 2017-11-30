@@ -8,7 +8,7 @@ include('inc/header.php');
 
 ?>
 
-    <div class="wrapper">
+    <div class="wrapper2">
         <div id="jumbotron">
             <div>
 				<p class="logo">Simpooly</p>
@@ -23,7 +23,7 @@ include('inc/header.php');
 
 
         <div id="projects">
-            <ul id="gallery">
+            <ul id="gallery" class="gallery">
                 <?php
                 $random = array_rand($project, 3);
 

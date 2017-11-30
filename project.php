@@ -24,17 +24,17 @@
 ?>
 
 <div>
-    <div class="wrapper">
+    <div class="wrapper box">
 
         <h1><?php echo $pageTitle; ?></h1>
 
         <!-- if you want breadcrumbs -->
         <div class="breadcrumbs">
             <a class="general" href="portfolio.php">Full Portfolio</a>
-            &gt;<?php echo $item["title"]; ?>
+            &gt;  <?php echo $item["title"]; ?>
         </div>
 
-        <div class="project-picture box">
+        <div class="project-picture">
             <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
         </div>
 <!--
@@ -45,18 +45,18 @@
 
 
 
-        
-        <div class="box">
-            
-        
 
-            <p class ="goal"><?php echo $item["goal"]; ?></p><br>
+        <div class="project-content">
 
-            <p class ="trouble"><?php echo $item["troubles"]; ?></p><br>
+            <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">view</a>
 
-            <p class ="thoughts"><?php echo $item["outcome"]; ?></p><br>
+            <h3>Goal</h3>
+            <p class ="content goal"><?php echo $item["goal"]; ?></p><br>
 
-            <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">Visit Project Here</a>
+            <h3>Troubles</h3>
+            <p class =" content trouble"><?php echo $item["troubles"]; ?></p><br>
+
+            <p class =" content thoughts"><?php echo $item["outcome"]; ?></p><br>
 
             <p class ="thoughts"><?php //echo implode(", ",$item["category"]); ?></p><br>
         </div>
