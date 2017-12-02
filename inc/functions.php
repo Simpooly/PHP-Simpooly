@@ -17,7 +17,7 @@
 
 function get_item_html($id, $item){
     $output = "<li><a href='project.php?id="
-    . $id . "'><p>" . $item["title"] . "</p>"
+    . $id . "'><h3>" . $item["title"] . "</h3>"
                     . "</a></li>";
     return $output;
 }

@@ -82,7 +82,7 @@ include('inc/header.php');
                 if(isset($error_message)) {
                     echo "<p class='error'>" . $error_message . "</p>";
                 } else {
-                    echo "<h1>Email Us</h1>";
+                    echo "<p class='email-me'>Email Me</p>";
                 }
             ?>
         </div>

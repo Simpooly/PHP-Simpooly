@@ -22,7 +22,7 @@ include('inc/header.php');
 
 		<div class="about-text">
 <div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-8 experience">
 				<h3>Experience</h3>
 				<p >As a self-taught web developer I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills, I had the opportunity to Intern with Ractoon Inc. and have been working by contract to provide web updates and data entry into various websites upon customer needs. I uderstand HTML, CSS, the basics of JavaScript, jQuery and was exposed to the world of PHP and Wordpress development. I find JavaScript developing fulfilling and would like to dive in deeper to explore all it has to offer in the future.
 				</p>
@@ -37,11 +37,11 @@ include('inc/header.php');
 </div> <!-- Row one -->
 <div class="row">
 
-			<h2 class="accent col-lg-12">Simplicity  |  Curiosity  |  Quirky</h2>
+			<h2 class="accent col-lg-8">Simplicity  |  Curiosity  |  Quirky</h2>
 </div>
-<div class="row"><!--  Row two -->
+<div class="row third"><!--  Row two -->
 
-		<div class="col-lg-8">
+		<div class="col-lg-8 philosophy">
 			<h3>Philosophy</h3>
 			<p >Over the years these three things, simplicity, curiosity, and quirkiness have become extremely important to who I am and what I put out in the world. Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details. Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand. Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting. My life philosophies translate into my work. Simple design well thought out and reliable user face with just the right amount of spice! </p>
 		</div>
@@ -62,8 +62,7 @@ include('inc/header.php');
 	<div id="popup" class="hide">
 		<div class="popup-inner">
 			<div class="report-card treehouse"></div>
-				<p><a class="close" href="#">Close</a></p>
-				<a class="close ex" href="#">x</a>
+				<a class="close ex" href="#"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
@@ -116,8 +115,7 @@ include('inc/header.php');
 
 				</tr>
 			</table> -->
-			<p><a class="close" href="#">Close</a></p>
-			<a class="close ex" href="#">x</a>
+			<a class="close ex" href="#"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</div>
 

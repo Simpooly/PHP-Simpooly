@@ -17,7 +17,7 @@ include('inc/header.php');
         </div>
 
 
-        <h2 class="home-projects">Projects</h2>
+        <p class="home-projects">Projects</p>
         <div id="projects">
             <ul id="gallery" class="gallery">
                 <?php

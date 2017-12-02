@@ -64,28 +64,22 @@ body {
 	}
 h1{
 	font-weight: bold;
-	width: 45%;
-	border-bottom: 2px solid white;
 	font-family: Playfair Display,serif;
 	color: #241035;
 	font-size: 3.75em;
-	text-align: center;
 	text-shadow: 1px 1px 5px rgb(194, 193, 193);
-	margin: 0 auto 40px auto;
 }
 h2{
 	font-size: 1.5em;
 	padding: 2px;
 	color: white /* rgb(194, 193, 193) */;
 }
-h3{
-	text-transform: uppercase;
+h3{ font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	color: red;
 
 }
 
-* a:link{
+/* * a:link{
 	text-decoration: none;
 	color: rgb(82, 81, 81);
 	padding:5px;
@@ -93,19 +87,21 @@ h3{
 * a:visited{
 	text-decoration: none;
 	color:rgb(82, 81, 81);
-}
+} */
 * a:hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
-.accent{
-	text-transform: uppercase;
-	font-size: 2em;
-	color: grey;
-	text-shadow: 1px 1px 5px black;
+
+
+.wrapper h1,
+.wrapper2 h1{
+	margin: 0 auto;
+	font-family: 'Abril Fatface', cursive;
+	color: #241035;
+	text-shadow: 1px 1px 7px rgb(194, 193, 193);
+	font-size: 6em;
 }
-
-
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
@@ -125,7 +121,6 @@ h3{
 .nav-toggle {
 	display: block;
 	padding: 16px 0;
-	background: rgba(0,0,0,0.1);
 	color: #fff;
 }
 
@@ -138,7 +133,7 @@ h3{
 
 .nav-toggle .bar {
 	height: 2px;
-	background: #fff;
+	background: black;
 	border-radius: 2px;
 	position: absolute;
 	left: 0;
@@ -215,7 +210,7 @@ h3{
 /* font-family: Playfair Display,serif; */
 #jumbotron{
 	padding: 3%;
-	height: 65%;
+	height: 60%;
 	/* background-color: rgba(10, 10, 10, 0.671); */
 	font-size: 1.25em;
 	margin: 1% auto;
@@ -227,22 +222,24 @@ h3{
 }
 
 #jumbotron .logo{
-	font-size: 2.60em;
+	letter-spacing: -.5px;
 	font-weight: 600;
-	font-size: 5em;
+	font-size: 4em;
 	color: #241035;
 	font-family: 'Milonga', cursive;
 	text-shadow: 1px 2px 7px rgb(194, 193, 193);
 	position: relative;
+	top: 57px;
+	left: 20px;
 
 }
 #jumbotron .logo2{
 	text-transform: uppercase;
 	text-shadow: 2px 2px 5px black;
 	position: relative;
-	font-size: .55em;
-	bottom: 15px;
-	left: 47px;
+	font-size: .8em;
+	bottom: -10px;
+	left: 160px;
 /* 	left: 121px;
 bottom:40px;
 font-size: 1.35em; */
@@ -278,16 +275,14 @@ text-align: center;
 background-color:rgba(10, 10, 10, 0.671);
 display:block;
 margin: 25px auto;
-width: 100%;
+width: 80%;
 border: solid black 3px;
 /* border-radius: 5px; */
 margin:25px auto ;
 height: 350px;
-padding: 5px;
+padding: 5px 5px 20px 5px;
 line-height: 30%;
 }
-
-
 
 #gallery img{
 	max-width: 100%;
@@ -295,7 +290,8 @@ line-height: 30%;
 }
 
 #gallery-port img{
-	max-height: 70%;
+	max-width: 90%;
+	max-height: 60%;
 	border: 2px solid black;
 }
 
@@ -322,7 +318,15 @@ line-height: 30%;
 	text-decoration: none;
 	color: white;
 }
-.gallery p{
+#gallery p{
+	 margin: 0 auto;
+	color: white;
+	padding: 25px;
+	/* font-family: 'Titillium Web', sans-serif; */
+	/* border: 5px solid;
+	padding: 30px; */
+}
+#gallery-port p{
 	 margin: 0 auto;
 	color: white;
 	padding: 15px;
@@ -345,19 +349,24 @@ line-height: 30%;
 	width: 90%;
 	margin: 50px auto 90px auto;
 	border-radius: 5px;
+
 }
 
 .wrapper2{
 	width: 90%;
 	margin: 50px auto 90px auto;
 	border-radius: 5px;
-}
 
+}
+#junbotron h2{
+	color: color: #760c0c;
+}
 .home-projects{
-	font-family: Playfair Display,serif;
 	font-size: 3em;
 	padding-left: 30px;
 	text-shadow: 2px 2px 5px black;
+	color: white;
+
 	/* color: #241035; */
 }
 /* .content{
@@ -393,34 +402,62 @@ line-height: 30%;
 
 /* .footer p{
 	margin-top: -14px;
+	#b31919
 } */
-
+.footer i{
+	color: grey;
+}
+ .footer i: active{
+ 	color: #760c0c;
+ }
+ .footer i:hover{
+ 	color: #760c0c;
+ }
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
 .mato{
-	font-family: Playfair Display,serif;
-	font-size: 2em;
+	font-family: 'Milonga', cursive;
+	font-size: 2.5em;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
-.mato-box{
-	width: 70%;
-	background-color: #241035;
-	margin: 0 auto;
+
+.accent{
+	text-transform: uppercase;
+	font-size: 2em;
+	color: grey;
+	text-shadow: 1px 1px 5px black;
+	margin: 25px auto;
 }
+
+.experience,
+.philosophy{
+	line-height: 100%;
+	word-spacing: .5px;
+ }
+
+.mato-box{
+
+	width: 100%;
+	background-color: #241035;
+	margin: 25 auto 0 auto; */
+}
+
 .box{
-	position: relative;
-	z-index: -100;
+/* 	position: relative;
+z-index: -100; */
 	overflow: hidden;
 }
+
 .parent{
 	overflow: hidden;
 }
+
 .parent img{
 	width: 100%;
-	padding: 20px;
+	/* padding: 20px; */
 	/* width: 400px;
 	padding-top: 75px;
 	position: absolute;
@@ -438,6 +475,7 @@ line-height: 30%;
 
 .parent h2{
 	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .about-text{
@@ -491,7 +529,7 @@ line-height: 30%;
  .ex{
 	position:absolute;
     top:3px;
-	right:5px;
+	right:26px;
 	font-size:20px;
 	height:20px;
 	width: 20px;
@@ -509,6 +547,7 @@ line-height: 30%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 550px;
+	padding:5px;
 }
 
 .skills li{
@@ -519,7 +558,25 @@ line-height: 30%;
 	border-radius: 50%;
 	font-weight: 700;
 	color:white;
+	max-width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:5px;
 
+}
+.skills p{
+	max-width: 50%;
+}
+
+.skills h2{
+	margin: 0 auto;
+}
+.skills a:link{
+	color: black;
+}
+.skills a:visited{
+	color: black;
 }
  /* .skills{
  	 margin: 0 auto;
@@ -570,9 +627,10 @@ line-height: 30%;
 		border-radius: 5px;
 		color:#241035;
 		padding:10px;
-		margin: 10px;
 		background-color:white;
 		font-weight: bold;
+		margin-top: -5px;
+
 }
 
 button:hover{
@@ -598,9 +656,15 @@ button:hover{
 	border-radius: 5px;
 	box-shadow: 5px 5px 15px black;
 }
+.goal h3,
+.trouble h3{
+	padding-left: 18px;
+	color: white;
+}
 
 .content{
 	text-align: justify;
+	padding: 15px;
 }
 
 .box a:link{
@@ -609,7 +673,6 @@ button:hover{
 .box a:visited{
 	color: white;
 }
-
 
 
 .breadcrumbs a{
@@ -624,10 +687,19 @@ button:hover{
 .breadcrumbs{
 	color: white;
 	/* font-weight: 550; */
-	text-align: left;
-	margin-left: 10%;
+	/* text-align: left; */
 }
 
+.row h3{
+	color: #760c0c;
+	font-size: 30px;
+}
+
+#gallery h3{
+	font-family: 'Abril Fatface', cursive;
+	color: lightgrey;
+	padding-left: 20%;
+}
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */
@@ -638,9 +710,13 @@ button:hover{
 }
 
 .email-me{
-	font-family: 'Monoton', cursive;
-	font-size: 4em;
-	margin-left: 15px;
+	font-family: 'Abril Fatface', cursive;
+	text-shadow: 1px 1px 7px rgb(194, 193, 193);
+/* 	font-family: 'Ubuntu', sans-serif;
+font-family: 'Old Standard TT', serif; */
+	font-weight: 600;
+	font-size: 5.5em;
+	margin: 0 0 -25px 15px;
 	color: #241035;
 }
 
@@ -680,6 +756,7 @@ padding: 15px; */
  .rows input,
  .rows textarea{
  	padding-left: 43px;
+
  }
 
 .rows{
@@ -692,8 +769,10 @@ padding: 15px; */
 	top: 36px;
 	left: 7px;
 	z-index: 100;
-	color: grey;
+	color: #760c0c;
+
 }
+
  .box{
 	background-color: rgba(10, 10, 10, 0.747);
 	color: white;
@@ -758,10 +837,14 @@ animation-fill-mode: forwards; */
 .git p{
 	display: inline-block;
 	position: relative;
-	color:red;
 	left: 20px;
 	bottom: 20px;
 }
+
+.buttons.contact i:hover{
+	color: grey;
+}
+
 
 
 /* -------------------------------------------------------------------------------- */
@@ -769,23 +852,32 @@ animation-fill-mode: forwards; */
 /* -------------------------------------------------------------------------------- */
 @media screen and ( min-width: 1200px ) {
 	.mato{
-		font-size: 4.5em;
+		font-size: 3.5em;
 		width: 100%;
 		position: relative;
 		text-align: left;
+		top: 82px;
 	}
 	.mato-box{
+
 		width: 65%;
-		position: absolute;
-		top: -20px;
-		right: 23%;
-		z-index: -50;
-		height: 550px;
+		position: relative;
+		top: -45px;
+		left: -40px;
+		height: 485px;
 	}
 	.parent img{
 		position: relative;
-		top: 35px;
+		top: 60px;
+		width: 75%;
 	}
+	.accent{
+		position: relative;
+		bottom: 195px;
+	}
+	.third{
+		position: relative;
+		bottom:190px; }
 }
 
 @media screen and ( min-width: 1060px ) {
@@ -801,15 +893,32 @@ animation-fill-mode: forwards; */
 		padding-top: 30px; /* fix when you get a font for email us */
 	}
 
-	/* --------------------	About */
+	/* --------------------	Portfolio */
 
+	#gallery-port li{
+		width: 80%;
+	}
+		#gallery-port img{
+	 		max-height: 100%;
 
+		}
 
-/* 	.face p{
-	bottom:45px;
-	left: 75px;
-} */
+	/* 	.face p{
+		bottom:45px;
+		left: 75px;
+	} */
+	/* --------------------------project page */
 
+	.project-picture a{
+		width: 65%;
+		float: left;
+	}
+	.goal{
+		width: 35%;
+		float: right;
+		padding: 0px 25px 15px 15px;
+
+	}
 
 }
 
@@ -837,7 +946,7 @@ animation-fill-mode: forwards; */
 
 
 /* ------------Individual Projects-------------- */
-#projects{
+/* #projects{
 	margin-bottom: 85px;
 }
 	.project-picture img{
@@ -847,7 +956,7 @@ animation-fill-mode: forwards; */
 	.project-content{
 		width: 80%;
 		margin: 40px auto 30px auto;
-	}
+	} */
 
 	/* ------------------------------Home */
 #gallery{
@@ -869,6 +978,9 @@ animation-fill-mode: forwards; */
 	}
 	#gallery-port li{
 		height: 230px;
+		margin-top: 50px;
+		width: 85%;
+		padding: 5px;
 	}
 	#gallery-port p{
 		padding: 15px;
@@ -878,18 +990,18 @@ animation-fill-mode: forwards; */
 		width: 90%;
 	}
 	#jumbotron .logo{
-		top: 60px;
+		top: 82px;
 		left: 50px;
 		font-size: 8.5em;
 	}
 	#jumbotron .logo2{
-	left: 401px;
-	bottom:1px;
+	left: 370px;
+	bottom:-10px;
 	font-size: 1.45em;
 	}
 
 	.home-logo{
-		width: 850px;
+		width: 90%;
 		border-bottom: 2px solid white;
 		position: relative;
 		top:25px;
@@ -934,13 +1046,13 @@ animation-fill-mode: forwards; */
 		display: block;
 		padding: 23px 0;
 		font-size: 18px;
-		color: #999;
+		color:  #999;
 		text-transform: uppercase;
 		position: relative;
 		z-index: 10000;
 	}
 
-	.main-menu li.on > a { color: black; }
+	.main-menu li.on > a { color:  #760c0c; font-size: 1.35em; }
 	.main-menu li:hover > a { color: rgb(109, 108, 108); }
 
 	.nav-small li.on > a { color: white; }
@@ -949,17 +1061,37 @@ animation-fill-mode: forwards; */
 
 
 }
-
 @media screen and ( min-width: 450px )and (max-width: 860px ) {
 	#jumbotron{ width:95%;}
 
 	#jumbotron .logo{
+		top: 72px;
+		left: 10px;
+		font-size: 5.5em;
+	}
+	#jumbotron .logo2{
+	left: 220px;
+	bottom:-12px;
+	font-size: 1em;
+	}
+
+	.home-logo{
+		width: 80%;
+		padding-left: -30px;}
+
+	/* #jumbotron .logo{
 		font-size: 4em;
 	}
 	#jumbotron .logo2{
 		font-size: .75em;
 		bottom: 23px;
 		left: 70px;
+	} */
+	#gallery-port li{
+		width: 100%;
+	}
+	#gallery-port p{
+		padding: 5px;
 	}
 }
 /* -------------------------------------------------------------------------------- */
