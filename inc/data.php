@@ -5,11 +5,13 @@ $project = [];
 
 $project[101] = [
     "title" => "Tribute Page",
-     "img" => "inc/img/Screenshot1.png",
-      //"img2" => "inc/img/Screenshot4.png",
+     "img" => "inc/img/screenshot/101/01.png",
+      //"img2" => "inc/img/screenshot/101/02.png",
       "url" => "https://codepen.io/Simpooly/full/WEyaam/",
 
       "goal" => "Designed a static page dedicated to one of my idols Alain de Botton. Inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
 
       "troubles" => "I had spent many weeks learning the basics of HTML, CSS, PHP, JavaScript, JQuery and more. As my first real project, it was interesting to find that knowing the documentation and making it work together were two completely different things. I struggled getting the images of the books to link properly. In the end I found it was not my code, but the URL.",
 
@@ -22,11 +24,13 @@ $project[101] = [
 ];
 
 $project[102] = [
-    "title" => "Photography",
-     "img" => "inc/img/Screenshot2.png",
-     // "img2" => "inc/img/Screenshot5.png",
+    "title" => "Mock Photography",
+     "img" => "inc/img/screenshot/102/01.png",
+     // "img2" => ""inc/img/screenshot/102/02.png",
       "url" => "https://codepen.io/Simpooly/full/RZqMNR/",
       "goal" => "Developed a mock photography scrolling static page.",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
 
       "troubles" => "As a second project, I found myself not needing to look up documentation as often, I had much more CSS information ingrained and was able to implement style quicker. In my process of being excited about my speed, my lack of organization was my downfall. It taught me how important it was to label and know where things were, and how much design and layout can break if I'm not careful.",
 
@@ -39,12 +43,14 @@ $project[102] = [
 ];
 
 
-$project[201] = [
-    "title" => "Random Quote",
-        "img" => "inc/img/Screenshot3.png",
-        //"img2" => "#",
+$project[103] = [
+    "title" => "Quote App",
+        "img" => "inc/img/screenshot/103/01.png",
+        //"img2" => "inc/img/screenshot/103/02.png",
         "url" => "https://codepen.io/Simpooly/full/KXyoeV/",
         "goal" => "Performed my first API project by acquiring JSON data, and displaying a random quote from API.",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
 
         "troubles" => "Learning to interact with an API was definitely a learning curve. I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data selecting the correct information was the downhill slide.",
 
@@ -58,12 +64,14 @@ $project[201] = [
             ]*/
 ];
 
-$project[202] = [
+$project[104] = [
     "title" => "Weather App",
-     "img" => "inc/img/Screenshot6.png",
-      //"img2" => "#",
+     "img" => "inc/img/screenshot/104/01.png",
+      //"img2" => "inc/img/screenshot/104/02.png",
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
       "goal" => "Provided a basic weather application that accesses users geolocation and displays according to data. ",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
 
       "troubles" => "With this project I have learned that finding a good database is important. I used the database FreeCodeCamp provided. They didnt want API keys in CodePen for security and privacy reasons. I got the majority of the project and found out that database did not provide all the information required (ie. city, state). Using a different database such as google maps would have provided more information than just the longitude and latitude.",
 
@@ -76,5 +84,47 @@ $project[202] = [
         "API"
         ]*/
 ];
+
+$project[105] = [
+    "title" => "PSD to Web Conversion",
+     "img" => "inc/img/screenshot/105/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+      "url" => "http://wildcalling.com/",
+
+      "goal" => "",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+
+      "troubles" => "",
+
+      "outcome" => " ",
+
+/*      "catagory" => [
+        "HTML",
+        "CSS"
+        ]*/
+];
+
+$project[106] = [
+    "title" => "Content Migration",
+     "img" => "inc/img/screenshot/106/01.png",
+      //"img2" => "inc/img/screenshot/106/02.png",
+      "url" => "https://www.fcgov.com/utilities/",
+
+      "goal" => "",
+
+      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+
+      "troubles" => "",
+
+      "outcome" => "",
+
+/*      "catagory" => [
+        "HTML",
+        "CSS"
+        ]*/
+];
+
 
 ?>

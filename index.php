@@ -17,18 +17,18 @@ include('inc/header.php');
         </div>
 
 
-        <p class="home-projects">Projects</p>
-        <div id="projects">
-            <ul id="gallery" class="gallery">
-                <?php
-                $random = array_rand($project, 4);
+     <!--    <p class="home-projects">Projects</p>
+     <div id="projects">
+         <ul id="gallery" class="gallery">
+             <?php
+             $random = array_rand($project, 4);
 
-                    foreach($random as $id){
-                        echo get_item_html($id, $project[$id]);
-                    }
-                ?>
-            </ul>
-        </div>
+                 foreach($random as $id){
+                     echo get_item_html($id, $project[$id]);
+                 }
+             ?>
+         </ul>
+     </div> -->
   <!--   </div>wrapper end -->
 
 
