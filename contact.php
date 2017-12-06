@@ -62,7 +62,7 @@ include('inc/header.php');
 
 
 
-<div class="wrapper">
+<div class="wrapper2">
 
     <!-- <h1><?php echo $pageTitle; ?></h1> -->
 
@@ -82,7 +82,7 @@ include('inc/header.php');
                 if(isset($error_message)) {
                     echo "<p class='error'>" . $error_message . "</p>";
                 } else {
-                    echo "<p class='email-me'>Email Me</p>";
+                    echo "<p class='email-me'>Let's Talk</p>";
                 }
             ?>
         </div>

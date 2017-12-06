@@ -10,9 +10,11 @@ include('inc/header.php');
 	<div class="flex">
 		<div class="about-top">
 			<div class="bio">
-				<div class="slogan">
-					<h2 >It's SimpOoly delightful to meet you!</h2>
-				</div>
+<!-- 				<div class="slogan">
+	<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+	<h2>It's SimpOoly delightful to meet you!</h2>
+		<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+</div> -->
 				<div class="name">
 					<h2>Krista Jekel</h2>
 					<h3>Front End Web Developer</h3>
@@ -39,17 +41,17 @@ include('inc/header.php');
 
 				<div class="philosophy-concept">
 					<div class="simplicity">
-						<i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>Simplicity</h4>
 						<p>Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details.</p>
 					</div>
 					<div class="curiosity">
-						<i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-lightbulb-o fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>Curiosity</h4>
 						<p>Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand.</p>
 					</div>
 					<div class="quirky">
-						<i class="fa fa-puzzle-piece fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-puzzle-piece fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>Quriky</h4>
 						<p>Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting.</p>
 					</div>

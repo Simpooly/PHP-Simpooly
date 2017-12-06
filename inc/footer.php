@@ -4,9 +4,9 @@
 <footer class="footer">
 
     <div class="buttons">
-        <a href="https://github.com/Simpooly" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://github.com/Simpooly" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
       <!-- <a><img class="social" src="inc/img/Twitter.png"></a>
         <a><img class="social" src="inc/img/Email.png"></a>-->
     </div>

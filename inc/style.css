@@ -44,6 +44,7 @@ html {
 html p{
 	line-height: 140%;
 	letter-spacing: 1px;
+	font-family: 'Titillium Web', sans-serif;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
@@ -64,18 +65,26 @@ body {
 	}
 h1{
 	font-weight: bold;
-	font-family: Playfair Display,serif;
+	/* font-family: Playfair Display,serif; */
 	color: #241035;
 	font-size: 3.75em;
-	text-shadow: 1px 1px 5px rgb(194, 193, 193);
+	/* text-shadow: 1px 1px 5px rgb(194, 193, 193); */
 }
 h2{
-	font-size: 1.5em;
+	font-size: 1.75em;
+	font-weight: bold;
+	/* font-family: 'Abril Fatface', cursive; */
 	padding: 2px;
 }
-h3{ font-family: 'Montserrat', sans-serif;
+h3{ /* font-family: 'Montserrat', sans-serif; */
+font-family: Playfair Display,serif;
 	font-weight: bold;
-
+	margin: 0 0 15px 0;
+	font-size:1.5em;
+}
+h4{
+	font-size: 1.35em;
+	margin-bottom: 10px;
 }
 
 /* * a:link{
@@ -96,9 +105,10 @@ h3{ font-family: 'Montserrat', sans-serif;
 .wrapper h1,
 .wrapper2 h1{
 	margin: 0 auto;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Lato', sans-serif;
+	/* font-family: 'Abril Fatface', cursive; */
 	color: #241035;
-	text-shadow: 1px 1px 7px rgb(194, 193, 193);
+	/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
 	font-size: 6em;
 }
 /* -------------------------------------------------------------------------------- */
@@ -106,7 +116,7 @@ h3{ font-family: 'Montserrat', sans-serif;
 /* -------------------------------------------------------------------------------- */
 
 .navigation {
-	background-color:  #f2f2f2;; /* #242424; */
+	background-color: white; /* #242424; */
 	width: 100%;
 	height: 60px;
 	position: fixed;
@@ -229,7 +239,7 @@ h3{ font-family: 'Montserrat', sans-serif;
 	/* letter-spacing: -.5px;
 	font-weight: 600; */
 	font-size: 4em;
-	color: #241035;
+	color: #3f0a42 /*  #241035 */;
 	font-family: 'Milonga', cursive;
 	/* text-shadow: 1px 2px 7px rgb(194, 193, 193);
 	position: relative;
@@ -243,18 +253,19 @@ h3{ font-family: 'Montserrat', sans-serif;
 
 }
 #jumbotron .logo2{
+	color: #0c3c40;
 	text-transform: uppercase;
 	position: relative;
 	font-size: .8em;
-	top:35px;
+	top:40px;
 	left: 100px;
-font-size: 14px;
-z-index: 100;
+	font-size: 14px;
+	z-index: 100;
 }
 
 /* #241035*/
 .home-logo{
-	padding:35px;
+	padding:40px;
 	border: 1px solid grey;
 	/* width: 900px;
 	border-bottom: 2px solid white;
@@ -283,8 +294,9 @@ height: auto;
 }
 
 #gallery-port li{
+box-shadow: 0 11px 8px -8px rgb(49, 49, 49);
 text-align: center;
-background-color: white;
+/*background-color: #646464;*/
 display:block;
 width: 70%;
 /* border: solid black 3px; */
@@ -293,6 +305,11 @@ margin:25px auto ;
 /* height: 400px; */
 /* padding: 5px 5px 20px 5px; */
 line-height: 30%;
+background: white; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(to top right,rgb(153, 153, 153), white 30%)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(top right,rgb(153, 153, 153), white 30%)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(top right, rgb(153, 153, 153), white 30%)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); /* Standard syntax */
 }
 
 /* #gallery img{
@@ -313,6 +330,10 @@ line-height: 30%;
 #gallery-port a:hover{
 	cursor: pointer;
 	color: black;
+}
+
+#gallery-port p{
+
 }
 /*
 #gallery a:link{
@@ -358,13 +379,18 @@ line-height: 30%;
 	width: 80%;
 	margin: 50px auto 60px auto;
 	border-radius: 5px;
-	background-color: white;
+	background: white;
 }
 
 .wrapper2{
-	width: 90%;
-	margin: 50px auto 90px auto;
+	width: 80%;
+	margin: 50px auto 60px auto;
 	border-radius: 5px;
+	background: #646464; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */
 
 }
 #junbotron h2{
@@ -417,25 +443,38 @@ line-height: 30%;
 	color: grey;
 }
  .footer i: active{
- 	color: #760c0c;
+ 	color:  #241035;
  }
  .footer i:hover{
- 	color: #760c0c;
+ 	color:  #241035;
  }
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
 
 .bio{ display: flex; }
-.slogan{ width: 65%; float: left; background-color: grey; order: 2;}
-.name{width:35%; float: left; background-color: darkgrey; order: 1;}
-.name h3{display: none;}
+.slogan{ width: 65%; float: left; background-color: #444444; order: 2; color: black;}
+.name{width:100%; float: left; order: 1; background: #646464; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
+background: linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */}
+.name h2{ color: #241035; font-size: 40px;  padding: 15px; font-family: 'Lato', sans-serif; text-transform: uppercase;}
+.name h3{display: none;  color: #0c3c40; padding-left: 15px; font-family: 'Lato', sans-serif;}
 .head-shot{ text-align: center;}
 .head-shot img{ width: 100%;}
+.slogan h2{	position: relative;
+	 top: 50%;
+	 left: 50%;
+	 /* bring your own prefixes */
+	 transform: translate(-50%, -50%);}
 
-
-.philosophy{ background-color: white; padding: 15px;}
-.experience{background-color: #241035; color: white; padding: 15px;}
+	 /* #3f0a42  #0c3c40; */
+.philosophy{ background-color: white; padding: 15px; color: #4f4f4f;}
+.philosophy h3,
+.philosophy h4,
+.philosophy i{ color: #0c3c40; }
+.experience{background-color: #241035; color: beige; padding: 15px; }
 
 /* -------------------Philosophy Boxes */
 
@@ -657,9 +696,9 @@ z-index: -100;
 		border: 1px solid black;
 		display: block;
 		border-radius: 5px;
-		color:#241035;
+		color:white;
 		padding:10px;
-		background-color:white;
+		background-color:#0c3c40;;
 		font-weight: bold;
 		margin:10px auto;
 
@@ -691,14 +730,15 @@ button:hover{
 }
 
 .goal{
-	color: white;
+	color: beige;
 	font-size: 16px;
 }
+.project-bottom, .goal{padding: 15px;}
 .project-content h1{ margin-bottom: 15px; }
-/* .goal h3,
-.trouble h3{
-	padding-left: 18px;
-} */
+.project-bottom.row{ color: black; background-color: white; margin-top: 25px;}
+.goal h3{
+	text-shadow: 0px 0px .5px beige;
+}
 
 /* .content{
 	text-align: justify;
@@ -729,7 +769,7 @@ button:hover{
 }
 
 .row h3{
-	font-size: 30px;
+	color: #0c3c40;
 }
 
 #gallery h3{
@@ -765,6 +805,9 @@ form{
  form label{
 	position: relative;
 	top: 25px;
+	color: black;
+	font-weight: bold;
+	font-size: 1.25em;
  }
 form textarea,
 form input{
@@ -774,7 +817,6 @@ form input{
 /* 	 width: 60%;
 padding: 15px; */
 	 border-radius: 3px;
-	background-color: lightgrey;
 	 -webkit-box-shadow: 0 8px 6px -6px black;
 	    -moz-box-shadow: 0 8px 6px -6px black;
 	         box-shadow: 0 8px 6px -6px black;
@@ -790,6 +832,7 @@ padding: 15px; */
 	 font-size: 1.25em;
 	 font-weight: bold;
 	 cursor: pointer;
+	 color: white;
  }
 
  .rows input,
@@ -801,14 +844,14 @@ padding: 15px; */
 .rows{
 	/* color: white; */
 	width: 95%;
-	margin-bottom:15px;
+	margin-bottom:10px;
 }
 .rows i{
 	position: relative;
-	top: 36px;
+	top: 40px;
 	left: 7px;
 	z-index: 100;
-	color: grey;
+	color: #0c3c40;
 
 }
 
@@ -877,10 +920,16 @@ animation-fill-mode: forwards; */
 	position: relative;
 	left: 20px;
 	bottom: 20px;
+	color: white;
+	font-size: 16px;
 }
 
-.buttons.contact i:hover{
-	color: grey;
+.contact a{
+	color: white;
+}
+
+.contact a:hover{
+	color:  #0c3c40;
 }
 
 
@@ -889,6 +938,47 @@ animation-fill-mode: forwards; */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
 @media screen and ( min-width: 1200px ) {
+	/* -----------------------Portfolio */
+
+		#item li:nth-child(odd) {
+		}
+
+		#item li:nth-child(even) {
+		}
+
+		#item{
+			display: flex;
+		flex-wrap: wrap;
+		padding: 1% 4%;
+		}
+
+		#gallery-port img{
+		 max-height: 100%;
+		 float: right;
+		}
+
+		#gallery-port li{
+			width:90%;
+			height: 200px;
+			/* display: inline-block;
+			height: 230px;
+			margin-top: 50px;
+			width: 30%; */
+		}
+		#gallery-port p{ text-align: right; }
+		#gallery-port h3 { text-align: right; }
+
+		#opposite img{
+			float: left;
+			max-height: 100%;
+		}
+
+		#oppotsite p{ text-align: left; }
+		#opposite h3{ text-align: left; }
+		.port-content{
+		padding: 15px;
+		width: 55%;
+		}
 /* ORIGINAL ABOUT 2
 
 	.mato{
@@ -921,15 +1011,20 @@ animation-fill-mode: forwards; */
 }
 
 @media screen and ( min-width: 1060px ) {
+
+	h3{
+		font-size: 2.5em;
+	}
 	/* -----------------------------------------------About */
 
 	.about-bottom{ display: flex; }
 	.philosophy{width: 65%; order: 1;}
 	.experience{width: 35%; order: 2;}
+	.name h2{font-size: 7em; }
 
-	.philosophy-concept i{ position: relative; right: 30px; top: 30px; }
+
+	.philosophy-concept i{ position: relative; right: 35px; top: 25px; }
 	.philosophy-concept div{ margin-left: 10px;}
-
 
 	/* ------------Email Form----------- */
 	.email{
@@ -960,58 +1055,19 @@ animation-fill-mode: forwards; */
 	/* --------------------------project page */
 
 	.project-picture a{
-		width: 65%;
+		width: 70%;
 		float: left;
 	}
 	.goal{
-		width: 35%;
+		width: 30%;
 		float: right;
 		padding: 0px 25px 15px 15px;
+		margin-top: 15px;
 
 	}
 
 
-/* -----------------------Portfolio */
 
-	#item li:nth-child(odd) {
-	}
-
-	#item li:nth-child(even) {
-	}
-
-	#item{
-		display: flex;
-	flex-wrap: wrap;
-	padding: 1% 4%;
-	}
-
-	#gallery-port img{
-	 max-height: 95%;
-	 float: right;
-	}
-
-	#gallery-port li{
-		width:80%;
-		height: 200px;
-		/* display: inline-block;
-		height: 230px;
-		margin-top: 50px;
-		width: 30%; */
-	}
-	#gallery-port p{ text-align: right; }
-	#gallery-port h3 { text-align: right; }
-
-	#opposite img{
-		float: left;
-		max-height: 100%;
-	}
-
-	#oppotsite p{ text-align: left; }
-	#opposite h3{ text-align: left; }
-	.port-content{
-	padding: 15px;
-	width: 55%;
-	}
 }
 
 
@@ -1022,11 +1078,13 @@ animation-fill-mode: forwards; */
 		color: #241035;
 		font-size: 5.5em;
 		text-align: center;
-		text-shadow: 1px 1px 7px rgb(194, 193, 193);
+		/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
 		margin-bottom: 50px;
 	}
 
-	.wrapper{
+
+	.wrapper,
+	.wrapper2{
 		width: 70%;
 		margin: 60px auto 60px auto;
 	}
@@ -1065,7 +1123,7 @@ animation-fill-mode: forwards; */
 
 
 	#jumbotron{
-		width: 55%;
+		width: 550px;
 	}
 	#jumbotron .logo{
 		/* top: 82px;
@@ -1073,9 +1131,9 @@ animation-fill-mode: forwards; */
 		font-size: 5.5em;
 	}
 	#jumbotron .logo2{
-/* 	left: 370px;
-bottom:-10px; */
-	font-size: 1.45em;
+ left: 210px;
+ top: 43px;
+	font-size: 1.05em;
 	}
 
 /*
@@ -1099,10 +1157,17 @@ bottom:-10px; */
 .about-top{display: flex;}
 .bio{ display: flex; flex-wrap:wrap; width: 65%; order: 2;}
 .slogan{display: block; width: 100%;}
-.name{display: block; width: 100%;}
+.name{display: block; width: 100%; padding-top: 5%;}
+.name h2{font-size: 5em; }
 .name h3{display: initial;}
 .head-shot{width: 35%; order: 1;}
 .head-shot img{width: 100%;}
+.name h2,
+.slogan h2{
+	margin-left: 25px;
+}
+.name h3{ margin-left: 30px;
+}
 
 /* .about-bottom{ display: flex; }
 .philosophy{width: 65%; order: 1;}
@@ -1162,21 +1227,25 @@ bottom:-10px; */
 
 
 }
-@media screen and ( min-width: 450px )and (max-width: 860px ) {
+@media screen and ( min-width: 450px )and (max-width: 960px ) {
 
 	/* #gallery-port li{height: 600px;
 	} */
 	/* #jumbotron{ width:95%;} */
-
+	.name h2 {
+	    font-size: 3.75em;}
+	    #jumbotron{
+	    	width: 500px;
+	    }
 	#jumbotron .logo{
 	/* top: 72px;
 	left: 10px; */
 		font-size: 4.5em;
 	}
 	#jumbotron .logo2{
-	/* left: 220px;
-	bottom:-12px; */
-	font-size: 1em;
+	left: 183px;
+	top: 40px;
+	font-size: .9em;
 	}
 
 
