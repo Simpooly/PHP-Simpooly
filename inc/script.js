@@ -4,7 +4,6 @@ $(document).ready(function(){
     //------open/ close treehouse
     $(".treehouse-btn").click(function(){
         $("#popup").removeClass("hide");
-
     });
 
     $(".close").click(function(){
@@ -33,36 +32,10 @@ $(document).ready(function(){
         site: 'treehouse',
         badgesAmount: 7
     });
-
+/*
     $("#item > li:nth-child(odd)").attr('id', 'opposite');
-      });
-
-
-function truncateString(str, num) {
-  // Clear out that junk in your trunk
-  // if str is <== num return str
-  var diff = str.length - num;
-
-  if(str.length <= num){
-      return str;
-  }else if(num < 4){
-      var short = str.slice(0, num);
-      var oth = short.concat("...");
-      return oth;
-  }else if( str.length > num || num > 4){
-      var long = str.slice(0, num-3);
-      var ext = long.concat("...");
-      return ext;
-
-  }
-  // if str is > num slice str num-3 add ...
-  // if num <== 3 slice str num add ...
-
-}
-
-truncateString("A-tisket a-tasket A green and yellow basket", 10);
-
-};
+      });*/
+});
 
 /*
 font-family: 'Cutive Mono', monospace;

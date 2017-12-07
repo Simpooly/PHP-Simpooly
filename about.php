@@ -70,7 +70,7 @@ include('inc/header.php');
 
 	<div id="skills-popup" class="hide">
 		<div class="popup-inner skills">
-			<h2>Skills</h2>
+			<h2>Skills :</h2>
 
 			<ul class="skills">
 				<li>HTML</li>

@@ -53,8 +53,8 @@ html p{
 	}
 
 body {
-	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
-	background-attachment: fixed;
+	/* background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
+	background-attachment: fixed; */
 	font-family: 'Palanquin', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
@@ -66,7 +66,7 @@ body {
 h1{
 	font-weight: bold;
 	/* font-family: Playfair Display,serif; */
-	color: #241035;
+	color: #30142d;
 	font-size: 3.75em;
 	/* text-shadow: 1px 1px 5px rgb(194, 193, 193); */
 }
@@ -101,16 +101,20 @@ h4{
 	cursor: pointer;
 }
 
+.wrapper80{
+	width: 80%;
+}
 
 .wrapper h1,
 .wrapper2 h1{
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	/* font-family: 'Abril Fatface', cursive; */
-	color: #241035;
+	color: #30142d;
 	/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
 	font-size: 6em;
 }
+
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
@@ -118,7 +122,7 @@ h4{
 .navigation {
 	background-color: white; /* #242424; */
 	width: 100%;
-	height: 60px;
+	/* height: 60px; */
 	position: fixed;
 	top: 0;
 	text-align: center;
@@ -202,13 +206,14 @@ h4{
 /* ---------------------Nav toggle-------------------*/
 
 .nav-small a {
+	margin-top: 10px;
 	display: block;
 	padding: 10px 0;
 	font-size: 16px;
 	color: #999;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 10000;
+	z-index: 100000;
 	text-align: center;
 }
 
@@ -217,6 +222,21 @@ h4{
 /*	3. Layout
 /* -------------------------------------------------------------------------------- */
 /* font-family: Playfair Display,serif; */
+#background{
+	background-color: white;
+	width: 100%;
+	height: 800px;
+}
+
+.accent-background{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #30142d;
+}
+
 #jumbotron{
 	position: fixed;
 	 top: 50%;
@@ -239,7 +259,7 @@ h4{
 	/* letter-spacing: -.5px;
 	font-weight: 600; */
 	font-size: 4em;
-	color: #3f0a42 /*  #241035 */;
+	color:  #30142d /*#3f0a42   #241035 */;
 	font-family: 'Milonga', cursive;
 	/* text-shadow: 1px 2px 7px rgb(194, 193, 193);
 	position: relative;
@@ -288,28 +308,46 @@ margin:20px auto ;
 height: auto;
 } */
 
+/* -------------------------------------------------------------------------------- */
+/*	3. Portfolio Gallery
+/* -------------------------------------------------------------------------------- */
+
+.gallery:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted #ff0000;
+    transform: translate(-50%);
+}
+
+.gallery div {
+    height: 100%;
+    border: 1px solid #333;
+    position:relative;
+    text-align:center
+}
 
 #gallery-port{
 	padding:15px;
 }
 
 #gallery-port li{
-box-shadow: 0 11px 8px -8px rgb(49, 49, 49);
+	background: rgba(255, 255, 255, 0.1);
+/* box-shadow: 0 11px 8px -8px rgb(49, 49, 49); */
 text-align: center;
 /*background-color: #646464;*/
 display:block;
 width: 70%;
-/* border: solid black 3px; */
-/* border-radius: 5px; */
 margin:25px auto ;
-/* height: 400px; */
-/* padding: 5px 5px 20px 5px; */
 line-height: 30%;
-background: white; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(to top right,rgb(153, 153, 153), white 30%)); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(top right,rgb(153, 153, 153), white 30%)); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(top right, rgb(153, 153, 153), white 30%)); /* For Firefox 3.6 to 15 */
-background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); /* Standard syntax */
+/* background: white; For browsers that do not support gradients
+background: -webkit-linear-gradient(to top right,rgb(153, 153, 153), white 30%)); For Safari 5.1 to 6.0
+background: -o-linear-gradient(top right,rgb(153, 153, 153), white 30%)); For Opera 11.1 to 12.0
+background: -moz-linear-gradient(top right, rgb(153, 153, 153), white 30%)); For Firefox 3.6 to 15
+background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); Standard syntax */
 }
 
 /* #gallery img{
@@ -376,7 +414,6 @@ background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); /* Stan
 
 */
 .wrapper{
-	width: 80%;
 	margin: 50px auto 60px auto;
 	border-radius: 5px;
 	background: white;
@@ -386,16 +423,15 @@ background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); /* Stan
 	width: 80%;
 	margin: 50px auto 60px auto;
 	border-radius: 5px;
-	background: #646464; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient( #646464 55%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */
+	background-color: #fbfbfb;
+/* 	background: #646464; For browsers that do not support gradients
+background: -webkit-linear-gradient( #646464 55%, rgb(71, 71, 71)); For Safari 5.1 to 6.0
+background: -o-linear-gradient( #646464 55%, rgb(71, 71, 71)); For Opera 11.1 to 12.0
+background: -moz-linear-gradient( #646464 55%, rgb(71, 71, 71)); For Firefox 3.6 to 15
+background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax */
 
 }
-#junbotron h2{
-	color: #760c0c;
-}
+
 .home-projects{
 	font-size: 3em;
 	padding-left: 30px;
@@ -446,19 +482,19 @@ background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); /* Stan
  	color:  #241035;
  }
  .footer i:hover{
- 	color:  #241035;
+ 	color:  #30142d;
  }
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-
+/*  SEDOND
 .bio{ display: flex; }
 .slogan{ width: 65%; float: left; background-color: #444444; order: 2; color: black;}
-.name{width:100%; float: left; order: 1; background: #646464; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
-background: linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */}
+.name{width:100%; float: left; order: 1; background: #646464; For browsers that do not support gradients
+background: -webkit-linear-gradient( #646464 95%, rgb(71, 71, 71)); For Safari 5.1 to 6.0
+background: -o-linear-gradient( #646464 95%, rgb(71, 71, 71)); For Opera 11.1 to 12.0
+background: -moz-linear-gradient( #646464 95%, rgb(71, 71, 71)); For Firefox 3.6 to 15
+background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax}
 .name h2{ color: #241035; font-size: 40px;  padding: 15px; font-family: 'Lato', sans-serif; text-transform: uppercase;}
 .name h3{display: none;  color: #0c3c40; padding-left: 15px; font-family: 'Lato', sans-serif;}
 .head-shot{ text-align: center;}
@@ -466,15 +502,19 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax *
 .slogan h2{	position: relative;
 	 top: 50%;
 	 left: 50%;
-	 /* bring your own prefixes */
+	 bring your own prefixes
 	 transform: translate(-50%, -50%);}
 
-	 /* #3f0a42  #0c3c40; */
+	 #3f0a42  #0c3c40;
 .philosophy{ background-color: white; padding: 15px; color: #4f4f4f;}
 .philosophy h3,
 .philosophy h4,
 .philosophy i{ color: #0c3c40; }
-.experience{background-color: #241035; color: beige; padding: 15px; }
+.experience{background-color: #30142d; color: beige; padding: 15px; } */
+.head-shot{ position: relative; right: 25%; }
+.head-shot img{ width: 100%; padding:10%;}
+.name{ text-align: center; position: relative; left: 25%;}
+/* .bio{ height: 900px; } */
 
 /* -------------------Philosophy Boxes */
 
@@ -591,7 +631,7 @@ z-index: -100;
 	 border-radius: 3px;
 	 padding:7px;
 	 margin: 5px;
-	 background-color: #241035;
+	 background-color: #30142d;
  }
 .popup-inner a:link{
 	color:black;
@@ -624,7 +664,7 @@ z-index: -100;
 	margin: auto;
 	width: 100px;
 	height:100px;
-	background-color: #241035;
+	background-color: #30142d;
 	border-radius: 50%;
 	font-weight: 700;
 	color:white;
@@ -711,11 +751,11 @@ button:hover{
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
-.project-top{background-color: #241035;}
-#projects{
+.project-top{background-color: #30142d}
+/* #projects{
 	border-top: 4px solid white;
 	margin-bottom: 100px;
-}
+} */
 
 .project-picture{
 	text-align: center;
@@ -794,7 +834,7 @@ font-family: 'Old Standard TT', serif; */
 	font-weight: 600;
 	font-size: 5.5em;
 	margin: 0 0 -25px 15px;
-	color: #241035;
+	color: #30142d;
 }
 
 form{
@@ -827,8 +867,8 @@ padding: 15px; */
 	 height: 150px;
  }
  form input[type=submit]{
-	 background-color: #241035;
-	 border: solid #241035;
+	 background-color: #30142d;
+	 border: solid #30142d;
 	 font-size: 1.25em;
 	 font-weight: bold;
 	 cursor: pointer;
@@ -951,7 +991,7 @@ animation-fill-mode: forwards; */
 		flex-wrap: wrap;
 		padding: 1% 4%;
 		}
-
+		#gallery div { margin-right: 65%; }
 		#gallery-port img{
 		 max-height: 100%;
 		 float: right;
@@ -1015,16 +1055,29 @@ animation-fill-mode: forwards; */
 	h3{
 		font-size: 2.5em;
 	}
-	/* -----------------------------------------------About */
+/* 	-----------------------------------------------About*/
 
-	.about-bottom{ display: flex; }
-	.philosophy{width: 65%; order: 1;}
-	.experience{width: 35%; order: 2;}
-	.name h2{font-size: 7em; }
+#bio{height: 900px;
+	background-color: grey;
+	/* background: url("http://thewallpaper.co/wp-content/uploads/2017/09/trees-landscape-windowsmist-forest-mobile-wallpaper-smart-phones-ios-768x432.jpg") no-repeat; */
+	background-size: 100%;
+	display: flex;
+}
+
+.head-shot{ width: 30%; order: 1; }
+
+.name{ width: 70%; order: 2;}
+
+/* SECOND
+
+.about-bottom{ display: flex; }
+.philosophy{width: 65%; order: 1;}
+.experience{width: 35%; order: 2;}
+.name h2{font-size: 7em; }
 
 
-	.philosophy-concept i{ position: relative; right: 35px; top: 25px; }
-	.philosophy-concept div{ margin-left: 10px;}
+.philosophy-concept i{ position: relative; right: 35px; top: 25px; }
+.philosophy-concept div{ margin-left: 10px;} */
 
 	/* ------------Email Form----------- */
 	.email{
@@ -1039,6 +1092,8 @@ animation-fill-mode: forwards; */
 	}
 
 	/* --------------------	Portfolio */
+
+
 
 	/* #gallery-port li{
 		width: 80%;
@@ -1075,7 +1130,7 @@ animation-fill-mode: forwards; */
 
 	h1{
 		font-weight: bold;
-		color: #241035;
+		color: #30142d;
 		font-size: 5.5em;
 		text-align: center;
 		/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
@@ -1085,7 +1140,6 @@ animation-fill-mode: forwards; */
 
 	.wrapper,
 	.wrapper2{
-		width: 70%;
 		margin: 60px auto 60px auto;
 	}
 
@@ -1121,7 +1175,6 @@ animation-fill-mode: forwards; */
 } */
 
 
-
 	#jumbotron{
 		width: 550px;
 	}
@@ -1153,7 +1206,7 @@ animation-fill-mode: forwards; */
 		bottom: 30px;
 		left: 87px;
 	} */
-/* -----------------------------------------------About */
+/* -----------------------------------------------About SECOND
 .about-top{display: flex;}
 .bio{ display: flex; flex-wrap:wrap; width: 65%; order: 2;}
 .slogan{display: block; width: 100%;}
@@ -1167,7 +1220,7 @@ animation-fill-mode: forwards; */
 	margin-left: 25px;
 }
 .name h3{ margin-left: 30px;
-}
+} */
 
 /* .about-bottom{ display: flex; }
 .philosophy{width: 65%; order: 1;}
@@ -1221,7 +1274,7 @@ animation-fill-mode: forwards; */
 	.main-menu li.on > a { color: black; font-size: 1.35em; }
 	.main-menu li:hover > a { color: rgb(109, 108, 108); }
 
-	.nav-small li.on > a { color: white; }
+	.nav-small li.on > a { color: black; }
 	.nav-small li:hover > a { color: rgb(109, 108, 108); }
 
 
