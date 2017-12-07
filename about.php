@@ -35,11 +35,11 @@ include('inc/header.php');
 				<button class="skills-btn" href="#">Skills</button>
 			</div>
 
-			<div class="philosophy">
+			<div class="philosophy phil-about">
 				<h3>Philosophy</h3>
 				<p>These important concepts represent my life philosophies and ideasl that translate into my life. Simple design well thought out and reliable user face with just the right amount of spice!</p>
 
-				<div class="philosophy-concept">
+				<div class="philosophy-concept philosophy-concept-about">
 					<div class="simplicity">
 						<i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>Simplicity</h4>

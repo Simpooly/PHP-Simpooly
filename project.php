@@ -28,7 +28,7 @@
 
         <div class="project-content">
 
-            <h1><?php echo $pageTitle; ?></h1>
+
 
             <div class="project-top row">
                 <!-- if you want breadcrumbs -->
@@ -36,11 +36,15 @@
       <a class="general" href="portfolio.php">Full Portfolio</a>
       &gt;  <?php echo $item["title"]; ?>
   </div> -->
-
+              <div class="goal">
+                  <h3>Overview</h3>
+                  <p class ="content"><?php echo $item["goal"]; ?></p><br>
+              </div>
                 <div class="project-picture">
-                    <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">
+                    <h1><?php echo $pageTitle; ?></h1>
+                    <!-- <a class="general" href="<?php echo $item["url"]; ?>" target="_blank"> -->
                     <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
-                    </a>
+                    <!-- </a> -->
                 </div>
                 <!--if there is a second picture..or make js slideshow
                 <div class="project-picture">
@@ -48,10 +52,7 @@
                 </div>-->
 
                 <!-- <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">view</a> -->
-                <div class="goal">
-                    <h3>Overview</h3>
-                    <p class ="content"><?php echo $item["goal"]; ?></p><br>
-                </div>
+
             </div>
             <div class="project-bottom row trouble">
 

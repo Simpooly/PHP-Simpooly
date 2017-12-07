@@ -16,9 +16,15 @@
 */
 
 function get_item_html($id, $item){
-    $output = "<li><a href='project.php?id="
-    . $id . "'><h3>" . $item["title"] . "</h3>"
-                    . "</a></li>";
+   $output = "<li><a href='project.php?id="
+   . $id . "'><img src='"
+                . $item["img"] ."' alt='"
+                . $item["title"] ."'/><a/>"
+                ."<a href='project.php?id="
+                . $id . "'>"
+                . "<div class='port-content'><h3>" . $item["title"] . "</h3>"
+                . "<p>" . $item["goal"] . "</p>"
+                . "</a></div></li>";
     return $output;
 }
 

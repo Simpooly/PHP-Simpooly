@@ -103,6 +103,7 @@ h4{
 
 .wrapper80{
 	width: 80%;
+	margin: 50px auto;
 }
 
 .wrapper h1,
@@ -222,10 +223,18 @@ h4{
 /*	3. Layout
 /* -------------------------------------------------------------------------------- */
 /* font-family: Playfair Display,serif; */
+.home-arrow{ position: absolute; top: 75%; left: 100%; color: grey; }
 #background{
 	background-color: white;
 	width: 100%;
 	height: 800px;
+	margin-bottom: 100px;
+}
+.wrapper80 button{
+	background-color: #30142d;
+	width: 50%;
+	height: 50px;
+	color: white;
 }
 
 .accent-background{
@@ -238,9 +247,9 @@ h4{
 }
 
 #jumbotron{
-	position: fixed;
+	position: relative;
 	 top: 50%;
-	 left: 50%;
+	 left: 100%;
 	 /* bring your own prefixes */
 	 transform: translate(-50%, -50%);
 	padding: 15px;
@@ -296,7 +305,6 @@ h4{
 /* #gallery{
 	text-align:center;
 } */
-
 /* #gallery li{
 background-color: rgba(10, 10, 10, 0.671);
 display:block;
@@ -312,7 +320,7 @@ height: auto;
 /*	3. Portfolio Gallery
 /* -------------------------------------------------------------------------------- */
 
-.gallery:after {
+/* .gallery:after {
     content:"";
     position: absolute;
     z-index: -1;
@@ -328,8 +336,8 @@ height: auto;
     border: 1px solid #333;
     position:relative;
     text-align:center
-}
-
+} */
+#port-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif;}
 #gallery-port{
 	padding:15px;
 }
@@ -487,7 +495,6 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax */
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-/*  SEDOND
 .bio{ display: flex; }
 .slogan{ width: 65%; float: left; background-color: #444444; order: 2; color: black;}
 .name{width:100%; float: left; order: 1; background: #646464; For browsers that do not support gradients
@@ -502,19 +509,21 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax}
 .slogan h2{	position: relative;
 	 top: 50%;
 	 left: 50%;
-	 bring your own prefixes
+	/*  bring your own prefixes */
 	 transform: translate(-50%, -50%);}
 
-	 #3f0a42  #0c3c40;
+	/*  #3f0a42  #0c3c40; */
 .philosophy{ background-color: white; padding: 15px; color: #4f4f4f;}
 .philosophy h3,
 .philosophy h4,
 .philosophy i{ color: #0c3c40; }
-.experience{background-color: #30142d; color: beige; padding: 15px; } */
-.head-shot{ position: relative; right: 25%; }
+.experience{background-color: #30142d; color: beige; padding: 55px; }
+/* NEW.head-shot{ position: relative; right: 25%; }
 .head-shot img{ width: 100%; padding:10%;}
-.name{ text-align: center; position: relative; left: 25%;}
+.name{ text-align: center; position: relative; left: 25%;} */
 /* .bio{ height: 900px; } */
+
+.home-button{ padding-top: 15px; }
 
 /* -------------------Philosophy Boxes */
 
@@ -848,6 +857,7 @@ form{
 	color: black;
 	font-weight: bold;
 	font-size: 1.25em;
+	padding-bottom: 3px;
  }
 form textarea,
 form input{
@@ -949,6 +959,8 @@ animation-fill-mode: forwards; */
 
 .buttons.contact{
 	margin-top: 20px;
+	background-color: #30142d;
+	width: 35%;
 }
 .buttons.contact a{
 	display: block;
@@ -980,33 +992,36 @@ animation-fill-mode: forwards; */
 @media screen and ( min-width: 1200px ) {
 	/* -----------------------Portfolio */
 
-		#item li:nth-child(odd) {
+		/* #item li:nth-child(odd) {
 		}
 
 		#item li:nth-child(even) {
-		}
+		} */
 
 		#item{
+			margin-left: 25%;
+			width: 75%;
 			display: flex;
 		flex-wrap: wrap;
 		padding: 1% 4%;
 		}
-		#gallery div { margin-right: 65%; }
-		#gallery-port img{
-		 max-height: 100%;
-		 float: right;
+		#side-title{padding:15px; height: 100%; width: 25%; position: fixed; }
+		#gallery-port{ display: flex; text-align: center;}
+		#gallery div { /* margin-right: 65%; */ }
+		#gallery-port img{ width: 100%;
+		/*  max-height: 100%;
+		float: right; */
 		}
 
 		#gallery-port li{
-			width:90%;
-			height: 200px;
-			/* display: inline-block;
-			height: 230px;
+			/* width:90%;
+			height: 200px; */
+			display: inline-block;
 			margin-top: 50px;
-			width: 30%; */
+			width: 30%;
 		}
-		#gallery-port p{ text-align: right; }
-		#gallery-port h3 { text-align: right; }
+		#gallery-port p{ /* text-align: right; */ }
+		#gallery-port h3 { /* text-align: right;  */}
 
 		#opposite img{
 			float: left;
@@ -1017,7 +1032,6 @@ animation-fill-mode: forwards; */
 		#opposite h3{ text-align: left; }
 		.port-content{
 		padding: 15px;
-		width: 55%;
 		}
 /* ORIGINAL ABOUT 2
 
@@ -1057,27 +1071,27 @@ animation-fill-mode: forwards; */
 	}
 /* 	-----------------------------------------------About*/
 
-#bio{height: 900px;
+/* NEW#bio{height: 900px;
 	background-color: grey;
-	/* background: url("http://thewallpaper.co/wp-content/uploads/2017/09/trees-landscape-windowsmist-forest-mobile-wallpaper-smart-phones-ios-768x432.jpg") no-repeat; */
+	background: url("http://thewallpaper.co/wp-content/uploads/2017/09/trees-landscape-windowsmist-forest-mobile-wallpaper-smart-phones-ios-768x432.jpg") no-repeat;
 	background-size: 100%;
 	display: flex;
 }
 
 .head-shot{ width: 30%; order: 1; }
 
-.name{ width: 70%; order: 2;}
-
-/* SECOND
+.name{ width: 70%; order: 2;} */
 
 .about-bottom{ display: flex; }
-.philosophy{width: 65%; order: 1;}
+.phil-about{width: 65%; order: 1;}
 .experience{width: 35%; order: 2;}
 .name h2{font-size: 7em; }
 
 
-.philosophy-concept i{ position: relative; right: 35px; top: 25px; }
-.philosophy-concept div{ margin-left: 10px;} */
+.philosophy-concept-about i{ position: relative; right: 35px; top: 25px; }
+.philosophy-concept-about div{ margin-left: 15px;}
+.philosophy-concept-home div{ margin-left: 20px; }
+.philosophy{ padding: 55px; }
 
 	/* ------------Email Form----------- */
 	.email{
@@ -1206,21 +1220,21 @@ animation-fill-mode: forwards; */
 		bottom: 30px;
 		left: 87px;
 	} */
-/* -----------------------------------------------About SECOND
+/* -----------------------------------------------About */
 .about-top{display: flex;}
-.bio{ display: flex; flex-wrap:wrap; width: 65%; order: 2;}
+.bio{ display: flex; flex-wrap:wrap; width: 75%; order: 2;}
 .slogan{display: block; width: 100%;}
 .name{display: block; width: 100%; padding-top: 5%;}
 .name h2{font-size: 5em; }
 .name h3{display: initial;}
-.head-shot{width: 35%; order: 1;}
+.head-shot{width: 25%; order: 1;}
 .head-shot img{width: 100%;}
 .name h2,
 .slogan h2{
 	margin-left: 25px;
 }
 .name h3{ margin-left: 30px;
-} */
+}
 
 /* .about-bottom{ display: flex; }
 .philosophy{width: 65%; order: 1;}
