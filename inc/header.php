@@ -59,7 +59,7 @@ $company_name = 'Simpooly';
 					<div class="bar"></div>
 					<div class="bar"></div>
 				</div>
-			<ul class="nav-small">
+			<ul class="nav-small" style="display: none;">
                 <li class="<?php if ($section == "home"){echo "on";}?>"><a href="index.php">Home</a></li>
                 <li class="<?php if ($section == "portfolio"){echo "on";}?>"><a href="portfolio.php">Portfolio</a></li>
                 <li class="<?php if ($section == "about"){echo "on";}?>"><a href="about.php">About</a></li>

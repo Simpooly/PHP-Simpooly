@@ -97,9 +97,10 @@ h4{
 	color:rgb(82, 81, 81);
 } */
 * a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 	cursor: pointer;
 }
+
 
 .wrapper80{
 	width: 80%;
@@ -113,7 +114,7 @@ h4{
 	/* font-family: 'Abril Fatface', cursive; */
 	color: #30142d;
 	/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
-	font-size: 6em;
+	/* font-size: 6em; */
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -223,6 +224,7 @@ h4{
 /*	3. Layout
 /* -------------------------------------------------------------------------------- */
 /* font-family: Playfair Display,serif; */
+.new{ margin-left: 15px; }
 .home-arrow{ position: absolute; top: 75%; left: 100%; color: grey; }
 #background{
 	background-color: white;
@@ -252,7 +254,7 @@ h4{
 	 left: 100%;
 	 /* bring your own prefixes */
 	 transform: translate(-50%, -50%);
-	padding: 15px;
+	padding: 25px;
 	/* height: 60%; */
 	/* background-color: rgba(10, 10, 10, 0.671); */
 	font-size: 1.25em;
@@ -337,9 +339,19 @@ height: auto;
     position:relative;
     text-align:center
 } */
-#port-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif;}
+.port-content h3{ font-size: 1.5em; font-family: 'Lato', sans-serif; }
+#side-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
 #gallery-port{
 	padding:15px;
+}
+#gallery-port-home{ padding-left: 15px; }
+
+#gallery-port-home li{	background: rgba(255, 255, 255, 0.1);
+text-align: center;
+display:block;
+width: 70%;
+margin:25px auto ;
+line-height: 30%;
 }
 
 #gallery-port li{
@@ -367,20 +379,20 @@ background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); Standar
 	/* max-height: 60%; */
 	/* border: 2px solid black; */
 }
+#gallery-port-home img{ max-width: 100%; }
 
 #gallery-port a{
 	text-decoration: none;
 	color: black;
 }
+#gallery-port-home a{ text-decoration: none; color: black; }
 
 #gallery-port a:hover{
 	cursor: pointer;
 	color: black;
 }
+#gallery-port-home a:hover{ cursor: pointer; color: black; }
 
-#gallery-port p{
-
-}
 /*
 #gallery a:link{
 	text-decoration: none;
@@ -410,6 +422,7 @@ background: linear-gradient(to top right,rgb(153, 153, 153), white 30%); Standar
 	/* border: 5px solid;
 	padding: 30px; */
 }
+#gallery-port-home p { margin:0 auto; }
 
 /* gallery old
 
@@ -523,7 +536,8 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax}
 .name{ text-align: center; position: relative; left: 25%;} */
 /* .bio{ height: 900px; } */
 
-.home-button{ padding-top: 15px; }
+.home-button{ padding-top: 15px;  border-radius: 10px; font-size: 1.25em; margin-left: 15px;}
+.home-button button{ padding-left: 15px; }
 
 /* -------------------Philosophy Boxes */
 
@@ -760,34 +774,37 @@ button:hover{
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
-.project-top{background-color: #30142d}
+/* .project-top{  } */
 /* #projects{
 	border-top: 4px solid white;
 	margin-bottom: 100px;
 } */
-
+.side-title a:link{ color: grey; }
+.side-title a:hover{ color: grey; }
+.side-title a:visited{ color: grey; }
 .project-picture{
 	text-align: center;
 }
-
+.proj-arrow{ color: grey; }
 .project-picture img{
-	margin: 15px;
-	width:95%;
-	border: 2px solid black;
-	border-radius: 5px;
-	box-shadow: 5px 5px 15px black;
+	width: 80%;
+	margin: 0 auto;
+/* 	margin: 15px;
+width:95%;
+border: 2px solid black;
+border-radius: 5px;
+box-shadow: 5px 5px 15px black; */
 }
+.project-picture h1{ margin-bottom: 15px; }
 
-.goal{
+/* .goal{
 	color: beige;
 	font-size: 16px;
-}
-.project-bottom, .goal{padding: 15px;}
-.project-content h1{ margin-bottom: 15px; }
-.project-bottom.row{ color: black; background-color: white; margin-top: 25px;}
-.goal h3{
-	text-shadow: 0px 0px .5px beige;
-}
+} */
+
+.project-content { margin: 15px; }
+.project-bottom{ position: relative; z-index: 100; background-color: white; padding: 25px; }
+.bottom-inner{border: 1px solid black; padding: 25px;}
 
 /* .content{
 	text-align: justify;
@@ -960,7 +977,8 @@ animation-fill-mode: forwards; */
 .buttons.contact{
 	margin-top: 20px;
 	background-color: #30142d;
-	width: 35%;
+	width: 90%;
+	margin: 0 auto;
 }
 .buttons.contact a{
 	display: block;
@@ -997,6 +1015,11 @@ animation-fill-mode: forwards; */
 
 		#item li:nth-child(even) {
 		} */
+		.project-picture{
+			width: 75%;
+			margin-left: 25%;
+		}
+		.project-bottom{ margin:20px auto 130px auto;  width: 80%;}
 
 		#item{
 			margin-left: 25%;
@@ -1007,19 +1030,29 @@ animation-fill-mode: forwards; */
 		}
 		#side-title{padding:15px; height: 100%; width: 25%; position: fixed; }
 		#gallery-port{ display: flex; text-align: center;}
+		#gallery-port-home{ display: flex; text-align: center; }
 		#gallery div { /* margin-right: 65%; */ }
 		#gallery-port img{ width: 100%;
 		/*  max-height: 100%;
 		float: right; */
 		}
+		#gallery-port-home img{ width: 100%; }
 
 		#gallery-port li{
 			/* width:90%;
 			height: 200px; */
 			display: inline-block;
 			margin-top: 50px;
+			width: 45%;
+		}
+		#gallery-port-home li{
+			/* width:90%;
+			height: 200px; */
+			display: inline-block;
+			margin-top: 50px;
 			width: 30%;
 		}
+
 		#gallery-port p{ /* text-align: right; */ }
 		#gallery-port h3 { /* text-align: right;  */}
 
@@ -1104,6 +1137,9 @@ animation-fill-mode: forwards; */
 	.contact{
 		padding-top: 30px; /* fix when you get a font for email us */
 	}
+	.buttons.contact{
+		width: 35%;
+	}
 
 	/* --------------------	Portfolio */
 
@@ -1124,14 +1160,14 @@ animation-fill-mode: forwards; */
 	/* --------------------------project page */
 
 	.project-picture a{
-		width: 70%;
-		float: left;
+		/* width: 70%;
+		float: left; */
 	}
 	.goal{
-		width: 30%;
-		float: right;
-		padding: 0px 25px 15px 15px;
-		margin-top: 15px;
+	/* 	width: 30%;
+	float: right;
+	padding: 0px 25px 15px 15px;
+	margin-top: 15px; */
 
 	}
 
@@ -1145,7 +1181,7 @@ animation-fill-mode: forwards; */
 	h1{
 		font-weight: bold;
 		color: #30142d;
-		font-size: 5.5em;
+	/* 	font-size: 5.5em; */
 		text-align: center;
 		/* text-shadow: 1px 1px 7px rgb(194, 193, 193); */
 		margin-bottom: 50px;
@@ -1335,4 +1371,14 @@ animation-fill-mode: forwards; */
 	#gallery-port p{
 		padding: 5px;
 	} */
+
 }
+@media screen and ( max-width: 450px ){
+	.logo{ text-shadow: 1px 2px 2px white;}
+	.home-logo{ border: none; }
+	#jumbotron .logo2{
+	top: 40px;
+	font-size: .7em;
+	}
+}
+

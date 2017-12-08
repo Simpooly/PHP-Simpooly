@@ -43,15 +43,16 @@ include('inc/header.php');
                     <p>Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting.</p>
                 </div>
             </div>
-            <div class="home-button"><a href="about.php"><button>More About Us</button></a></div>
         </div>
+        <div class="home-button"><a href="about.php"><button>More About Us</button></a></div>
     </div>
+
 </div>
 
 <div id="background">
     <div class="wrapper80">
         <h3 class="new">Recent Projects</h3>
-        <ul id="gallery-port">
+        <ul id="gallery-port-home">
             <?php
             $random = array_rand($project, 3);
 
