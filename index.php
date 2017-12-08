@@ -24,27 +24,27 @@ include('inc/header.php');
     <div class="wrapper80">
         <div class="philosophy">
             <h3>About</h3>
-            <p>We provide.....</p>
+            <p>I provide fully customizable websites with simple designs focusing on user experience. Each of my designs begins with a blank canvas allowing your content and ideas to determine the outcome of your professional or quirky vision. I practice responsive layout which means your website will work and resize regardless of the screen size or device (e.g. iPhone, iPad). Feel free to contact me with any questions and know I am currently available for remote work.</p>
 
             <div class="philosophy-concept philosophy-concept-home">
                 <div class="simplicity">
-                    <i class="fa fa-cog fa-4x fa-fw" aria-hidden="true"></i>
-                    <h4>Simplicity</h4>
-                    <p>Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details.</p>
+                    <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
+                    <h4>Simple</h4>
+                    <p>Simple design maximizes efficiency and allows the user to focus on what's important.</p>
                 </div>
                 <div class="curiosity">
-                    <i class="fa fa-lightbulb-o fa-4x fa-fw" aria-hidden="true"></i>
-                    <h4>Curiosity</h4>
-                    <p>Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand.</p>
+                    <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
+                    <h4>Skillful</h4>
+                    <p>A knowledge and ability to execute the fundamentals properly and quickly.</p><!--  Be prepared and cover every little detail. -->
                 </div>
                 <div class="quirky">
-                    <i class="fa fa-puzzle-piece fa-4x fa-fw" aria-hidden="true"></i>
-                    <h4>Quriky</h4>
-                    <p>Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting.</p>
+                    <i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"></i>
+                    <h4>Original</h4>
+                    <p>Just the right amount of spontaneity to make things interesting.</p>
                 </div>
             </div>
         </div>
-        <div class="home-button"><a href="about.php"><button>More About Us</button></a></div>
+        <div class="home-button"><a href="about.php"><button>Want More Of Me?</button></a></div>
     </div>
 
 </div>

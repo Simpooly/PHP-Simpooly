@@ -36,7 +36,7 @@
       <a class="general" href="portfolio.php">Full Portfolio</a>
       &gt;  <?php echo $item["title"]; ?>
   </div> -->
-              <div id="side-title" class="goal">
+              <div id="side-title-project" class="goal">
                   <h3>Overview</h3>
                   <p class ="content"><?php echo $item["goal"]; ?></p><br>
                   <a href="#bottom"><i class="fa fa-angle-double-down fa-3x proj-arrow" aria-hidden="true"></i></a>

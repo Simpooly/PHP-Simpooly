@@ -28,32 +28,33 @@ include('inc/header.php');
 
 		<div class="about-bottom">
 			<div class="experience">
-				<h3>Experience</h3>
-				<p >As a self-taught web developer I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills, I had the opportunity to Intern with Ractoon Inc. and have been working by contract to provide web updates and data entry into various websites upon customer needs. I uderstand HTML, CSS, the basics of JavaScript, jQuery and was exposed to the world of PHP and Wordpress development. I find JavaScript developing fulfilling and would like to dive in deeper to explore all it has to offer in the future.
+				<h3>Just Me!</h3>
+				<p >Making things has always given me a sense of purpose and achievement in life. As I have grown, I replaced paper and bottle caps with code and programming. My obsession with gaining more knowledge leads me to continually improving my skills and staying up-to- date on new languages (while occasionally secluding myself on a couch for days with a good book). Through experience I have gained time management skills, as well as the ability to communicate with team members and clients while effectively meeting milestones and deadlines. I'm excited to turn my passion into a career and look forward to speaking with you soon about you, your business and prospective projects.
 				</p>
+				<!-- <p>I'm available for remote work.</p> -->
 				<button class="treehouse-btn" href="#">Team Treehouse</button>
 				<button class="skills-btn" href="#">Skills</button>
 			</div>
 
 			<div class="philosophy phil-about">
 				<h3>Philosophy</h3>
-				<p>These important concepts represent my life philosophies and ideasl that translate into my life. Simple design well thought out and reliable user face with just the right amount of spice!</p>
+				<p>Living and working by a strong set of principles allows for clarity in difficult situations and improves the quality of your website. Having and maintaining goals throughout the process is important to moving forward on the project and achieving the desired results.</p>
 
 				<div class="philosophy-concept philosophy-concept-about">
 					<div class="simplicity">
 						<i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
-						<h4>Simplicity</h4>
-						<p>Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details.</p>
+						<h4>Simple</h4>
+						<p>Simplicity represents the ability to look past the things not contributing to the design and usability of your website. Getting rid of unessisary aspects that are clogging up visual space will maximizes efficiency. Allowing users to focus on what is most important in your site.</p>
 					</div>
 					<div class="curiosity">
 						<i class="fa fa-lightbulb-o fa-2x fa-fw" aria-hidden="true"></i>
-						<h4>Curiosity</h4>
-						<p>Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand.</p>
+						<h4>Skillful</h4>
+						<p>Within the web industry everything is constantly changing, old languages evolve and new ones pop up. Having an inquisitive development mindset allows me to stay on top of new technologies and provide the most cutting edge user experience available.</p>
 					</div>
 					<div class="quirky">
 						<i class="fa fa-puzzle-piece fa-2x fa-fw" aria-hidden="true"></i>
-						<h4>Quriky</h4>
-						<p>Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting.</p>
+						<h4>Original</h4>
+						<p>Simple doesn't mean boring, it means you have more room to make a <b>big splash!</b> You can choose to be different from your competitors, to promote your products and services that will catch people's eyes and bring in business.</p>
 					</div>
 				</div>
 			</div> <!-- philosophy end -->

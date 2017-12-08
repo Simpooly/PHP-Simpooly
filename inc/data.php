@@ -5,17 +5,19 @@ $project = [];
 
 $project[101] = [
     "title" => "Tribute Page",
+
      "img" => "inc/img/screenshot/101/01.png",
       //"img2" => "inc/img/screenshot/101/02.png",
+
       "url" => "https://codepen.io/Simpooly/full/WEyaam/",
 
-      "goal" => "Designed a static page dedicated to one of my idols Alain de Botton. Inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
+      "goal" => "Designed a static page, inputted HTML and configured page layout with CSS and links to purchase his books if interested.",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+      "discription" => "I used HTML and CSS to create a static page designated to one of my idols. It has a well thought out layout to display his most well known books. Beside each book is a section to describe the basic concepts of each album. I implemented a hover feature that added a box shadow, transitioned and increased the size of each photo when a cursor glides over it. If you click on the available area it will link you to the Barns and Noble online bookstore to purchase his products. ",
 
-      "troubles" => "I had spent many weeks learning the basics of HTML, CSS, PHP, JavaScript, JQuery and more. As my first real project, it was interesting to find that knowing the documentation and making it work together were two completely different things. I struggled getting the images of the books to link properly. In the end I found it was not my code, but the URL.",
+      "troubles" => "As my first real project, it was interesting to find that knowing the documentation and making it work together were two completely different things. I struggled getting the images of the books to link properly. In the end I found it was not my code, but the URL. Experimentation and trial and error is a must.",
 
-      "outcome" => "I learned a lot from this first simple project. Experimentation and trial and error is a must. ",
+      "outcome" => "",
 
 /*      "catagory" => [
         "HTML",
@@ -25,14 +27,17 @@ $project[101] = [
 
 $project[102] = [
     "title" => "Mock Photography",
+
      "img" => "inc/img/screenshot/102/01.png",
      // "img2" => ""inc/img/screenshot/102/02.png",
+
       "url" => "https://codepen.io/Simpooly/full/RZqMNR/",
-      "goal" => "Developed a mock photography scrolling static page.",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+      "goal" => "Developed a mock photography site featuring a workable navigation, gallery of images and contact form.",
 
-      "troubles" => "As a second project, I found myself not needing to look up documentation as often, I had much more CSS information ingrained and was able to implement style quicker. In my process of being excited about my speed, my lack of organization was my downfall. It taught me how important it was to label and know where things were, and how much design and layout can break if I'm not careful.",
+      "discription" => "This is a fully responsive static page that shows a long scrolling static page with distinct sections for the navigation, jumbotron, about, gallery and contact section. In both the jumbotron and footer are buttons to link to my available social media platforms. Headlining is a fully functioning nav bar that jumps to the various sections of the page. The gallery is formatted using flexbox, and will transition to one per line when on a smaller viewport or mobile device.",
+
+      "troubles" => "As a second project, I found myself not needing to look up documentation as often, I had much more CSS information ingrained and was able to implement style quicker. In my process of being excited about my speed, my lack of organization was my downfall. It taught me how important it was to comment and have a system in place so I can find the right documentation. Design and layout break easily if I'm not careful.",
 
       "outcome" => "",
 
@@ -45,16 +50,20 @@ $project[102] = [
 
 $project[103] = [
     "title" => "Quote App",
+
         "img" => "inc/img/screenshot/103/01.png",
         //"img2" => "inc/img/screenshot/103/02.png",
+
         "url" => "https://codepen.io/Simpooly/full/KXyoeV/",
-        "goal" => "Performed my first API project by acquiring JSON data, and displaying a random quote from API.",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+        "goal" => "Performed my first API project by acquiring JSON data, and displaying a random quote from an API.",
 
-        "troubles" => "Learning to interact with an API was definitely a learning curve. I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data selecting the correct information was the downhill slide.",
+        "discription" => "For this app i found",
+
+        "troubles" => "I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data, selecting the correct information was the downhill slide.",
 
         "outcome" => "During this project I found true growth going beyond basic HTML and CSS. It taught me that interacting with API's can take time, but as long as I have patience and keep with it I will succeed.",
+
 /*        "catagory" => [
             "HTML",
             "CSS",
@@ -69,7 +78,7 @@ $project[104] = [
      "img" => "inc/img/screenshot/104/01.png",
       //"img2" => "inc/img/screenshot/104/02.png",
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
-      "goal" => "Provided a basic weather application that accesses users geolocation and displays according to data. ",
+      "goal" => "Provided a basic weather application that accesses users geolocation and displays information according to data. ",
 
       "discription" => "jkdjdhS:ODhfso;Dh;odh",
 
@@ -92,9 +101,9 @@ $project[105] = [
      //"img3" => "inc/img/screenshot/105/03.png",
       "url" => "http://wildcalling.com/",
 
-      "goal" => "",
+      "goal" => "Extracted images and used photoshop to recreate design and layout of a page mock up.",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+      "discription" => "implement the design by hand-coding them using CSS, HTML. added interactability with jquery so the individual ggrups of products collapsed.",
 
       "troubles" => "",
 
@@ -106,7 +115,7 @@ $project[105] = [
         ]*/
 ];
 
-$project[106] = [
+/*$project[106] = [
     "title" => "Content Migration",
      "img" => "inc/img/screenshot/106/01.png",
       //"img2" => "inc/img/screenshot/106/02.png",
@@ -114,17 +123,17 @@ $project[106] = [
 
       "goal" => "",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+      "discription" => "",
 
       "troubles" => "",
 
       "outcome" => "",
 
-/*      "catagory" => [
+     "catagory" => [
         "HTML",
         "CSS"
-        ]*/
-];
+        ]
+];*/
 
 
 ?>

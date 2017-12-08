@@ -45,6 +45,7 @@ html p{
 	line-height: 140%;
 	letter-spacing: 1px;
 	font-family: 'Titillium Web', sans-serif;
+	word-spacing: 1;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
@@ -83,7 +84,7 @@ font-family: Playfair Display,serif;
 	font-size:1.5em;
 }
 h4{
-	font-size: 1.35em;
+	font-size: 1.75em;
 	margin-bottom: 10px;
 }
 
@@ -104,7 +105,7 @@ h4{
 
 .wrapper80{
 	width: 80%;
-	margin: 50px auto;
+	margin: 50px auto 80px auto;
 }
 
 .wrapper h1,
@@ -224,20 +225,22 @@ h4{
 /*	3. Layout
 /* -------------------------------------------------------------------------------- */
 /* font-family: Playfair Display,serif; */
-.new{ margin-left: 15px; }
+.new{ margin-left: 15px; color: #0c3c40;}
 .home-arrow{ position: absolute; top: 75%; left: 100%; color: grey; }
 #background{
 	background-color: white;
 	width: 100%;
 	height: 800px;
-	margin-bottom: 100px;
 }
 .wrapper80 button{
-	background-color: #30142d;
+	border: 1px solid #30142d;
+	background-color: white;
 	width: 50%;
 	height: 50px;
-	color: white;
+	color:#30142d;
+	font-weight: bold;
 }
+.wrapper80 button:hover{ background-color: lightgrey; }
 
 .accent-background{
 	position: relative;
@@ -254,7 +257,7 @@ h4{
 	 left: 100%;
 	 /* bring your own prefixes */
 	 transform: translate(-50%, -50%);
-	padding: 25px;
+	padding: 20px;
 	/* height: 60%; */
 	/* background-color: rgba(10, 10, 10, 0.671); */
 	font-size: 1.25em;
@@ -269,26 +272,30 @@ h4{
 #jumbotron .logo{
 	/* letter-spacing: -.5px;
 	font-weight: 600; */
-	font-size: 4em;
+	font-size: 2.3em;
 	color:  #30142d /*#3f0a42   #241035 */;
 	font-family: 'Milonga', cursive;
 	/* text-shadow: 1px 2px 7px rgb(194, 193, 193);
 	position: relative;
 	top: 57px;
 	left: 20px; */
-	position: fixed;
-	 top: 50%;
-	 left: 50%;
-	 /* bring your own prefixes */
-	 transform: translate(-50%, -50%);
-
+/* 	position: fixed;
+ top: 50%;
+ left: 50%;
+ bring your own prefixes
+ transform: translate(-50%, -50%);
+ */
+ display:table-cell;
+  text-align:center;
+  width:100%;
+  vertical-align: middle;
 }
 #jumbotron .logo2{
 	color: #0c3c40;
 	text-transform: uppercase;
 	position: relative;
 	font-size: .8em;
-	top:40px;
+	top:-30px;
 	left: 100px;
 	font-size: 14px;
 	z-index: 100;
@@ -296,14 +303,15 @@ h4{
 
 /* #241035*/
 .home-logo{
-	padding:40px;
 	border: 1px solid grey;
+	display: table-cell;
 	/* width: 900px;
 	border-bottom: 2px solid white;
 	position: relative;
 	top:25px;
 	left: 30px; */
 }
+.philosophy-concept-home p{ background-color: #30142d; height: 170px; color: beige; font-size: 16px; padding:25px; }
 /* #gallery{
 	text-align:center;
 } */
@@ -339,29 +347,34 @@ height: auto;
     position:relative;
     text-align:center
 } */
-.port-content h3{ font-size: 1.5em; font-family: 'Lato', sans-serif; }
+.port-content h3{ font-size: 1.5em; font-family: 'Lato', sans-serif; text-transform: uppercase; margin-top: 7px; }
 #side-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
+#side-title-project{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
 #gallery-port{
 	padding:15px;
+
 }
 #gallery-port-home{ padding-left: 15px; }
 
-#gallery-port-home li{	background: rgba(255, 255, 255, 0.1);
+#gallery-port-home li{	/* background: rgba(255, 255, 255, 0.1); */
 text-align: center;
 display:block;
 width: 70%;
 margin:25px auto ;
 line-height: 30%;
+border: 1px solid black;
+padding:25px;
 }
 
 #gallery-port li{
-	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid black;
+	padding:20px;
 /* box-shadow: 0 11px 8px -8px rgb(49, 49, 49); */
 text-align: center;
 /*background-color: #646464;*/
 display:block;
 width: 70%;
-margin:25px auto ;
+margin:12.5px auto ;
 line-height: 30%;
 /* background: white; For browsers that do not support gradients
 background: -webkit-linear-gradient(to top right,rgb(153, 153, 153), white 30%)); For Safari 5.1 to 6.0
@@ -481,6 +494,7 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax */
 	height:60px;
 	width:100%;
 	text-align: center;
+	z-index: 100;
 
 }
 .buttons a {
@@ -539,9 +553,10 @@ background: linear-gradient( #646464 58%, rgb(71, 71, 71)); Standard syntax}
 .home-button{ padding-top: 15px;  border-radius: 10px; font-size: 1.25em; margin-left: 15px;}
 .home-button button{ padding-left: 15px; }
 
+.experience p{ font-size: 16px; }
 /* -------------------Philosophy Boxes */
 
-.philosophy-concept{ padding: 15px 30px;}
+.philosophy-concept{ padding: 30px 0;}
 .philosophy-concept div{ padding:10px; }
 .simplicity{}
 .curiosity{}
@@ -788,7 +803,7 @@ button:hover{
 .proj-arrow{ color: grey; }
 .project-picture img{
 	width: 80%;
-	margin: 0 auto;
+	margin: 10 auto 0 auto;
 /* 	margin: 15px;
 width:95%;
 border: 2px solid black;
@@ -805,6 +820,7 @@ box-shadow: 5px 5px 15px black; */
 .project-content { margin: 15px; }
 .project-bottom{ position: relative; z-index: 100; background-color: white; padding: 25px; }
 .bottom-inner{border: 1px solid black; padding: 25px;}
+#bottom h3{ color: #30142d ; }
 
 /* .content{
 	text-align: justify;
@@ -900,6 +916,8 @@ padding: 15px; */
 	 font-weight: bold;
 	 cursor: pointer;
 	 color: white;
+	 width: 50%;
+	 margin-top: 15px;
  }
 
  .rows input,
@@ -969,6 +987,7 @@ animation-fill-mode: forwards; */
   	width:60%;
   	margin: 0 auto;
   	font-size: 1.1em;
+  	font-weight: bold;
   	margin: 30px auto;
   }
 
@@ -1019,7 +1038,7 @@ animation-fill-mode: forwards; */
 			width: 75%;
 			margin-left: 25%;
 		}
-		.project-bottom{ margin:20px auto 130px auto;  width: 80%;}
+		.project-bottom{ margin:55px auto 130px auto;  width: 80%;}
 
 		#item{
 			margin-left: 25%;
@@ -1028,7 +1047,8 @@ animation-fill-mode: forwards; */
 		flex-wrap: wrap;
 		padding: 1% 4%;
 		}
-		#side-title{padding:15px; height: 100%; width: 25%; position: fixed; }
+		#side-title{padding:70px 25px; height: 100%; width: 50%; position: fixed; text-align: left; font-size: 5em; }
+		#side-title-project{padding:70px 25px; height: 100%; width: 27%; position: fixed; text-align: left; }
 		#gallery-port{ display: flex; text-align: center;}
 		#gallery-port-home{ display: flex; text-align: center; }
 		#gallery div { /* margin-right: 65%; */ }
@@ -1042,8 +1062,9 @@ animation-fill-mode: forwards; */
 			/* width:90%;
 			height: 200px; */
 			display: inline-block;
-			margin-top: 50px;
-			width: 45%;
+			width: 47%;
+			z-index: 1;
+			background-color: white;
 		}
 		#gallery-port-home li{
 			/* width:90%;
@@ -1100,8 +1121,9 @@ animation-fill-mode: forwards; */
 @media screen and ( min-width: 1060px ) {
 
 	h3{
-		font-size: 2.5em;
+		font-size: 3em;
 	}
+	#gallery-port-home{ padding: 0 55px; }
 /* 	-----------------------------------------------About*/
 
 /* NEW#bio{height: 900px;
@@ -1124,7 +1146,8 @@ animation-fill-mode: forwards; */
 .philosophy-concept-about i{ position: relative; right: 35px; top: 25px; }
 .philosophy-concept-about div{ margin-left: 15px;}
 .philosophy-concept-home div{ margin-left: 20px; }
-.philosophy{ padding: 55px; }
+.philosophy{ padding: 55px 55px 0 55px;}
+.phil-about{border: 1px solid black; margin: 20px;}
 
 	/* ------------Email Form----------- */
 	.email{
@@ -1234,8 +1257,8 @@ animation-fill-mode: forwards; */
 		font-size: 5.5em;
 	}
 	#jumbotron .logo2{
- left: 210px;
- top: 43px;
+ left: 205px;
+ top: -30px;
 	font-size: 1.05em;
 	}
 
@@ -1346,8 +1369,8 @@ animation-fill-mode: forwards; */
 		font-size: 4.5em;
 	}
 	#jumbotron .logo2{
-	left: 183px;
-	top: 40px;
+	left: 163px;
+	top: -25px;
 	font-size: .9em;
 	}
 
@@ -1377,7 +1400,8 @@ animation-fill-mode: forwards; */
 	.logo{ text-shadow: 1px 2px 2px white;}
 	.home-logo{ border: none; }
 	#jumbotron .logo2{
-	top: 40px;
+	top: -2px;
+	left:60px;
 	font-size: .7em;
 	}
 }
