@@ -7,19 +7,21 @@ include('inc/header.php');
 
 
 ?>
+
+<!-- Top open page -->
 <div id="background">
     <div class="accent-background">
-        <!-- <div class="wrapper2"> -->
-            <div id="jumbotron">
-                <div class="home-logo">
-    				<p class="logo">Simpooly</p>
-                    <h2 class="logo2"> Web Development</h2>
-    			</div>
-            </div>
-            <a href="#top"><i class="fa fa-angle-double-down home-arrow fa-4x" aria-hidden="true"></i></a>
+        <div id="jumbotron">
+            <div class="home-logo">
+				<p class="logo">Simpooly</p>
+                <h2 class="logo2"> Web Development</h2>
+			</div>
+        </div>
+        <a href="#top"><i class="fa fa-angle-double-down home-arrow fa-4x" aria-hidden="true"></i></a>
     </div>
 <div>
 
+<!-- About section -->
 <div id="top" class="background">
     <div class="wrapper80">
         <div class="philosophy">
@@ -33,12 +35,12 @@ include('inc/header.php');
                     <p>Simple design maximizes efficiency and allows the user to focus on what's important.</p>
                 </div>
                 <div class="curiosity">
-                    <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"></i>
                     <h4>Skillful</h4>
                     <p>A knowledge and ability to execute the fundamentals properly and quickly.</p><!--  Be prepared and cover every little detail. -->
                 </div>
                 <div class="quirky">
-                    <i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"></i>
+                    <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
                     <h4>Original</h4>
                     <p>Just the right amount of spontaneity to make things interesting.</p>
                 </div>
@@ -46,9 +48,9 @@ include('inc/header.php');
         </div>
         <div class="home-button"><a href="about.php"><button>Want More Of Me?</button></a></div>
     </div>
-
 </div>
 
+<!-- Projects Section -->
 <div id="background">
     <div class="wrapper80">
         <h3 class="new">Recent Projects</h3>

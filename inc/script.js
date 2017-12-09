@@ -37,9 +37,3 @@ $(document).ready(function(){
       });*/
 });
 
-/*
-font-family: 'Cutive Mono', monospace;
-font-family: 'PT Mono', monospace;
-font-family: 'Merienda', cursive;
-font-family: 'Montez', cursive;
-*/

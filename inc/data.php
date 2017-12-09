@@ -58,7 +58,7 @@ $project[103] = [
 
         "goal" => "Performed my first API project by acquiring JSON data, and displaying a random quote from an API.",
 
-        "discription" => "For this app i found",
+        "discription" => "For this app when you press a button it outputs an INSPIRING random quote for you. I used an ajax function in JQuery to connect to the url. I got the data in JSON format and placed it in my HTML code. Every time the button is clicked it resends a request getting another quote. In Addition to receiving a quote, if one is 'so worthy of your praise' you can press the twitter button. It transfers the quote through a query string to post to your twitter account.",
 
         "troubles" => "I was overwhelmed with all the different API's out there, some gave a list of quotes others automatically generated them. Learning the process of acquiring the keys and using them correctly in a query took the most time. Once I had the data, selecting the correct information was the downhill slide.",
 
@@ -75,14 +75,17 @@ $project[103] = [
 
 $project[104] = [
     "title" => "Weather App",
+
      "img" => "inc/img/screenshot/104/01.png",
       //"img2" => "inc/img/screenshot/104/02.png",
+
       "url" => "https://codepen.io/Simpooly/pen/qPMjwG",
+
       "goal" => "Provided a basic weather application that accesses users geolocation and displays information according to data. ",
 
-      "discription" => "jkdjdhS:ODhfso;Dh;odh",
+      "discription" => "This app finds where you are located and displays some basic weather information about your surrounding area. It starts with getting your geolocation. Once the longitude and latitude is acquired I can use those as variables in a query string to get weather information about the area. i used fcc-weather-api to acquire the name of the city, weather in fahrenheit and celsius, weather conditions and an icon showing the conditions. I inputed those into the HTML. The button will toggle you back and forth between fahrenheit and celsius",
 
-      "troubles" => "With this project I have learned that finding a good database is important. I used the database FreeCodeCamp provided. They didnt want API keys in CodePen for security and privacy reasons. I got the majority of the project and found out that database did not provide all the information required (ie. city, state). Using a different database such as google maps would have provided more information than just the longitude and latitude.",
+      "troubles" => "With this project I have learned that finding a good database is important. I used the database FreeCodeCamp provided. They didn't want API keys in CodePen for security and privacy reasons. I got the majority of the project and found out that database did not provide all the information required (ie. city, state). Using a different database such as google maps would have provided more information needed.",
 
       "outcome" => "In the future, I will learn to do extra research to find the best API and information for my needs. Efficiency is a goal I have in all work I do, it makes things simple and eventually easier, even if the process leading up to that is a little messy.",
 /*      "catagory" => [
@@ -96,16 +99,18 @@ $project[104] = [
 
 $project[105] = [
     "title" => "PSD to Web Conversion",
+
      "img" => "inc/img/screenshot/105/01.png",
       //"img2" => "inc/img/screenshot/105/02.png",
      //"img3" => "inc/img/screenshot/105/03.png",
+
       "url" => "http://wildcalling.com/",
 
       "goal" => "Extracted images and used photoshop to recreate design and layout of a page mock up.",
 
-      "discription" => "implement the design by hand-coding them using CSS, HTML. added interactability with jquery so the individual ggrups of products collapsed.",
+      "discription" => "Working with a sheet in photoshop from a designer I extracted layers and seats of layers as images. during the extraction I minimized them for better load time and performance of the page. The design was then implemented by hand-coding them using CSS, HTML. JQuery was added for interactability with the individual groups of products, allowing them to toggle between being visible and being collapsed.",
 
-      "troubles" => "",
+      "troubles" => "Creating the page with HTML CSS and JQuery were simple. Learning Photoshop would be the lesson. At first I was extracting individual layers and trying to manually layer them with CSS. Once i learned you can extract multiple layers together it made things much easier. I went through sont online classes and now understand the basics of photoshop.",
 
       "outcome" => " ",
 

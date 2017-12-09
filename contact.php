@@ -72,7 +72,6 @@ include('inc/header.php');
             if(isset($_GET["status"]) && $_GET["status"] == "thanks") {
                 //echo "<h2 class='thanks'>Thank You! <br> animation?</h2>";
                 echo "<img  class='thanks' src='inc/img/thanks.png'>";
-
             } else{
         ?>
 
@@ -120,11 +119,6 @@ include('inc/header.php');
                 <a class="face" href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i><p>Facebook</p></a>
             </div>
 
-           <!--  <div class="buttons contact">
-               <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"><p>LinkedIn</p></a>
-               <a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"><p>Facebook</p></a>
-               <a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"><p>GitHub</p></a>
-           </div> -->
         </div>
 
         <?php } ?>
