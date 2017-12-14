@@ -32,6 +32,7 @@ blockquote:before, blockquote:after { content:""; }
 /* -------------------------------------------------------------------------------- */
 /*	1. Genreal css
 /* -------------------------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 html {
 	font-size: 16px;
@@ -43,6 +44,8 @@ html {
 html p{
 	line-height: 140%;
 	letter-spacing: 1px;
+	font-family: 'Titillium Web', sans-serif;
+	word-spacing: 1;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
@@ -51,8 +54,8 @@ html p{
 	}
 
 body {
-	background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
-	background-attachment: fixed;
+	/* background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
+	background-attachment: fixed; */
 	font-family: 'Palanquin', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
@@ -63,47 +66,48 @@ body {
 	}
 h1{
 	font-weight: bold;
-	color: #241035;
-	font-size: 4.5em;
-	text-align: center;
-	text-shadow: 1px 1px 5px rgb(194, 193, 193);
-	margin-bottom: 20px;
+	color: #30142d;
+	font-size: 3.75em;
+
 }
 h2{
-	font-size: 1.5em;
-	text-align: center;
+	font-size: 1.75em;
+	font-weight: bold;
 	padding: 2px;
-	color:rgb(194, 193, 193);
+}
+h3{
+	font-family: Playfair Display,serif;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	font-size:1.5em;
+}
+h4{
+	font-size: 1.75em;
+	margin-bottom: 10px;
 }
 
-* a:link{
-	text-transform: uppercase;
-	text-decoration: none;
-	color: rgb(82, 81, 81);
-	padding:5px;
-}
-* a:visited{
-	text-decoration: none;
-	color:rgb(82, 81, 81);;
-}
 * a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 	cursor: pointer;
 }
-.accent{
-	text-transform: uppercase;
-	font-size: 2em;
-	color: rgb(82, 81, 81);
-	text-shadow: 1px 1px 5px black;
+
+.wrapper80{
+	width: 80%;
+	margin: 50px auto 80px auto;
 }
 
+.wrapper h1,{
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+	color: #30142d;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
 
 .navigation {
-	background: #242424;
+	background-color: white; /* #242424; */
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -116,7 +120,6 @@ h2{
 .nav-toggle {
 	display: block;
 	padding: 16px 0;
-	background: rgba(0,0,0,0.1);
 	color: #fff;
 }
 
@@ -129,7 +132,7 @@ h2{
 
 .nav-toggle .bar {
 	height: 2px;
-	background: #fff;
+	background: black;
 	border-radius: 2px;
 	position: absolute;
 	left: 0;
@@ -146,249 +149,271 @@ h2{
 
 .nav-toggle:hover { cursor: pointer; }
 
-/* -------old nav---------------
-.nav-toggle { display: none; }
-
-
-.main-menu {
-	text-align: center;}
-
-.main-menu li { position: relative; }
-
-.main-menu > li { display: inline-block; }
-
-.main-menu > li + li { margin-left: 40px; }
-
-.main-menu > li + li:before {
-	content: "|";
-	font-size: 14px;
-	color: #3d3d3d;
-	position: absolute;
-	top: 50%;
-	margin-top: -7px;
-	left: -25px;
-}
-
-.main-menu a {
-	display: block;
-	padding: 23px 0;
-	font-size: 18px;
-	color: #999;
-	text-transform: uppercase;
-	position: relative;
-	z-index: 10000;
-}
-
-.main-menu li.on > a { color: white; }
-.main-menu li:hover > a { color: rgb(109, 108, 108); }
-
-.nav-small li.on > a { color: white; }
-.nav-small li:hover > a { color: rgb(109, 108, 108); } */
-
-
 /* ---------------------Nav toggle-------------------*/
 
 .nav-small a {
+	margin-top: 10px;
 	display: block;
 	padding: 10px 0;
 	font-size: 16px;
 	color: #999;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 10000;
+	z-index: 100000;
 	text-align: center;
 }
 
 
 /* -------------------------------------------------------------------------------- */
-/*	3. Layout
+/*	3. Home
 /* -------------------------------------------------------------------------------- */
 
-#jumbotron{
-	padding: 3%;
-	background-color: rgba(10, 10, 10, 0.671);
-	font-size: 1.25em;
-	margin: 1% auto;
-	border: solid black 1px;
-	border-radius: 10px;
+#background{
+	background-color: white;
 	width: 100%;
-	color: white;
-	text-align: center;
+	height: 800px;
+}
+.wrapper80 button{
+	border: 1px solid #30142d;
+	background-color: white;
+	width: 50%;
+	height: 50px;
+	color:#30142d;
+	font-weight: bold;
+}
+.wrapper80 button:hover{ background-color: lightgrey; }
+
+.accent-background{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #30142d;
+}
+
+#jumbotron{
+	position: relative;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	font-size: 1.25em;
+	width: 80%;
+	background-color: white;
+}
+.home-logo{
+	border: 1px solid grey;
+	display: table-cell;
 }
 
 #jumbotron .logo{
-	font-size: 2.60em;
-	/* font-size: 7em; */
-	color: #241035;
+	font-size: 2.3em;
+	color:  #30142d;
 	font-family: 'Milonga', cursive;
-	text-shadow: 1px 2px 7px rgb(194, 193, 193);
+ 	display:table-cell;
+ 	text-align:center;
+    width:100%;
+    vertical-align: middle;
 }
 #jumbotron .logo2{
+	color: #0c3c40;
 	text-transform: uppercase;
 	position: relative;
-	font-size: .55em;
-	bottom: 15px;
-	left: 47px;
-/* 	left: 121px;
-bottom:40px;
-font-size: 1.35em; */
+	font-size: .8em;
+	top:-30px;
+	left: 100px;
+	font-size: 14px;
+	z-index: 100;
 }
 
-/* #241035*/
-
-#gallery{
-	text-align:center;
+.philosophy-concept-home p{
+	background-color: #30142d;
+	height: 170px;
+	color: beige;
+	font-size: 16px;
+	padding:25px;
 }
 
-#gallery li{
-background-color: rgba(10, 10, 10, 0.671);
-display:block;
-margin: 25px auto;
-width: 100%;
-border: solid black 2px;
-border-radius: 5px;
-margin:20px auto ;
-height: auto;
-padding: 1.15%;
+.new{ margin-left: 15px; color: #0c3c40;}
+
+.home-arrow{
+	position: absolute;
+	top: 75%;
+	left: 100%;
+	color: grey;
 }
 
-#gallery img{
-	max-width: 100%;
-	padding: 5px;
-}
 
-#gallery a:link{
-	text-decoration: none;
-	color: white;
-	padding:5px;
-}
+/* -------------------------------------------------------------------------------- */
+/*	4. Gallery
+/* -------------------------------------------------------------------------------- */
 
-#gallery a:hover{
-	text-decoration: underline;
-	cursor: pointer;
-}
 
-#gallery a:visited{
-	text-decoration: none;
-	color: white;
-}
+/* -----------------------Gallery on Home Page */
 
-#gallery p{
-	margin: 10px 0 -15px 0;
-}
+#gallery-port-home{ padding-left: 15px; }
+#gallery-port-home p { margin:0 auto; }
+#gallery-port-home img{ max-width: 100%; }
+#gallery-port-home a{ text-decoration: none; color: black; }
+#gallery-port-home a:hover{ cursor: pointer; color: black; }
 
-/* gallery old
-
-#gallery li{
-	margin:1% 1% 0 1%;
-	display: inline-block;
+#gallery-port-home li{
 	text-align: center;
-	width:30%;
+	display:block;
+	width: 70%;
+	margin:25px auto ;
+	line-height: 30%;
+	border: 1px solid black;
+	padding:25px;
 }
 
-
-
-
-
-
-*/
-.wrapper{
-	width: 90%;
-	margin: 50px auto 90px auto;
-}
-
-.content{
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-
-.breadcrumbs a{
-	color:white;
-
-}
-.breadcrumbs a:hover{
-	text-decoration: underline;
-	cursor: pointer;
-
-}
-.breadcrumbs{
+.home-projects{
+	font-size: 3em;
+	padding-left: 30px;
+	text-shadow: 2px 2px 5px black;
 	color: white;
+
+}
+
+
+/* ----------------------------------Gallery on Project Page */
+
+#gallery-port{ padding:15px; }
+#gallery-port img{ max-width: 100%; }
+#gallery-port a{ text-decoration: none; color: black; }
+#gallery-port a:hover{ cursor: pointer; color: black; }
+#gallery-port p{margin: 0 auto;}
+
+#gallery-port li{
+	border: 1px solid black;
+	padding:20px;
+	text-align: center;
+	display:block;
+	width: 70%;
+	margin:12.5px auto ;
+	line-height: 30%;
+}
+
+#side-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
+#side-title-project{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
+
+
+.port-content h3{
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 3px black;
-	font-size: 1.15em;
-	font-weight: 550;
-
+	margin-top: 7px;
 }
 
-
-
-/* -------------------------------------------------------------------------------- */
-/*	4. footer
-/* -------------------------------------------------------------------------------- */
-p { text-align: center; }
-
-.footer{
-	bottom:0;
-    position:fixed;
-	background-color: #1f1e1e;
-	height:80px;
-	width:100%;
-	text-align: center;
-
+.wrapper{
+	margin: 50px auto 60px auto;
+	border-radius: 5px;
+	background: white;
 }
 
-.social{
-	display: inline-block;
-	padding: 5px 5px 5px 5px;
-	margin: 0 1%;
-}
-
-.footer p{
-	margin-top: -14px;
+.wrapper2{
+	width: 80%;
+	margin: 50px auto 60px auto;
+	border-radius: 5px;
+	background-color: #fbfbfb;
 }
 
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
 
-.parent img{
-	width: 300px;
-	padding: 20px;
-	/* width: 400px;
-	padding-top: 75px;
-	position: absolute;
-	top:35%;
-	right:11%; */
-}
-.about-text{
-	width: 100%;
-	/* width: 63%; */
-	margin: 0;
-	float:left;
-}
-.parent h2{
-	margin-bottom: 20px;
+/* ------------------------Top */
+.bio{ display: flex; }
+
+.slogan{
+	width: 65%;
+	float: left;
+	background-color: #444444;
+	order: 2;
+	color: black;
 }
 
-.about-text{
-	width: 100%;
+.name{
+	width:100%;
+	float: left;
+	order: 1;
+	background: #646464; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
+	background:    -moz-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
+	background:      -o-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
+	background:         linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */
 }
-.parent img{
-	width: 300px;
-	padding: 20px;
 
+.name h2{
+	color: #241035;
+	font-size: 40px;
+	padding: 15px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
 }
-.parent img{
 
+.name h3{
+	display: none;
+	color: #0c3c40;
+	padding-left: 15px;
+	font-family: 'Lato', sans-serif;
 }
+
+.head-shot{ text-align: center;}
+.head-shot img{ width: 100%;}
+
+/*  If you put it in??
+.slogan h2{
+	position: relative;
+	 top: 50%;
+	 left: 50%;
+	bring your own prefixes
+	 transform: translate(-50%, -50%);}
+ */
+
+/* -------------------------------Bottom */
+
+.philosophy{
+	background-color: white;
+	padding: 15px;
+	color: #4f4f4f;
+}
+
+.philosophy h3,
+.philosophy h4,
+.philosophy i{ color: #0c3c40; }
+
+.experience{
+	background-color: #30142d;
+	color: beige;
+	padding: 55px;
+}
+
+.home-button{
+	padding-top: 15px;
+	border-radius: 10px;
+	font-size: 1.25em;
+	margin-left: 15px;
+}
+
+.home-button button{ padding-left: 15px; }
+
+.experience p{ font-size: 16px; }
+
+/* -------------------Philosophy Boxes */
+
+.philosophy-concept{ padding: 30px 0;}
+.philosophy-concept div{ padding:10px; }
+.simplicity{}
+.curiosity{}
+.quirky{}
+
 
 /*------------------------model box---------------------*/
 
 /* Outer */
-.hide{
-	display:none;
-}
+.hide{ display:none; }
 
 #popup, #skills-popup {
     width:100%;
@@ -416,30 +441,27 @@ p { text-align: center; }
     background:#fff;
 }
 
- .btn{
-	 border: 1px solid white;
-	 border-radius: 3px;
-	 padding:7px;
-	 margin: 5px;
-	 background-color: #241035;
- }
-.popup-inner a:link{
-	color:black;
+.btn{
+	border: 1px solid white;
+	border-radius: 3px;
+	padding:7px;
+	margin: 5px;
+	background-color: #30142d;
 }
- .ex{
+.popup-inner a:link{ color:black; }
+
+.ex{
 	position:absolute;
-    top:3px;
-	right:5px;
+	top:3px;
+	right:26px;
 	font-size:20px;
 	height:20px;
 	width: 20px;
 	padding: 3px;
 
- }
+}
 
- #skills-popup table{
- 	border-spacing: 20px;
-  }
+#skills-popup table{ border-spacing: 20px; }
 
 .skills{
 	margin: 0 auto;
@@ -447,70 +469,62 @@ p { text-align: center; }
 	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 550px;
+	padding:5px;
 }
 
 .skills li{
 	margin: auto;
 	width: 100px;
 	height:100px;
-	background-color: #241035;
+	background-color: #30142d;
 	border-radius: 50%;
 	font-weight: 700;
 	color:white;
+	max-width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:5px;
 
 }
- /* .skills{
- 	 margin: 0 auto;
- }
- .skills td{
- 	width: 60px;
- 	height: 72px;
- width:100px;
- 	height:100px;
- 	 text-align: center;
- 	 background-color: #241035;
- 	 border-radius: 50%;
- 	 color: white;
- 	 font-weight: 700;
+.skills p{ max-width: 50%; }
 
- } */
+.skills h2{	margin: 0 auto; }
+.skills a:link{	color: black; }
+.skills a:visited{ color: black; }
 
- #skills-popup td{
+#skills-popup td{
  	width: 75px;
  	height: 75px;
- }
+}
 
- #skills-popup table{
+#skills-popup table{
 	border-collapse: separate;
 	border-spacing: 20px;
-	/* border-spacing: 10px;
-		 */	/* border-spacing: 30px; */
- }
 
- #skills-popup .popup-inner{
-	 /* max-width:50%; */
-	 /* max-width:90%; */
+}
+
+#skills-popup .popup-inner{
 	 max-height:85%;
 	 padding: 10px 20px;
-	/*  overflow:scroll; */
 	 max-width:100%;
- }
+}
 
-
- .popup-inner a:link{
+.popup-inner a:link{
 	color: black;
 	font-weight: bold;
- }
+}
 
 .skills-btn,
 .treehouse-btn{
 		border: 1px solid black;
+		display: block;
 		border-radius: 5px;
-		color:#241035;
+		color:white;
 		padding:10px;
-		margin: 10px;
-		background-color:white;
+		background-color:#0c3c40;;
 		font-weight: bold;
+		margin:10px auto;
 }
 
 button:hover{
@@ -520,74 +534,112 @@ button:hover{
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
-.project-picture{
-	text-align: center;
-	width:100%;
-	margin: 0 auto;
-	/* width:70%;
- */
-}
 
+.side-title a:link{ color: grey; }
+.side-title a:hover{ color: grey; }
+.side-title a:visited{ color: grey; }
+
+.project-picture{ text-align: center; }
+.proj-arrow{ color: grey; }
 .project-picture img{
-	width:95%
+	width: 80%;
+	margin: 10 auto 0 auto;
+}
+.project-picture h1{ margin-bottom: 15px; }
 
-}
-.box a:link{
-	color: white;
-}
-.box a:visited{
-	color: white;
-}
+
+.project-content { margin: 15px; }
+.project-bottom{ position: relative; z-index: 100; background-color: white; padding: 25px; }
+
+.bottom-inner{border: 1px solid black; padding: 25px;}
+#bottom h3{ color: #30142d ; }
+
+
+/* #gallery h3{
+	font-family: 'Abril Fatface', cursive;
+	color: lightgrey;
+	padding-left: 20%;
+} */
+
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */
+.message{ margin: 30px auto; }
+
+.email-me{
+	font-family: 'Abril Fatface', cursive;
+	text-shadow: 1px 1px 7px rgb(194, 193, 193);
+	font-weight: 600;
+	font-size: 5.5em;
+	margin: 0 0 -25px 15px;
+	color: #30142d;
+}
+
+form{
+	width: 100%;
+	margin: 15px;
+
+}
+ form label{
+	position: relative;
+	top: 25px;
+	color: black;
+	font-weight: bold;
+	font-size: 1.25em;
+	padding-bottom: 3px;
+ }
 form textarea,
 form input{
 	 display: block;
-	 width: 100%;
 	 padding: 10px;
-	 margin: 20px auto;
-/* 	 width: 60%;
-padding: 15px; */
+	 width: 100%;
 	 border-radius: 3px;
-	 box-shadow: 5px 5px 2px black;
+	 -webkit-box-shadow: 0 8px 6px -6px black;
+	    -moz-box-shadow: 0 8px 6px -6px black;
+	         box-shadow: 0 8px 6px -6px black;
  }
 
 
- form textarea{
-	 height: 200px;
- }
- form input[type=submit]{
-	 background-color: #241035;
-	 border: solid #241035;
+ form textarea{ height: 150px;}
+
+form input[type=submit]{
+	 background-color: #30142d;
+	 border: solid #30142d;
 	 font-size: 1.25em;
 	 font-weight: bold;
+	 cursor: pointer;
+	 color: white;
+	 width: 50%;
+	 margin-top: 15px;
+}
 
- }
+.rows input,
+.rows textarea{ padding-left: 43px; }
 
- .box{
-	background-color: rgba(10, 10, 10, 0.747);
-	color: white;
-	text-align: center;
+.rows{
+	width: 95%;
+	margin-bottom:10px;
+}
+
+.rows i{
+	position: relative;
+	top: 40px;
+	left: 7px;
+	z-index: 100;
+	color: #0c3c40;
+}
+
+.box{
+	/* color: white; */
+	/* text-align: center; */
 	padding: 2%;
 	margin-bottom: 50px;
  }
- form label{
-	color: white;
-	text-align: center;
- }
-.error{
-	border-color:rgb(105, 1, 1);
-	background-color: rgb(133, 1, 1);
-	border-radius: 5px;
-	padding:10px;
-	width:30%;
-	margin: 0 auto;
-	box-shadow: 5px 5px 5px black;
-}
 
+/* ---------Thank You annimation --------------*/
 .thanks{
 	max-width: 80%;
+
 /*   animation-name: bounceIn;
 animation-duration: 750ms;
 animation-timing-function: linear;
@@ -611,49 +663,248 @@ animation-fill-mode: forwards; */
     opacity: 1;
     transform: scale(1);
   } */
-form{
-	width: 100%;
+
+
+/* ---------Error Message Sending Email-------------- */
+  .error{
+  	border-color:rgb(105, 1, 1);
+  	background-color: rgb(133, 1, 1);
+  	border-radius: 5px;
+  	padding:10px;
+  	width:60%;
+  	margin: 0 auto;
+  	font-size: 1.1em;
+  	font-weight: bold;
+  	margin: 30px auto;
+  }
+
+/* ---------Social Media Buttons------------- */
+
+.buttons.contact{
+	margin-top: 20px;
+	background-color: #30142d;
+	width: 90%;
+	margin: 0 auto;
 }
-.row{
+.buttons.contact a{
+	display: block;
+}
+.link p,
+.face p,
+.git p{
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	bottom: 20px;
+	color: white;
+	font-size: 16px;
+}
+
+.contact a{
+	color: white;
+}
+
+.contact a:hover{
+	color:  #0c3c40;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	5. footer
+/* -------------------------------------------------------------------------------- */
+.footer p { text-align: center; }
+
+.footer{
+	bottom:0;
+    position:fixed;
+	background-color: white;
+	height:60px;
+	width:100%;
 	text-align: center;
+	z-index: 100;
+
 }
+.buttons a {
+	padding: 7px 15px;
+}
+.social{
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+	margin: 0 1%;
+}
+
+.footer i{ color: grey; }
+.footer i: active{ color: #241035; }
+.footer i:hover{ color: #30142d; }
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
+@media screen and ( min-width: 1200px ) {
+
+
+	/* -----------------------Portfolio */
+
+	.project-picture{
+		width: 75%;
+		margin-left: 25%;
+	}
+	.project-bottom{ margin:55px auto 130px auto;  width: 80%;}
+
+	#item{
+		margin-left: 25%;
+		width: 75%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1% 4%;
+	}
+	#side-title{padding:70px 25px; height: 100%; width: 50%; position: fixed; text-align: left; font-size: 5em; }
+	#side-title-project{padding:70px 25px; height: 100%; width: 27%; position: fixed; text-align: left; }
+	#gallery-port{ display: flex; text-align: center;}
+	#gallery-port-home{ display: flex; text-align: center; }
+	#gallery div { /* margin-right: 65%; */ }
+	#gallery-port img{ width: 100%;
+	/*  max-height: 100%;
+	float: right; */
+	}
+	#gallery-port-home img{ width: 100%; }
+
+	#gallery-port li{
+		/* width:90%;
+		height: 200px; */
+		display: inline-block;
+		width: 47%;
+		z-index: 1;
+		background-color: white;
+	}
+	#gallery-port-home li{
+		/* width:90%;
+		height: 200px; */
+		display: inline-block;
+		margin-top: 50px;
+		width: 30%;
+	}
+
+	#gallery-port p{ /* text-align: right; */ }
+	#gallery-port h3 { /* text-align: right;  */}
+
+	#opposite img{
+		float: left;
+		max-height: 100%;
+	}
+
+	#oppotsite p{ text-align: left; }
+	#opposite h3{ text-align: left; }
+	.port-content{	padding: 15px; }
+}
+
+
+
+@media screen and ( min-width: 1060px ) {
+
+	h3{
+		font-size: 3em;
+	}
+	#gallery-port-home{ padding: 0 55px; }
+/* 	-----------------------------------------------About*/
+
+	/* NEW#bio{height: 900px;
+	background-color: grey;
+	background: url("http://thewallpaper.co/wp-content/uploads/2017/09/trees-landscape-windowsmist-forest-mobile-wallpaper-smart-phones-ios-768x432.jpg") no-repeat;
+	background-size: 100%;
+	display: flex;
+	}
+
+	.head-shot{ width: 30%; order: 1; }
+
+	.name{ width: 70%; order: 2;} */
+
+	.about-bottom{ display: flex; }
+	.phil-about{width: 65%; order: 1;}
+	.experience{width: 35%; order: 2;}
+	.name h2{font-size: 7em; }
+
+
+	.philosophy-concept-about i{ position: relative; right: 35px; top: 25px; }
+	.philosophy-concept-about div{ margin-left: 15px;}
+	.philosophy-concept-home div{ margin-left: 20px; }
+	.philosophy{ padding: 55px 55px 0 55px;}
+	.phil-about{border: 1px solid black; margin: 20px;}
+
+	/* ------------Email Form----------- */
+	.email{
+		display: flex;
+	}
+	.box form{
+		max-width: 65%;
+	}
+
+	.contact{
+		padding-top: 30px; /* fix when you get a font for email us */
+	}
+	.buttons.contact{
+		width: 35%;
+	}
+
+}
+
+
 @media screen and ( min-width: 760px ) {
 
-	.wrapper{
-		margin: 80px auto 90px auto;
+	h1{
+		font-weight: bold;
+		color: #30142d;
+		text-align: center;
+		margin-bottom: 50px;
 	}
 
-	#gallery li{
-		margin:1% 1% 0 1%;
-		display: inline-block;
-		text-align: center;
-		width:30%;
+
+	.wrapper,
+	.wrapper2{
+		margin: 60px auto 60px auto;
 	}
+
 	#jumbotron{
-		width: 90%;
+		width: 550px;
 	}
 	#jumbotron .logo{
-		font-size: 7em;
+		/* top: 82px;
+		left: 50px; */
+		font-size: 5.5em;
 	}
 	#jumbotron .logo2{
-	left: 121px;
-	bottom:40px;
-	font-size: 1.35em;
+ left: 205px;
+ top: -30px;
+	font-size: 1.05em;
 	}
 
-	/* #jumbotron .logo{
-		font-size: 5em;
-	}
-	#jumbotron .logo2{
-		font-size: 1em;
-		bottom: 30px;
-		left: 87px;
-	} */
+/* -----------------------------------------------About */
+.about-top{display: flex;}
+.bio{ display: flex; flex-wrap:wrap; width: 75%; order: 2;}
+.slogan{display: block; width: 100%;}
+.name{display: block; width: 100%; padding-top: 5%;}
+.name h2{font-size: 5em; }
+.name h3{display: initial;}
+.head-shot{width: 25%; order: 1;}
+.head-shot img{width: 100%;}
+.name h2,
+.slogan h2{
+	margin-left: 25px;
+}
+.name h3{ margin-left: 30px;
+}
 
+
+	/* --------------------------------philosophy boxes */
+	.philosophy-concept{ display: flex;}
+
+	.philosophy-concept div p{}
+	.simplicity{flex: 1;}
+	.curiosity{ flex: 1;}
+	.quirky{ flex: 1;}
+
+
+/* --------------------------------Navigation */
 	.nav-toggle { display: none; }
 
 
@@ -683,199 +934,51 @@ form{
 		display: block;
 		padding: 23px 0;
 		font-size: 18px;
-		color: #999;
+		color:  #999;
 		text-transform: uppercase;
 		position: relative;
 		z-index: 10000;
 	}
 
-	.main-menu li.on > a { color: white; }
+	.main-menu li.on > a { color: black; font-size: 1.35em; }
 	.main-menu li:hover > a { color: rgb(109, 108, 108); }
 
-	.nav-small li.on > a { color: white; }
+	.nav-small li.on > a { color: black; }
 	.nav-small li:hover > a { color: rgb(109, 108, 108); }
+
+
+
 }
+@media screen and ( min-width: 450px )and (max-width: 960px ) {
 
-@media screen and ( min-width: 450px )and (max-width: 860px ) {
-	#jumbotron{ width:95%;}
-
+	/* #gallery-port li{height: 600px;
+	} */
+	/* #jumbotron{ width:95%;} */
+	.name h2 {
+	    font-size: 3.75em;}
+	    #jumbotron{
+	    	width: 500px;
+	    }
 	#jumbotron .logo{
-		font-size: 4em;
+	/* top: 72px;
+	left: 10px; */
+		font-size: 4.5em;
 	}
 	#jumbotron .logo2{
-		font-size: .75em;
-		bottom: 23px;
-		left: 70px;
-	}
-}
-/* -------------------------------------------------------------------------------- */
-/*	6. Responsive
-/* -------------------------------------------------------------------------------- */
-/*
-@media ( max-width: 1290px ) {
-	.about-text{
-		width: 100%;
-	}
-	.parent img{
-		padding: 20px;
-
+	left: 163px;
+	top: -25px;
+	font-size: .9em;
 	}
 
 }
 
-
-
-@media ( max-width: 1025px ) {
-	#jumbotron .logo{
-		font-size: 5em;
-	}
+@media screen and ( max-width: 450px ){
+	.logo{ text-shadow: 1px 2px 2px white;}
+	.home-logo{ border: none; }
 	#jumbotron .logo2{
-		font-size: 1em;
-		bottom: 30px;
-		left: 87px;
-	}
-
-	#gallery li{
-		display:block;
-		margin: 45px auto;
-		width: 85%;
-	}
-
-	#skills-popup .popup-inner{
-		max-width:70%;
-	}
-	.project-picture{
-		margin: 20px auto;
+	top: -2px;
+	left:60px;
+	font-size: .7em;
 	}
 }
-
-@media ( max-width: 700px ) {
-
-
-
-	Nav toggle ---------------------------------------
-	.main-menu { display: none; }
-
-	.nav-toggle {
-		display: block;
-		padding: 16px 0;
-		background: rgba(0,0,0,0.1);
-		color: #fff;
-	}
-
-	.nav-toggle .bars {
-		margin: 0 auto;
-		height: 12px;
-		width: 20px;
-		position: relative;
-	}
-
-	.nav-toggle .bar {
-		height: 2px;
-		background: #fff;
-		border-radius: 2px;
-		position: absolute;
-		left: 0;
-		right: 0;
-		-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
-		-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
-		-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
-		transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
-	}
-
-	.nav-toggle .bar:nth-child(1) { top: 0px; }
-	.nav-toggle .bar:nth-child(2) { top: 5px; }
-	.nav-toggle .bar:nth-child(3) { top: 10px; }
-
-	.nav-toggle:hover { cursor: pointer; }
-
-
-	gallery ---------------------------------------
-
-	#gallery li{
-	display:block;
-	margin: 25px auto;
-	width: 100%;
-	}
-
-	#gallery a:link{
-		text-decoration: none;
-		color: white;
-	}
-	#gallery a:hover{
-		text-decoration: underline;
-		cursor: pointer;
-
-	}
-
-
-
-	Jumbotron -------------------------------------------
-	#jumbotron{ width:100%;}
-
-	#jumbotron .logo{
-		font-size: 4em;
-	}
-	#jumbotron .logo2{
-		font-size: .75em;
-		bottom: 23px;
-		left: 70px;
-	}
-
-	form -------------------------------------------
-
-	form textarea,
-	form input{
-		width: 100%;
-		padding: 10px;
-	}
-
-	popup--------------------------------
-	#skills-popup .popup-inner{
-		max-width:90%;
-	}
-	#skills-popup td{
-		width: 75px;
-		height: 75px;
-	}
-
-	#skills-popup .popup-inner{
-		max-width:100%;
-	}
-
-	#skills-popup table{
-		border-spacing: 20px;
-	 }
-
-	.project-picture{
-		width:100%;
-		margin: 0 auto;
-	}
-
-}
-
-@media ( max-width: 550px ) {
-	#jumbotron .logo{
-		font-size: 2.60em;
-	}
-	#jumbotron .logo2{
-		font-size: .55em;
-		bottom: 15px;
-		left: 47px;
-	}
-
-	#skills-popup td{
-		width: 60px;
-		height: 72px;
-	}
-
-	#skills-popup table{
-		border-spacing: 10px;
-	}
-	.parent img{
-		width: 300px;
-	}
-
-} */
-
 

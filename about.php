@@ -7,58 +7,71 @@ include('inc/header.php');
 
 <div class="wrapper">
 
-	<div>
-		<h1><?php echo $pageTitle; ?></h1>
-
-	</div>
-
-	<div class="box parent" style="overflow: auto;">
-		<h2>It's SimpOoly delightful to meet you!</h2>
-
-
-		<img src="inc/img/self2.jpg" alt="Krista Jekel">
-
-
-		<div class="about-text">
-
-
-			<p>As a self-starter in the computer science field, I have spent my free time doing online classes, tutorials, and tracks gaining knowledge of basic development languages. Improving and expanding on those skills, I had the opportunity to provide web updates and data entry into various websites upon customer needs.
-			<br>
-			<br>
-			<p>I am currently spending time working on personal projects to perfect and practice the detail orienting skills of HTML, CSS, JavaScript, jQuery. I was exposed to the world of PHP and Wordpress development and would like to dive in deeper into those topics as well. I have also found JavaScript developing fulfilling and plan to explore the different facets of that language. Through learning development on my own I have become conscious of soft skills such as time-management, habit forming, and self-motivation.
-			<br>
-			<br>
-			<h2 class="accent">Simplicity  |  Curiosity  |  Quirky</h2>
-			<p>Over the years these three things, simplicity, curiosity, and quirkiness have become extremely important to who I am and what I put out in the world. Simplicity represents the ability to look past thing that are not contributing to my life or my process so I can make room and focus on what's most important. Simple design maximizes efficiency and allows the user to not get caught up in too many excessive details. Curiosity is the foundation of growth and learning. I am dedicated to gaining knowledge and knowing more about whatever language, project or situation I come to. I am capable of finding information on my own and enjoy researching things I don't yet understand. Quirk is that extra spice, just the right amount of uniqueness and spontaneity to make things interesting. My life philosophies translate into my work. Simple design well thought out and reliable user face with just the right amount of spice! </p>
-			<br>
-			<br>
-			<button class="treehouse-btn" href="#">Team Treehouse</button>
-			<button class="skills-btn" href="#">Skills</button>
-
-
-
+	<div class="flex">
+		<div class="about-top">
+			<div class="bio">
+				<!-- 				<div class="slogan">
+					<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+					<h2>It's SimpOoly delightful to meet you!</h2>
+						<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+				</div> -->
+				<div class="name">
+					<h2>Krista Jekel</h2>
+					<h3>Front End Web Developer</h3>
+				</div>
+			</div>
+			<div class="head-shot">
+				<img src="inc/img/self2.jpg" alt="Krista Jekel">
+			</div>
 		</div>
 
 
+		<div class="about-bottom">
+			<div class="experience">
+				<h3>Just Me!</h3>
+				<p >Making things has always given me a sense of purpose and achievement in life. As I have grown, I replaced paper and bottle caps with code and programming. My obsession with gaining more knowledge leads me to continually improving my skills and staying up-to- date on new languages (while occasionally secluding myself on a couch for days with a good book). Through experience I have gained time management skills, as well as the ability to communicate with team members and clients while effectively meeting milestones and deadlines. I'm excited to turn my passion into a career and look forward to speaking with you soon about you, your business and prospective projects.
+				</p>
+				<button class="treehouse-btn" href="#">Team Treehouse</button>
+				<button class="skills-btn" href="#">Skills</button>
+			</div>
 
+			<div class="philosophy phil-about">
+				<h3>Philosophy</h3>
+				<p>Living and working by a strong set of principles allows for clarity in difficult situations and improves the quality of your website. Having and maintaining goals throughout the process is important to moving forward on the project and achieving the desired results.</p>
 
-
-
+				<div class="philosophy-concept philosophy-concept-about">
+					<div class="simplicity">
+						<i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
+						<h4>Simple</h4>
+						<p>Simplicity represents the ability to look past the things not contributing to the design and usability of your website. Getting rid of unessisary aspects that are clogging up visual space will maximizes efficiency. Allowing users to focus on what is most important in your site.</p>
+					</div>
+					<div class="curiosity">
+						<i class="fa fa-puzzle-piece fa-2x fa-fw" aria-hidden="true"></i>
+						<h4>Skillful</h4>
+						<p>Within the web industry everything is constantly changing, old languages evolve and new ones pop up. Having an inquisitive development mindset allows me to stay on top of new technologies and provide the most cutting edge user experience available.</p>
+					</div>
+					<div class="quirky">
+						<i class="fa fa-lightbulb-o fa-2x fa-fw" aria-hidden="true"></i>
+						<h4>Original</h4>
+						<p>Simple doesn't mean boring, it means you have more room to make a <b>big splash!</b> You can choose to be different from your competitors, to promote your products and services that will catch people's eyes and bring in business.</p>
+					</div>
+				</div>
+			</div> <!-- philosophy end -->
+		</div> <!-- class row end -->
 	</div>
 
 	<!--popup treehouse-->
 	<div id="popup" class="hide">
 		<div class="popup-inner">
 			<div class="report-card treehouse"></div>
-				<p><a class="close" href="#">Close</a></p>
-				<a class="close ex" href="#">x</a>
+				<a class="close ex" href="#"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
 
 	<div id="skills-popup" class="hide">
 		<div class="popup-inner skills">
-			<h2>Skills</h2>
+			<h2>Skills :</h2>
 
 			<ul class="skills">
 				<li>HTML</li>
@@ -77,39 +90,10 @@ include('inc/header.php');
 				<li>JSON</li>
 				<li>AJAX</li>
 			</ul>
-			<!-- <table class="skills">
-
-				<tr>
-					<td>HTML</td>
-					<td>HTML5</td>
-					<td>CSS</td>
-				</tr>
-				<tr>
-					<td>CSS3</td>
-					<td>JQuery</td>
-					<td>JavaScript</td>
-				</tr>
-				<tr>
-					<td>SASS</td>
-					<td>Wordpress</td>
-					<td>PHP</td>
-				</tr>
-				<tr>
-					<td>Bootstrap</td>
-					<td>GitHub</td>
-					<td> API </td>
-				</tr>
-				<tr>
-					<td>JSON</td>
-
-				</tr>
-			</table> -->
-			<p><a class="close" href="#">Close</a></p>
-			<a class="close ex" href="#">x</a>
+			<a class="close ex" href="#"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</div>
 
 </div><!--wrapper end -->
-
 
 <?php include('inc/footer.php'); ?>

@@ -62,9 +62,9 @@ include('inc/header.php');
 
 
 
-<div class="wrapper">
+<div class="wrapper2">
 
-    <h1><?php echo $pageTitle; ?></h1>
+    <!-- <h1><?php echo $pageTitle; ?></h1> -->
 
     <div class="box">
 
@@ -72,47 +72,54 @@ include('inc/header.php');
             if(isset($_GET["status"]) && $_GET["status"] == "thanks") {
                 //echo "<h2 class='thanks'>Thank You! <br> animation?</h2>";
                 echo "<img  class='thanks' src='inc/img/thanks.png'>";
-
             } else{
         ?>
 
 
-        <div><?php
+
+        <div class="message"><?php
                 if(isset($error_message)) {
                     echo "<p class='error'>" . $error_message . "</p>";
                 } else {
-                    echo "<p>If you have any questions please feel free to send me an email.</p>";
+                    echo "<p class='email-me'>Let's Talk</p>";
                 }
             ?>
         </div>
 
-        <div class="buttons">
-            <a href="https://github.com/Simpooly" target="_blank"><img class="social" src="inc/img/Github.png"></a>
-            <a href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><img class="social" src="inc/img/Linkedin.png"></a>
-            <a href="https://www.facebook.com/krista.jekel" target="_blank"><img class="social" src="inc/img/Facebook.png"></a>
+
+        <div class="email">
+
+            <form action="contact.php" method="post">
+                <div class="rows">
+                    <label for="name">Name:</label><br>
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    <input  id="name" type="text" name="name" value="<?php if(isset($name)) { echo $name;} ?>" ></input>
+                </div>
+                <div class="rows">
+                    <label for="email">Email Address:</label><br>
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    <input id="email" type="text" name="email" value="<?php if(isset($name)) { echo $email;} ?>"></input>
+                </div>
+                <div class="rows" style="display:none">
+                    <p>Please leave blank</p></input>
+                    <label for="address fa-2x">Address:</label><br>
+                    <input id="address" type="text" name="address" value="<?php if(isset($name)) { echo $address;} ?>">
+                </div>
+                <div class="rows">
+                    <label for="message">Message:</label><br>
+                    <i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+                    <textarea id="message" type="textarea" name="message"><?php if(isset($name)) { echo $message;} ?></textarea>
+                </div>
+                <input class="rows" type="submit" value="Submit">
+            </form>
+
+            <div class="buttons contact">
+                <a class="link" href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i><p>LinkedIn</p></a>
+                <a class="git" href="https://github.com/Simpooly" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i><p>GitHub</p></a>
+                <a class="face" href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i><p>Facebook</p></a>
+            </div>
+
         </div>
-
-
-        <form action="contact.php" method="post">
-            <div class="row">
-                <label for="name">Name:</label><br>
-                <input  id="name" type="text" name="name" value="<?php if(isset($name)) { echo $name;} ?>" ></input>
-            </div>
-            <div class="row">
-                <label for="email">Email Address:</label><br>
-                <input id="email" type="text" name="email" value="<?php if(isset($name)) { echo $email;} ?>"></input>
-            </div>
-            <div class="row" style="display:none">
-                <p>Please leave blank</p></input>
-                <label for="address">Address:</label><br>
-                <input id="address" type="text" name="address" value="<?php if(isset($name)) { echo $address;} ?>">
-            </div>
-            <div class="row">
-                <label for="message">Message:</label><br>
-                <textarea id="message" type="textarea" name="message"><?php if(isset($name)) { echo $message;} ?></textarea>
-            </div>
-            <input type="submit" value="Submit">
-        </form>
 
         <?php } ?>
     </div>

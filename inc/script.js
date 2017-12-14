@@ -4,14 +4,13 @@ $(document).ready(function(){
     //------open/ close treehouse
     $(".treehouse-btn").click(function(){
         $("#popup").removeClass("hide");
-        
     });
 
     $(".close").click(function(){
         $("#popup").addClass("hide").fadeOut(3500);
     });
 
-    
+
       //------open/ close skills
       $(".skills-btn").click(function(){
         $("#skills-popup").removeClass("hide");
@@ -33,15 +32,8 @@ $(document).ready(function(){
         site: 'treehouse',
         badgesAmount: 7
     });
-
-    // width height same
-    //var cw = $('.child').width();
-   // $('.child').css({'height':cw+'px'});
+/*
+    $("#item > li:nth-child(odd)").attr('id', 'opposite');
+      });*/
 });
 
-/*
-font-family: 'Cutive Mono', monospace;
-font-family: 'PT Mono', monospace;
-font-family: 'Merienda', cursive;
-font-family: 'Montez', cursive;
-*/
