@@ -46,7 +46,7 @@ include('inc/header.php');
                 </div>
             </div>
         </div>
-        <div class="home-button"><a href="about.php"><button>Want More Of Me?</button></a></div>
+        <div class="home-button"><a href="about.php"><button>View More</button></a></div>
     </div>
 </div>
 
@@ -63,7 +63,7 @@ include('inc/header.php');
                 }
             ?>
         </ul>
-        <div class="home-button"><a href="portfolio.php"><button>View Other Projects</button></a></div>
+        <div class="home-button"><a href="portfolio.php"><button>View More</button></a></div>
     </div>
 <div>
 

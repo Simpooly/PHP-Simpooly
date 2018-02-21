@@ -83,7 +83,7 @@ h3{
 }
 h4{
 	font-size: 1.75em;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 * a:hover{
@@ -174,9 +174,9 @@ h4{
 	height: 800px;
 }
 .wrapper80 button{
-	border: 1px solid #30142d;
+	/* border: 1px solid #30142d; */
 	background-color: white;
-	width: 50%;
+	width: 20%;
 	height: 50px;
 	color:#30142d;
 	font-weight: bold;
@@ -188,7 +188,7 @@ h4{
 	top: 0;
 	left: 0;
 	width: 50%;
-	height: 100%;
+	height: 100vh;
 	background-color: #30142d;
 }
 
@@ -397,7 +397,7 @@ h4{
 	margin-left: 15px;
 }
 
-.home-button button{ padding-left: 15px; }
+.home-button button{ padding-left: 15px; margin-top: -30px; border: solid grey 1px; }
 
 .experience p{ font-size: 16px; }
 
@@ -752,13 +752,13 @@ animation-fill-mode: forwards; */
 	.project-bottom{ margin:55px auto 130px auto;  width: 80%;}
 
 	#item{
-		margin-left: 25%;
-		width: 75%;
+		margin-left: 28%;
+		width: 65%;
 		display: flex;
 		flex-wrap: wrap;
 		padding: 1% 4%;
 	}
-	#side-title{padding:70px 25px; height: 100%; width: 50%; position: fixed; text-align: left; font-size: 5em; }
+	#side-title{padding:55px; height: 100%; width: 30%; position: fixed; text-align: left; font-size: 5em; }
 	#side-title-project{padding:70px 25px; height: 100%; width: 27%; position: fixed; text-align: left; }
 	#gallery-port{ display: flex; text-align: center;}
 	#gallery-port-home{ display: flex; text-align: center; }
@@ -801,7 +801,7 @@ animation-fill-mode: forwards; */
 
 
 @media screen and ( min-width: 1060px ) {
-
+	.home-button button { margin-left: 55px; }
 	h3{
 		font-size: 3em;
 	}
@@ -871,9 +871,10 @@ animation-fill-mode: forwards; */
 		/* top: 82px;
 		left: 50px; */
 		font-size: 5.5em;
+		padding: 0 15px;
 	}
 	#jumbotron .logo2{
- left: 205px;
+ left: 210px;
  top: -30px;
 	font-size: 1.05em;
 	}
@@ -965,7 +966,7 @@ animation-fill-mode: forwards; */
 		font-size: 4.5em;
 	}
 	#jumbotron .logo2{
-	left: 163px;
+	left: 175px;
 	top: -25px;
 	font-size: .9em;
 	}

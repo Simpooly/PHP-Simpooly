@@ -54,7 +54,7 @@
             <div id="bottom" class="project-bottom">
                 <div class="bottom-inner">
 
-                    <h3>Discription</h3>
+                    <h3>Description</h3>
                     <p class =" content"><?php echo $item["discription"]; ?></p><br>
 
                     <h3>Learning Curve</h3>
