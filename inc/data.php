@@ -98,7 +98,7 @@ $project[104] = [
 ];
 
 $project[105] = [
-    "title" => "PSD to Web Conversion",
+    "title" => "Photoshop to Web Conversion",
 
      "img" => "inc/img/screenshot/105/01.png",
       //"img2" => "inc/img/screenshot/105/02.png",
@@ -108,9 +108,52 @@ $project[105] = [
 
       "goal" => "Extracted images and used photoshop to recreate design and layout of a page mock up.",
 
-      "discription" => "Working with a sheet in photoshop from a designer I extracted layers and seats of layers as images. during the extraction I minimized them for better load time and performance of the page. The design was then implemented by hand-coding them using CSS, HTML. JQuery was added for interactability with the individual groups of products, allowing them to toggle between being visible and being collapsed.",
+      "discription" => "Working with a sheet in photoshop from a designer I extracted layers and sets of layers as images. During the extraction I minimized them for better load time and performance of the page. The design was then implemented by hand-coding them using CSS, HTML. JQuery was added for interactability with the individual groups of products, allowing them to toggle between being visible and being collapsed.",
 
-      "troubles" => "Creating the page with HTML CSS and JQuery were simple. Learning Photoshop would be the lesson. At first I was extracting individual layers and trying to manually layer them with CSS. Once i learned you can extract multiple layers together it made things much easier. I went through sont online classes and now understand the basics of photoshop.",
+      "troubles" => "Creating the page with HTML CSS and JQuery were simple. Learning Photoshop would be the lesson. At first I was extracting individual layers and trying to manually layer them with CSS. Once i learned you can extract multiple layers together it made things much easier. I went through online classes and now understand the basics of photoshop.",
+
+      "outcome" => " ",
+
+/*      "catagory" => [
+        "HTML",
+        "CSS"
+        ]*/
+];
+/*
+$project[106] = [
+    "title" => "Brock Content Entry",
+
+     "img" => "inc/img/screenshot/106/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "http://www.brockusa.com/",
+
+      "goal" => "",
+
+      "discription" => "",
+
+      "troubles" => "",
+
+      "outcome" => " ",
+
+
+];*/
+
+$project[107] = [
+    "title" => "Google Maps API",
+
+     "img" => "inc/img/screenshot/107/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "",
+
+      "goal" => "Experimented with Google Maps, geolocation and geocoding",
+
+      "discription" => "I implemented a map as the core of the page and added geolocation. Allowing the map to open with the users’ location in the center. Using PHP I looped through my array of different point on the map. When each maker is clicked the URL of the specific Tiny House Company appears. This allows the user easy access to each of the houses. A form was added at the bottom. When you enter in an address it will output the latitude and longitude on screen. This is the first step to automatically placing new address as a point on the map. ",
+
+      "troubles" => "The largest hang-up was having a place to store data. I have not learned database creation and implementation yet. This project was intended to familiarize myself with the vastness of google maps and all it has to offer. Google has easy to understand documentation and simple instructions. I found it enjoyable and fun to mess around with.",
 
       "outcome" => " ",
 
@@ -120,25 +163,65 @@ $project[105] = [
         ]*/
 ];
 
-/*$project[106] = [
+$project[108] = [
     "title" => "Content Migration",
-     "img" => "inc/img/screenshot/106/01.png",
-      //"img2" => "inc/img/screenshot/106/02.png",
+
+     "img" => "inc/img/screenshot/108/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
       "url" => "https://www.fcgov.com/utilities/",
+
+      "goal" => "Worked with the IT team of City Utilities to identify content related issues and differences associated with their new CMS system.",
+
+      "discription" => "I combed through a vast number of pages on the City of Fort Collins Utilities website and compared the old/new pages for accuracy. This included images, carousals, badges, links, content or additional behavior that proved not user friendly. I self-manage an assigned list of pages against a deadline and created a detailed list of any information that contradicted each other.",
+
+      "troubles" => "I didnt run into many troubles with this project, it was straight to the point.",
+
+      "outcome" => " ",
+
+/*      "catagory" => [
+        "HTML",
+        "CSS"
+        ]*/
+];
+
+$project[109] = [
+    "title" => "Photoshop Conversion Update",
+
+     "img" => "inc/img/screenshot/109/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "http://www.eversightlabs.com/careers",
+
+      "goal" => "Recreated a design from photoshop and implemented a sliding carousal.",
+
+     "description" => "I extracted images and design elements from photoshop. The content and layout was then coded with CSS, HTML. Flexslider, a WordPress slider toolkit, was added to flip through team members. Additional styling and responsive design completed the project",
+
+     "troubles" => "Flexslider overall was easy to implement. Adding some of the responsive elements with flexslider had some quirk but overall was easy to work through.",
+
+      "outcome" => " ",
+
+];
+
+/*$project[110] = [
+    "title" => "Visit ponderosa",
+
+     "img" => "inc/img/screenshot/110/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "http://www.eversightlabs.com/careers",
 
       "goal" => "",
 
-      "discription" => "",
+      "discription" => "maintaining continuity of themes, Test websites across browsers, operating systems and devices Address user complaints Added nessisary functionality",
 
       "troubles" => "",
 
-      "outcome" => "",
+      "outcome" => " ",
 
-     "catagory" => [
-        "HTML",
-        "CSS"
-        ]
 ];*/
-
 
 ?>

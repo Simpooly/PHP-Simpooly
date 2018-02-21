@@ -28,6 +28,7 @@ function get_item_html($id, $item){
     return $output;
 }
 
+// For Portfolio
 function get_item_detail($id, $item){
     $output = "<li><a href='project.php?id="
     . $id . "'><img src='"

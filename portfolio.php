@@ -12,6 +12,7 @@ include('inc/header.php'); ?>
             <h1 id="side-title"><?php echo $pageTitle; ?></h1>
              <ul id="item">
             <?php
+                krsort($project);
                 foreach($project as $id => $item){
                     echo get_item_detail($id, $item);
                 }
