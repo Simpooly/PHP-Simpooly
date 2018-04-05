@@ -107,16 +107,16 @@ include('inc/header.php');
                 </div>
                 <div class="rows">
                     <label for="message">Message:</label><br>
-                    <i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+                    <i class="fas fa-comment-alt fa-2x" aria-hidden="true"></i>
                     <textarea id="message" type="textarea" name="message"><?php if(isset($name)) { echo $message;} ?></textarea>
                 </div>
                 <input class="rows" type="submit" value="Submit">
             </form>
 
             <div class="buttons contact">
-                <a class="link" href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i><p>LinkedIn</p></a>
-                <a class="git" href="https://github.com/Simpooly" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i><p>GitHub</p></a>
-                <a class="face" href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i><p>Facebook</p></a>
+                <a class="link" href="https://www.linkedin.com/in/krista-jekel/" target="_blank"><i class="fab fa-linkedin fa-4x" aria-hidden="true"></i><p>LinkedIn</p></a>
+                <a class="git" href="https://github.com/Simpooly" target="_blank"><i class="fab fa-github-square fa-4x" aria-hidden="true"></i><p>GitHub</p></a>
+                <a class="face" href="https://www.facebook.com/krista.jekel" target="_blank"><i class="fab fa-facebook-square fa-4x" aria-hidden="true"></i><p>Facebook</p></a>
             </div>
 
         </div>

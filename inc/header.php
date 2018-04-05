@@ -8,15 +8,23 @@ $company_name = 'Simpooly';
 <!doctype>
 <html>
 <head>
-    <title><?php echo $company_name; ?> </title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><?php echo $company_name; ?> | Web Development focused on creating a website for your buisness </title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="At Simpooly our web development expertise shines with creating fully customizable websites for your business and personal use. Focusing on simple web designs, usability, and user experience.">
+    <meta name="keywords" content="Simpooly, Web Development, Krista Jekel">
+    <meta name="author" content="Krista Jekel">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
     <link rel="icon" href="http://www.southeastpsych.com/wp-content/uploads/2015/05/s-no-background-1024x1024.png"><!--  Tab Icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Bootstrap -->
     <link rel="stylesheet" href="inc/style.css" type="text/css"> <!-- Stylesheet -->
     <link rel="stylesheet" href="inc/reportcard/css/badges.css"> <!-- treehouse badges -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--  Jquery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script><!-- Jquery -->
-    <link rel="stylesheet" href="inc/img/font-awesome-4.7.0/css/font-awesome.min.css"> <!-- font awesome -->
+    <link rel="stylesheet" href="inc/img/font-awesome-4.7.0/css/font-awesome.min.css"> font awesome
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- font awesome -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Milonga|Palanquin|Playfair+Display|Titillium+Web" rel="stylesheet">
 
     <!-- Google Tag Manager -->

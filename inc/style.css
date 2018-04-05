@@ -6,7 +6,8 @@
 
 html, body { margin:0; padding:0;}
 
-h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img,
+, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
 	margin:0;
 	padding:0;
 	border:0;
@@ -46,7 +47,18 @@ html p{
 	letter-spacing: 1px;
 	font-family: 'Titillium Web', sans-serif;
 	word-spacing: 1;
+	font-size: 1.25em;
 }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
@@ -64,12 +76,12 @@ body {
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 	}
-h1{
+/* h1{
 	font-weight: bold;
 	color: #30142d;
 	font-size: 3.75em;
 
-}
+} */
 h2{
 	font-size: 1.75em;
 	font-weight: bold;
@@ -79,7 +91,11 @@ h3{
 	font-family: Playfair Display,serif;
 	font-weight: bold;
 	margin: 0 0 15px 0;
-	font-size:1.5em;
+	font-size:2em;
+	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	color:#562f51;
 }
 h4{
 	font-size: 1.75em;
@@ -89,9 +105,15 @@ h4{
 * a:hover{
 	text-decoration: none;
 	cursor: pointer;
+	color: #777;
 }
+ * a{color: #777; }
 
-.wrapper80{
+
+ li:hover img {
+   opacity: 0.7;
+ }
+/* .wrapper80{
 	width: 80%;
 	margin: 50px auto 80px auto;
 }
@@ -99,9 +121,13 @@ h4{
 .wrapper h1,{
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
-	color: #30142d;
-}
+	color: #320d2d;
+} */
 
+@media only screen and (max-width: 600px) {
+    .head-shot{display: none;}
+	.project-content p { margin-bottom: 30px; }
+}
 /* -------------------------------------------------------------------------------- */
 /*	2. Navigation
 /* -------------------------------------------------------------------------------- */
@@ -162,36 +188,61 @@ h4{
 	z-index: 100000;
 	text-align: center;
 }
-
+.nav-small{ margin-left: -40px; }
 
 /* -------------------------------------------------------------------------------- */
 /*	3. Home
 /* -------------------------------------------------------------------------------- */
+.primary{ background-color: #30142d; }
+.secondary{background-color:  #441a3f;}
+.light{ background-color: #562f51; }
+.accent{background:  #4F6D3C; }/* background: linear-gradient( to right, #4F6D3C 60%, #ffffff); */
+.dark{ background-color: #20041c; }
 
 #background{
 	background-color: white;
 	width: 100%;
 	height: 800px;
 }
-.wrapper80 button{
-	/* border: 1px solid #30142d; */
-	background-color: white;
-	width: 20%;
-	height: 50px;
-	color:#30142d;
-	font-weight: bold;
-}
-.wrapper80 button:hover{ background-color: lightgrey; }
 
-.accent-background{
+.sec-border{
+	padding: 20px;
+}
+.border{
+	border: 1px solid grey;
+	width: 100%;
+	/* height: 100%; */
+}
+.border-front{
+	border: 1px solid grey;
+	width: 100%;
+
+}
+
+.philosophy{border: 1px solid grey;}
+.horizontal-cut{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50vh;
+	margin-bottom: 50vh;
+	background-color: #320d2d;
+}
+.full-width{ width: 100vw; }
+.height{ height: 100vw; }
+.vertical-cut{
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 50%;
-	height: 100vh;
-	background-color: #30142d;
-}
 
+	background-color: #320d2d;
+}
+.half-box{width: 100%;}
+
+.full-height{height: 100%;}
+.full-height-vh{height: 100v;}
 #jumbotron{
 	position: relative;
 	top: 50%;
@@ -209,7 +260,7 @@ h4{
 
 #jumbotron .logo{
 	font-size: 2.3em;
-	color:  #30142d;
+	color:  #320d2d;
 	font-family: 'Milonga', cursive;
  	display:table-cell;
  	text-align:center;
@@ -217,350 +268,145 @@ h4{
     vertical-align: middle;
 }
 #jumbotron .logo2{
-	color: #0c3c40;
+	display: none;
+	color: #777;
 	text-transform: uppercase;
 	position: relative;
 	font-size: .8em;
 	top:-30px;
 	left: 100px;
-	font-size: 14px;
+
 	z-index: 100;
 }
 
-.philosophy-concept-home p{
-	background-color: #30142d;
-	height: 170px;
-	color: beige;
-	font-size: 16px;
-	padding:25px;
+.center{ margin: 0 auto; }
+/* Center align the text within the three columns below the carousel */
+.service .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-
-.new{ margin-left: 15px; color: #0c3c40;}
-
-.home-arrow{
-	position: absolute;
-	top: 75%;
-	left: 100%;
-	color: grey;
+.service h2 {
+  text-align: center;
+  font-weight: 400;
+  padding: 30px;
 }
+.service .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.service-inner{ padding-top: 10%; color: #777; }
+.work-together svg:not(:root).svg-inline--fa:hover { color: #4c4c4c; }
+
+.container i{ color:  #111e6c; }
+
+.quote{ color: #20041c;  font-size: 2em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold;}
+
+.work-together{ display: block;}
+.offset{ padding-left: 30%; }
+
+.front-gallery{ padding-top: -3rem }
+
+.flex-item-1 {order: 1;}
+.flex-item-2 {order: 2;}
+.flex-item-3 {order: 4;}
+.flex-item-4 {order: 3;}
+.flex-item-5 {order: 5;}
+.flex-item-6 {order: 6;}
 
 
 /* -------------------------------------------------------------------------------- */
 /*	4. Gallery
 /* -------------------------------------------------------------------------------- */
 
+.album {
+  min-height: 50rem; Can be removed; just added for demo purposes
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  }
 
-/* -----------------------Gallery on Home Page */
+  .front-album {
+  min-height: 50rem; Can be removed; just added for demo purposes
+  padding-top: -3rem;
+  padding-bottom: 3rem;
+  }
+.portfolio{
+/* 	margin-right: -15px;
+    margin-left: -15px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -40px;
+ }
 
-#gallery-port-home{ padding-left: 15px; }
-#gallery-port-home p { margin:0 auto; }
-#gallery-port-home img{ max-width: 100%; }
-#gallery-port-home a{ text-decoration: none; color: black; }
-#gallery-port-home a:hover{ cursor: pointer; color: black; }
+.card {
 
-#gallery-port-home li{
-	text-align: center;
-	display:block;
-	width: 70%;
-	margin:25px auto ;
-	line-height: 30%;
-	border: 1px solid black;
-	padding:25px;
+  width: 100%;
+  padding: .75rem 2rem;
+  margin-bottom: 2rem;
+  border: 0;
 }
 
-.home-projects{
-	font-size: 3em;
-	padding-left: 30px;
-	text-shadow: 2px 2px 5px black;
-	color: white;
-
+.card > img {
+  margin-bottom: .75rem
 }
-
+.card img {
+  width:100%;
+}
+.card-text {
+  font-size: 85%;
+}
 
 /* ----------------------------------Gallery on Project Page */
 
-#gallery-port{ padding:15px; }
-#gallery-port img{ max-width: 100%; }
-#gallery-port a{ text-decoration: none; color: black; }
-#gallery-port a:hover{ cursor: pointer; color: black; }
-#gallery-port p{margin: 0 auto;}
-
-#gallery-port li{
-	border: 1px solid black;
-	padding:20px;
-	text-align: center;
-	display:block;
-	width: 70%;
-	margin:12.5px auto ;
-	line-height: 30%;
-}
-
-#side-title{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
-#side-title-project{ background-color: #30142d; color:beige; font-family: Playfair Display,serif; padding: 15px;}
-
-
-.port-content h3{
-	font-size: 1.5em;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	margin-top: 7px;
-}
-
-.wrapper{
-	margin: 50px auto 60px auto;
-	border-radius: 5px;
-	background: white;
-}
-
-.wrapper2{
-	width: 80%;
-	margin: 50px auto 60px auto;
-	border-radius: 5px;
-	background-color: #fbfbfb;
-}
 
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
+.about-quote{ color: #20041c;  font-size: 3em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold; padding-top: 40px;}
 
-/* ------------------------Top */
-.bio{ display: flex; }
+   .about h2{ color: white; font-size: 4.5em; }
+   .about h4{ color: white; font-size: 2.5em; }
 
-.slogan{
-	width: 65%;
-	float: left;
-	background-color: #444444;
-	order: 2;
-	color: black;
-}
-
-.name{
-	width:100%;
-	float: left;
-	order: 1;
-	background: #646464; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Safari 5.1 to 6.0 */
-	background:    -moz-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Firefox 3.6 to 15 */
-	background:      -o-linear-gradient( #646464 95%, rgb(71, 71, 71)); /* For Opera 11.1 to 12.0 */
-	background:         linear-gradient( #646464 58%, rgb(71, 71, 71)); /* Standard syntax */
-}
-
-.name h2{
-	color: #241035;
-	font-size: 40px;
-	padding: 15px;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-}
-
-.name h3{
-	display: none;
-	color: #0c3c40;
-	padding-left: 15px;
-	font-family: 'Lato', sans-serif;
-}
-
-.head-shot{ text-align: center;}
-.head-shot img{ width: 100%;}
-
-/*  If you put it in??
-.slogan h2{
-	position: relative;
-	 top: 50%;
-	 left: 50%;
-	bring your own prefixes
-	 transform: translate(-50%, -50%);}
- */
-
-/* -------------------------------Bottom */
-
-.philosophy{
+.head-shot img{
+	width: 45%;
+	border: 1px solid grey;
+	padding: 20px;
 	background-color: white;
-	padding: 15px;
-	color: #4f4f4f;
-}
 
-.philosophy h3,
-.philosophy h4,
-.philosophy i{ color: #0c3c40; }
+ }
+ .name{  padding:20px; color: #777; }
 
-.experience{
-	background-color: #30142d;
-	color: beige;
-	padding: 55px;
-}
+ .flex-container{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ 	justify-content: center;
+ }
 
-.home-button{
-	padding-top: 15px;
-	border-radius: 10px;
-	font-size: 1.25em;
-	margin-left: 15px;
-}
-
-.home-button button{ padding-left: 15px; margin-top: -30px; border: solid grey 1px; }
-
-.experience p{ font-size: 16px; }
-
-/* -------------------Philosophy Boxes */
-
-.philosophy-concept{ padding: 30px 0;}
-.philosophy-concept div{ padding:10px; }
-.simplicity{}
-.curiosity{}
-.quirky{}
+ .inner {
 
 
-/*------------------------model box---------------------*/
+     width: 75%;
+     text-align: center;
+ }
+ .report-card{ margin-bottom: 100px; }
+ .report-card h2,
+ .report-card p { display: none; }
 
-/* Outer */
-.hide{ display:none; }
+ .about p{margin-top: 85px; line-height: 1.6;}
 
-#popup, #skills-popup {
-    width:100%;
-    height:100%;
-    position:fixed;
-    top:0px;
-    left:0px;
-	background:rgba(0,0,0,0.75);
-	color:black;
-}
 
-/* Inner */
-
-.popup-inner {
-	width:80%;
-    padding:30px;
-    position:absolute;
-    top:50%;
-	left:50%;
-	background-color: rgb(88, 88, 88);
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
-}
-
-.btn{
-	border: 1px solid white;
-	border-radius: 3px;
-	padding:7px;
-	margin: 5px;
-	background-color: #30142d;
-}
-.popup-inner a:link{ color:black; }
-
-.ex{
-	position:absolute;
-	top:3px;
-	right:26px;
-	font-size:20px;
-	height:20px;
-	width: 20px;
-	padding: 3px;
-
-}
-
-#skills-popup table{ border-spacing: 20px; }
-
-.skills{
-	margin: 0 auto;
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 550px;
-	padding:5px;
-}
-
-.skills li{
-	margin: auto;
-	width: 100px;
-	height:100px;
-	background-color: #30142d;
-	border-radius: 50%;
-	font-weight: 700;
-	color:white;
-	max-width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding:5px;
-
-}
-.skills p{ max-width: 50%; }
-
-.skills h2{	margin: 0 auto; }
-.skills a:link{	color: black; }
-.skills a:visited{ color: black; }
-
-#skills-popup td{
- 	width: 75px;
- 	height: 75px;
-}
-
-#skills-popup table{
-	border-collapse: separate;
-	border-spacing: 20px;
-
-}
-
-#skills-popup .popup-inner{
-	 max-height:85%;
-	 padding: 10px 20px;
-	 max-width:100%;
-}
-
-.popup-inner a:link{
-	color: black;
-	font-weight: bold;
-}
-
-.skills-btn,
-.treehouse-btn{
-		border: 1px solid black;
-		display: block;
-		border-radius: 5px;
-		color:white;
-		padding:10px;
-		background-color:#0c3c40;;
-		font-weight: bold;
-		margin:10px auto;
-}
-
-button:hover{
-	cursor: pointer;
-}
 
 /* -------------------------------------------------------------------------------- */
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
 
-.side-title a:link{ color: grey; }
-.side-title a:hover{ color: grey; }
-.side-title a:visited{ color: grey; }
-
-.project-picture{ text-align: center; }
-.proj-arrow{ color: grey; }
-.project-picture img{
-	width: 80%;
-	margin: 10 auto 0 auto;
+.project-picture img{width: 100%; padding: 1.75em;}
+.project-picture:hover img {
+  opacity: 0.7;
 }
-.project-picture h1{ margin-bottom: 15px; }
-
-
-.project-content { margin: 15px; }
-.project-bottom{ position: relative; z-index: 100; background-color: white; padding: 25px; }
-
-.bottom-inner{border: 1px solid black; padding: 25px;}
-#bottom h3{ color: #30142d ; }
-
-
-/* #gallery h3{
-	font-family: 'Abril Fatface', cursive;
-	color: lightgrey;
-	padding-left: 20%;
-} */
-
+.project-content{padding: 1.75em; text-align: center; line-height: 1.6; color: #777;}
+.project-page h1{ margin-top: 100px; text-align: center; color: #777;}
+.project-page{ display: inline-block; }
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */
@@ -572,7 +418,7 @@ button:hover{
 	font-weight: 600;
 	font-size: 5.5em;
 	margin: 0 0 -25px 15px;
-	color: #30142d;
+	color: #320d2d;
 }
 
 form{
@@ -587,6 +433,7 @@ form{
 	font-weight: bold;
 	font-size: 1.25em;
 	padding-bottom: 3px;
+	padding-left: 35px;
  }
 form textarea,
 form input{
@@ -603,8 +450,8 @@ form input{
  form textarea{ height: 150px;}
 
 form input[type=submit]{
-	 background-color: #30142d;
-	 border: solid #30142d;
+	 background-color: #320d2d;
+	 border: solid #320d2d;
 	 font-size: 1.25em;
 	 font-weight: bold;
 	 cursor: pointer;
@@ -613,15 +460,15 @@ form input[type=submit]{
 	 margin-top: 15px;
 }
 
-.rows input,
-.rows textarea{ padding-left: 43px; }
+
 
 .rows{
 	width: 95%;
 	margin-bottom:10px;
+
 }
 
-.rows i{
+.rows.fa-2x{
 	position: relative;
 	top: 40px;
 	left: 7px;
@@ -682,7 +529,7 @@ animation-fill-mode: forwards; */
 
 .buttons.contact{
 	margin-top: 20px;
-	background-color: #30142d;
+	background-color: #320d2d;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -705,7 +552,7 @@ animation-fill-mode: forwards; */
 }
 
 .contact a:hover{
-	color:  #0c3c40;
+	color:  #777;
 }
 
 
@@ -718,7 +565,7 @@ animation-fill-mode: forwards; */
 	bottom:0;
     position:fixed;
 	background-color: white;
-	height:60px;
+	height:65px;
 	width:100%;
 	text-align: center;
 	z-index: 100;
@@ -733,103 +580,32 @@ animation-fill-mode: forwards; */
 	margin: 0 1%;
 }
 
-.footer i{ color: grey; }
-.footer i: active{ color: #241035; }
-.footer i:hover{ color: #30142d; }
+.footer a{ color: #777; }
+.footer a: active{ color: #241035; }
+.footer a:hover{ color: #320d2d; }
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Responsive
 /* -------------------------------------------------------------------------------- */
 @media screen and ( min-width: 1200px ) {
 
+	.section-full{
+		height: 100vh;
 
-	/* -----------------------Portfolio */
-
-	.project-picture{
-		width: 75%;
-		margin-left: 25%;
-	}
-	.project-bottom{ margin:55px auto 130px auto;  width: 80%;}
-
-	#item{
-		margin-left: 28%;
-		width: 65%;
-		display: flex;
-		flex-wrap: wrap;
-		padding: 1% 4%;
-	}
-	#side-title{padding:55px; height: 100%; width: 30%; position: fixed; text-align: left; font-size: 5em; }
-	#side-title-project{padding:70px 25px; height: 100%; width: 27%; position: fixed; text-align: left; }
-	#gallery-port{ display: flex; text-align: center;}
-	#gallery-port-home{ display: flex; text-align: center; }
-	#gallery div { /* margin-right: 65%; */ }
-	#gallery-port img{ width: 100%;
-	/*  max-height: 100%;
-	float: right; */
-	}
-	#gallery-port-home img{ width: 100%; }
-
-	#gallery-port li{
-		/* width:90%;
-		height: 200px; */
-		display: inline-block;
-		width: 47%;
-		z-index: 1;
-		background-color: white;
-	}
-	#gallery-port-home li{
-		/* width:90%;
-		height: 200px; */
-		display: inline-block;
-		margin-top: 50px;
-		width: 30%;
 	}
 
-	#gallery-port p{ /* text-align: right; */ }
-	#gallery-port h3 { /* text-align: right;  */}
-
-	#opposite img{
-		float: left;
-		max-height: 100%;
+	.section-half{
+		height: 50vh;
 	}
+	.section-small{
+		height: 30vh;
+	}
+	.border-front{ height: 100%; }
 
-	#oppotsite p{ text-align: left; }
-	#opposite h3{ text-align: left; }
-	.port-content{	padding: 15px; }
+
 }
-
-
-
 @media screen and ( min-width: 1060px ) {
 	.home-button button { margin-left: 55px; }
-	h3{
-		font-size: 3em;
-	}
-	#gallery-port-home{ padding: 0 55px; }
-/* 	-----------------------------------------------About*/
-
-	/* NEW#bio{height: 900px;
-	background-color: grey;
-	background: url("http://thewallpaper.co/wp-content/uploads/2017/09/trees-landscape-windowsmist-forest-mobile-wallpaper-smart-phones-ios-768x432.jpg") no-repeat;
-	background-size: 100%;
-	display: flex;
-	}
-
-	.head-shot{ width: 30%; order: 1; }
-
-	.name{ width: 70%; order: 2;} */
-
-	.about-bottom{ display: flex; }
-	.phil-about{width: 65%; order: 1;}
-	.experience{width: 35%; order: 2;}
-	.name h2{font-size: 7em; }
-
-
-	.philosophy-concept-about i{ position: relative; right: 35px; top: 25px; }
-	.philosophy-concept-about div{ margin-left: 15px;}
-	.philosophy-concept-home div{ margin-left: 20px; }
-	.philosophy{ padding: 55px 55px 0 55px;}
-	.phil-about{border: 1px solid black; margin: 20px;}
 
 	/* ------------Email Form----------- */
 	.email{
@@ -846,23 +622,33 @@ animation-fill-mode: forwards; */
 		width: 35%;
 	}
 
+
+
+
+	.float-l{ float: left;
+	width: 85%; }
+	.float-r{ float: right; }
+
+	.quote{ font-size: 3em; }
+	.quote-top{	width: 80%;}
+	.quote-bottom{ width: 10%; }
+	.work-together{ flex-direction: column; display: inline-block;}
 }
 
 
 @media screen and ( min-width: 760px ) {
-
-	h1{
-		font-weight: bold;
-		color: #30142d;
-		text-align: center;
-		margin-bottom: 50px;
+	.card {width: 50%;}
+	.project{width: 50%; display: inline-block;
 	}
+	.half-box{width: 50%; height: 50%;}
+	.border{ height: 100%; }
 
-
-	.wrapper,
-	.wrapper2{
-		margin: 60px auto 60px auto;
-	}
+	.flex-item-1 {order: 1;}
+	.flex-item-2 {order: 2;}
+	.flex-item-3 {order: 3;}
+	.flex-item-4 {order: 4;}
+	.flex-item-5 {order: 5;}
+	.flex-item-6 {order: 6;}
 
 	#jumbotron{
 		width: 550px;
@@ -874,36 +660,31 @@ animation-fill-mode: forwards; */
 		padding: 0 15px;
 	}
 	#jumbotron .logo2{
- left: 210px;
- top: -30px;
+	left: 215px;
+	top: -50px;
 	font-size: 1.05em;
 	}
 
-/* -----------------------------------------------About */
-.about-top{display: flex;}
-.bio{ display: flex; flex-wrap:wrap; width: 75%; order: 2;}
-.slogan{display: block; width: 100%;}
-.name{display: block; width: 100%; padding-top: 5%;}
-.name h2{font-size: 5em; }
-.name h3{display: initial;}
-.head-shot{width: 25%; order: 1;}
-.head-shot img{width: 100%;}
-.name h2,
-.slogan h2{
-	margin-left: 25px;
-}
-.name h3{ margin-left: 30px;
-}
+		/* -----------------------------------------------About */
 
+	.quote-phrase{     margin: 0 auto;
+    width: 75%;
+    position: relative;
+    bottom: 35px; }
+	.head-shot img{
+	float: right;
+ 	}
+ 	.name{ float: left; width: 50%; }
+ 	.about p{ width: 80%;}
 
-	/* --------------------------------philosophy boxes */
-	.philosophy-concept{ display: flex;}
+ 	.about{position: relative;
+ 	    top: 50%;}
 
-	.philosophy-concept div p{}
-	.simplicity{flex: 1;}
-	.curiosity{ flex: 1;}
-	.quirky{ flex: 1;}
+	/* --------------------------------project page */
 
+	.project-picture {width: 50%; float: right;}
+	.project-content{ width: 45%; float: left;}
+	.full-height-vh{height: 100vh;}
 
 /* --------------------------------Navigation */
 	.nav-toggle { display: none; }
@@ -949,12 +730,10 @@ animation-fill-mode: forwards; */
 
 
 
-}
+
 @media screen and ( min-width: 450px )and (max-width: 960px ) {
 
-	/* #gallery-port li{height: 600px;
-	} */
-	/* #jumbotron{ width:95%;} */
+
 	.name h2 {
 	    font-size: 3.75em;}
 	    #jumbotron{
@@ -966,8 +745,8 @@ animation-fill-mode: forwards; */
 		font-size: 4.5em;
 	}
 	#jumbotron .logo2{
-	left: 175px;
-	top: -25px;
+	left: 178px;
+	top: -43px;
 	font-size: .9em;
 	}
 

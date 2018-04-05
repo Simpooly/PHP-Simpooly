@@ -9,62 +9,109 @@ include('inc/header.php');
 ?>
 
 <!-- Top open page -->
-<div id="background">
-    <div class="accent-background">
-        <div id="jumbotron">
-            <div class="home-logo">
-				<p class="logo">Simpooly</p>
-                <h2 class="logo2"> Web Development</h2>
-			</div>
+
+<section class="section-full vertical-cut full-height">
+    <div id="jumbotron">
+        <div class="home-logo">
+            <p class="logo">Simpooly</p>
+            <h2 class="logo2"> Web Development</h2>
         </div>
-        <a href="#top"><i class="fa fa-angle-double-down home-arrow fa-4x" aria-hidden="true"></i></a>
     </div>
-<div>
+    <!-- <a href="#top"><i class="fa fa-angle-double-down home-arrow fa-4x" aria-hidden="true"></i></a> -->
+</section>
 
-<!-- About section -->
-<div id="top" class="background">
-    <div class="wrapper80">
-        <div class="philosophy">
-            <h3>About</h3>
-            <p>I provide fully customizable websites with simple designs focusing on user experience. Each of my designs begins with a blank canvas allowing your content and ideas to determine the outcome of your professional or quirky vision. I practice responsive layout which means your website will work and resize regardless of the screen size or device (e.g. iPhone, iPad). Feel free to contact me with any questions and know I am currently available for remote work.</p>
 
-            <div class="philosophy-concept philosophy-concept-home">
-                <div class="simplicity">
-                    <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
-                    <h4>Simple</h4>
-                    <p>Simple design maximizes efficiency and allows the user to focus on what's important.</p>
-                </div>
-                <div class="curiosity">
-                    <i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"></i>
-                    <h4>Skillful</h4>
-                    <p>A knowledge and ability to execute the fundamentals properly and quickly.</p><!--  Be prepared and cover every little detail. -->
-                </div>
-                <div class="quirky">
-                    <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
-                    <h4>Original</h4>
-                    <p>Just the right amount of spontaneity to make things interesting.</p>
-                </div>
+<section class="section-small sec-border">
+    <div class="border-front">
+    <div class="container inline">
+        <h3>We've got what you need</h3>
+
+            <p class="float-l inline">At Simpooly our web development expertise shines with creating fully customizable websites for your buisness and personal use. Focusing on simple web designs, useablility, and user experience.</p>
+            <button type="button" class="btn btn-secondary btn-lg dark float-r inline"><a href="portfolio.php">View our work</a></button>
             </div>
+    </div>
+</section>
+
+
+<section class="section-full service vertical-cut">
+    <div class="full-width">
+        <h3>At Your Service</h3>
+
+        <div class="container">
+<div class=" service-inner">
+
+
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <i class="fas fa-laptop fa-9x"></i>
+            <h2>Responsive Design</h2>
+            <p>This design will allow your website to be easily viewed based on screen size, platform and orientation. This process consists of using flexible grids, layouts and images. Allowing your website to automatically switch to accommodate for multiple devices. </p>
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <i class="fas fa-pencil-alt fa-9x"></i>
+            <h2>Customization & Usability</h2>
+            <p>We provide services to create a unique look to match your unique brand. A custom web design can help your customers flow easily through your content, reach that call to action to complete a form, pick up the phone and make a sale.</p>
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <i class="fas fa-heart fa-9x"></i>
+            <h2>Made with Love</h2>
+            <p>Here at Simpooly, we care about you and your business. Quality is of top importance and everything we make is designed with intention. We put our heart and soul into each image, line and word to create total satisfaction. </p>
+
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+</div>
+    </div> <!-- /.container -->
+    </div>
+</section>
+
+<section class="section-small sec-border">
+    <div class="border-front">
+    <div class="container">
+    <!--     <h3>Let's Get In Touch!</h3> -->
+    <div class="work-together">
+        <div class="quote-top float-l">
+            <p class="float-l quote">Be apart of somthing great. </p>
+            <p class="float-l quote offset">Let's work together! <i class="fas fa-arrow-circle-right fa-1x"></i></p>
         </div>
-        <div class="home-button"><a href="about.php"><button>View More</button></a></div>
+        <div class="quote-bottom float-r center">
+                <a href="contact.php"><i class="fa fa-envelope fa-9x float-r"></i></a>
+        </div>
+                </div> <!-- Work together -->
+            </div><!-- Container -->
+        </div> <!-- border -->
+</section>
+<!-- <section class="section-small primary">
+    <div class="container">
+    <h3>Let's Get In Touch!</h3>
+    <a href="contact.php"><i class="fa fa-envelope fa-9x"></i></a>
+
     </div>
 </div>
+</section> -->
 
-<!-- Projects Section -->
-<div id="background">
-    <div class="wrapper80">
-        <h3 class="new">Recent Projects</h3>
-        <ul id="gallery-port-home">
-            <?php
-            $random = array_rand($project, 3);
 
-                foreach($random as $id){
-                    echo get_item_html($id, $project[$id]);
-                }
-            ?>
-        </ul>
-        <div class="home-button"><a href="portfolio.php"><button>View More</button></a></div>
-    </div>
-<div>
+<section class="vertical-cut">
+    <div class="front-album text-muted full-width">
+        <div class="container front-gallery">
+            <h3>Recent Projects</h3>
+            <ul class="row">
+                <?php
+                $random = array_rand($project, 2);
+
+                    foreach($random as $id){
+                        echo get_item_detail($id, $project[$id]);
+                    }
+                ?>
+            </ul>
+            <button type="button" class="btn btn-secondary btn-lg secondary"><a href="portfolio.php">View More</a></button>
+        </div>
+        </div>
+</section>
+
+
 
 <?php include('inc/footer.php'); ?>

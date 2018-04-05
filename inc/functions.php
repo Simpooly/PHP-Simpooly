@@ -30,7 +30,7 @@ function get_item_html($id, $item){
 
 // For Portfolio
 function get_item_detail($id, $item){
-    $output = "<li><a href='project.php?id="
+    $output = "<li class='col-lg-4 col-sm-6 card'><a href='project.php?id="
     . $id . "'><img src='"
                  . $item["img"] ."' alt='"
                  . $item["title"] ."'/><a/>"
@@ -38,7 +38,7 @@ function get_item_detail($id, $item){
                  . $id . "'>"
                  . "<div class='port-content'><h3>" . $item["title"] . "</h3>"
                  . "<p>" . $item["goal"] . "</p>"
-                 . "</a></div></li>";
+                 . "</div></a></li>";
     return $output;
 }
 
