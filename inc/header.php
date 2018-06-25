@@ -6,7 +6,7 @@ $company_name = 'Simpooly';
 ?>
 
 <!doctype>
-<html>
+<html lang="en">
 <head>
     <title><?php echo $company_name; ?> | Web Development focused on creating a website for your buisness </title>
 

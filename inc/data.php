@@ -140,7 +140,7 @@ $project[110] = [
       //"img2" => "inc/img/screenshot/105/02.png",
      //"img3" => "inc/img/screenshot/105/03.png",
 
-      "url" => "http://www.visitponderosa.com/",
+      "url" => "https://dev.ractoon.com/ponderosa/",
 
       "goal" => "An older site was modrnized using WordPress",
 
@@ -177,11 +177,47 @@ $project[112] = [
       //"img2" => "inc/img/screenshot/105/02.png",
      //"img3" => "inc/img/screenshot/105/03.png",
 
-      "url" => "#",
+      "url" => "https://tinyhouse.simpooly.com",
 
       "goal" => "Used Laravel and Google Maps API to create a Tiny House Location App.",
 
      "discription" => "The idea behind this project is to have one place to both search for Tiny Houses near you and post your own to sell. First, I had to work with Laravel to create a houses model. Authentication, and user sigh-up/ sign-in was placed. Then I created a form for the houses to input the data into a database using MySQL. Then geocoding and geolocation was implemented to extract the latitude/ longitude. The information was then retrieved in JSON format and placed into the Google Maps API. A marker is then dynamically places as a Tiny house is put up for sale. You can search houses based on different featured they possess. This was one of the larger personal projects i have worked on. I ran into way too many hurdles to remember. But I never gave up and kept working through each struggle until I figured it out.",
+
+     "troubles" => "",
+
+      "outcome" => " ",
+
+];
+$project[113] = [
+    "title" => "Art in Public Places",
+
+     "img" => "inc/img/screenshot/113/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "https://www.fcgov.com/artspublic/gallery/art-in-action-2010",
+
+      "goal" => "Migrated and organized static content into City of Fort Collins CMS system.",
+
+     "discription" => "I was responsible for collecting content and attributes from live site and creating new pages for the data onto the Fort Collins Utilities CMS systems dev site. Organizing the content, artist information, and according images was a majority of the project. Being detail oriented and making sure all artists, images, and files were accounted for and in the correct place. In addition, being everything being connected properly.",
+
+     "troubles" => "",
+
+      "outcome" => " ",
+
+];
+$project[114] = [
+    "title" => "React To-do App",
+
+     "img" => "inc/img/screenshot/114/01.png",
+      //"img2" => "inc/img/screenshot/105/02.png",
+     //"img3" => "inc/img/screenshot/105/03.png",
+
+      "url" => "https://codepen.io/Simpooly/pen/bKBVwP?editors=0010",
+
+      "goal" => "Created a simple dynamic to-do list app from React",
+
+     "discription" => "For my introduction to React, a simple to-do list was created. This allows users an easy interface to input a task to add to the list. It is created by implementing a state to hold user information, and some static data. The general App, header, form, and list are all separate components they work harmoniously together to transfer the variables and props around the app. The information is stored on the browser, and so will refresh as the page re-loads. The user can choose to delete individual tasks as they are completed.",
 
      "troubles" => "",
 
