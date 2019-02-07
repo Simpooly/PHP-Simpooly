@@ -7,7 +7,7 @@ include('inc/header.php');
 
  <?php
 
- $section = "home";
+
  include('inc/data.php');
  include('inc/functions.php');
  include('inc/header.php');

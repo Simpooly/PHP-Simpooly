@@ -66,42 +66,13 @@ html,body
 	}
 
 body {
-	/* background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/brick-wallpaper-grey-abstract.jpg");
-	background-attachment: fixed; */
-	/*font-family: 'Palanquin', sans-serif;
-	-webkit-text-size-adjust: 100%;*/
-}
-  *, *:before, *:after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
-	}
-/* h1{
-	font-weight: bold;
-	color: #30142d;
-	font-size: 3.75em;
 
-} */
-/*h2{
-	font-size: 1.75em;
-	font-weight: bold;
-	padding: 2px;
-}*/
-h3{
-	/*font-family: Playfair Display,serif;*/
-	font-weight: bold;
-	/*margin: 0 0 15px 0;*/
-	font-size:2em;
-	text-align: center;
-	/*margin-bottom: 2rem;*/
-	/*margin-top: 1rem;*/
-	/*color:#562f51;*/
 }
-/*h4{
-	font-size: 1.75em;
-	margin-bottom: 25px;
-}*/
-
+*, *:before, *:after {
+-webkit-box-sizing: inherit;
+-moz-box-sizing: inherit;
+box-sizing: inherit;
+}
 * a:hover{
 	text-decoration: none;
 	cursor: pointer;
@@ -113,82 +84,372 @@ h3{
  li:hover img {
    opacity: 0.7;
  }
-/* .wrapper80{
-	width: 80%;
-	margin: 50px auto 80px auto;
-}
 
-.wrapper h1,{
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	color: #320d2d;
-} */
+	/* -------------------------------------------------------------------------------- */
+	/*  3. CSS New Code
+	/* -------------------------------------------------------------------------------- */
+
+	 .active-card {
+	    z-index: 1;
+	    box-shadow: 0 5px 15px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.24);
+	  }
+	  .passive-card{
+	    margin: 0 7.5px 15px;
+	    background-color: #fff;
+	    box-shadow: 0 0 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.24);
+	  }
+
+	  .home-page a:hover,
+	  .home-page a:focus {
+	    text-decoration: none;
+	  }
+
+
+	  /*----------------------------------------------Core Layout*/
+	  .home-page .jumbotron h2{
+        color:  #320d2d;
+        font-weight: 500;
+        background-color: #fff;
+        margin: 0px;
+        font-family: 'Milonga', cursive;
+        text-align:center;
+	  }
+	  .home-page .jumbotron h3{
+	    margin: 0px;
+	  }
+	  .home-page .jumbotron{
+	    background: rgb(50,13,45);
+	    background: -moz-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
+	    background: -webkit-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
+	    background: linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#320d2d",endColorstr="#ffffff",GradientType=1);
+	    border-bottom: 1px solid #ebebeb;
+	  }
+	  .home-page .jumbotron .logo{
+        background-color: #fff;
+        padding: 7px;
+        text-align:center;
+        border: 1px solid #303030;
+	  }
+	  .home-page .wrapper{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    align-content: center;
+	    width: 980px;
+	    margin: 0 auto;
+	  }
+	  .home-page .flex-row {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-direction: row;
+	  }
+	  .home-page .flex-column {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-direction: column;
+	  }
+	  .home-page .center-content{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	  }
+
+	  /*------------------------------------General Button Styles*/
+
+	/*  .home-page a:hover .cx-button,
+	  .home-page a:focus .cx-button {
+	  .home-page .cx-button:hover,
+	  .home-page .cx-button:focus {
+	    color: #fff;
+	    background-color: #804068;
+	    border-color: #804068;
+	  }
+	  .home-page .cx-button {
+	    color: #804068;
+	    background-color: #fff;
+	    border-color: #804068;
+	    text-align: center;
+	    font-size: 16px;
+	    padding: 12px 0px 12px 0px;
+	    border-width: 2px;
+	    line-height: 1.0;
+	  }
+	  .home-page .btn {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	  }
+	  .home-page .btn-overall {
+	    display: flex;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	    align-items: center;
+	  }*/
+
+	  /*----------------------------------------------Text Styles*/
+
+	  .home-page h2{
+	    color: #320d2d;
+	  }
+	  .home-page h3{
+	    color: #4F6D3C;
+	  }
+	  .home-page h4{
+	    color: #999;
+	  }
+	  .home-page .text-title{
+	    font-size: 18px;
+	    line-height: 20px;
+	    color: #999;
+	    font-weight: 700;
+	  }
+	  .home-page .text-description{
+	    font-size: 16px;
+	    line-height: 18px;
+	    color: #999;
+	  }
+	  /* -------------------------------------------------------------------------------- */
+	  /*	2. Navigation
+	  /* -------------------------------------------------------------------------------- */
+
+	  .navigation {
+	  	background-color: white; /* #242424; */
+	  	width: 100%;
+	  	position: fixed;
+	  	top: 0;
+	  	text-align: center;
+	  	z-index:1000;
+	  }
+	  .main-menu { display: none;}
+	  .nav-toggle {
+	  	display: block;
+	  	padding: 16px 0;
+	  	color: #fff;
+	  }
+	  .nav-toggle .bars {
+	  	margin: 0 auto;
+	  	height: 12px;
+	  	width: 20px;
+	  	position: relative;
+	  }
+	  .nav-toggle .bar {
+	  	height: 2px;
+	  	background: black;
+	  	border-radius: 2px;
+	  	position: absolute;
+	  	left: 0;
+	  	right: 0;
+	  	-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+	  	-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
+	  	-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
+	  	transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
+	  }
+
+	  .nav-toggle .bar:nth-child(1) { top: 0px; }
+	  .nav-toggle .bar:nth-child(2) { top: 5px; }
+	  .nav-toggle .bar:nth-child(3) { top: 10px; }
+
+	  .nav-toggle:hover { cursor: pointer; }
+	  .nav-small li.on > a {
+	  	color: #fff;
+	  	/*border-radius: 3px;*/
+	  	background: rgb(176,176,176);
+	  	background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+	  	background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+	  	background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+	  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
+	  }
+	  .nav-small li:hover > a {
+	  	color:  #262626;
+	  	border-radius: 3px;
+	  	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+	  }
+
+	  /* Small devices (Phones, under 480px) */
+	  @media (max-width: 480px) {
+
+			/*Navigation*/
+			.nav-small {
+				margin-top: 15px;}
+	  	.nav-small a {
+	  		/*margin-top: 10px;*/
+	  		display: block;
+	  		padding: 10px 0;
+	  		font-size: 16px;
+	  		color: #262626;
+	  		text-transform: uppercase;
+	  		position: relative;
+	  		z-index: 100000;
+	  		text-align: center;
+	  	}
+	  	.nav-small li.on:hover > a {
+	  		color: #fff;
+	  		background-color: #000;
+	  	}
+	  	.nav-small{ margin-left: -40px; }
+
+			/*Jumbotron*/
+	    .home-page .jumbotron{
+	      height: 100vh;
+	    }
+	    .home-page .jumbotron h2{
+        font-size: 16vw;
+	    }
+	    .home-page .wrapper-logo{
+        padding: 5vw;
+        background-color: #fff;
+	    }
+	    .home-page .jumbotron .logo{
+        background-color: #fff;
+        padding: 3vw;
+        text-align:center;
+        border: 1px solid #303030;
+	    }
+	    .home-page .jumbotron h3{
+				font-size: 2.8vw;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: center;
+				position: relative;
+				bottom: 2vw;
+				left: 12.5vw;
+	    }
+	  }
+
+	  /* Extra Small Devices, Phones */
+	  @media (min-width : 481px) {
+
+			/*Navigation*/
+			.nav-small {
+				margin-top: 15px;}
+	  	.nav-small a {
+	  		/*margin-top: 10px;*/
+	  		display: block;
+	  		padding: 10px 0;
+	  		font-size: 16px;
+	  		color: #262626;
+	  		text-transform: uppercase;
+	  		position: relative;
+	  		z-index: 100000;
+	  		text-align: center;
+	  	}
+	  	.nav-small li.on:hover > a {
+	  		color: #fff;
+	  		background-color: #000;
+	  	}
+	  	.nav-small{ margin-left: -40px; }
+
+
+	  	/*Jumbotron*/
+	    .home-page .jumbotron .logo{
+        background-color: #fff;
+        padding: 7px;
+        text-align:center;
+        border: 1px solid #303030;
+	    }
+	    .home-page .jumbotron{
+	      height: 55%;
+	      margin-top: 20px;
+	      padding: 0px;
+	    }
+	    .home-page .wrapper-logo{
+        padding: 20px;
+        background-color: #fff;
+	    }
+	    .home-page .jumbotron h2{
+        font-size: 90px;
+        margin-bottom: -5px;
+        letter-spacing: 1px;
+	    }
+	    .home-page .jumbotron h3{
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        bottom: 3px;
+        left: 71px;
+	    }
+	  }
+
+	  /* Small Devices, Tablets */
+	  @media (min-width : 768px) {
+
+  		/*Navigation*/
+  		.nav-toggle { display: none; }
+  		.main-menu {
+  			display: inline-block;
+				margin: 0px;
+  		}
+  		.main-menu li { position: relative; }
+  		.main-menu > li { display: inline-block; }
+  		.main-menu > li + li { margin-left: 10px; }
+  		.main-menu > li + li:before {
+  			content: "|";
+  			font-size: 16px;
+  			color: #3d3d3d;
+  			position: absolute;
+  			top: 30%;
+  			left: -10px;
+  		}
+  		.main-menu a {
+  			display: block;
+		    padding: 10px;
+		    margin: 5px 0;
+		    font-size: 16px;
+		    color: #262626;
+		    text-transform: uppercase;
+		    position: relative;
+		    z-index: 10000;
+  		}
+  		.main-menu li.on > a {
+  			color: #fff;
+  			border-radius: 3px;
+  			background: rgb(176,176,176);
+  			background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+  			background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+  			background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+  			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
+  		}
+  		.main-menu li.on:hover > a {
+  			color: #fff;
+  			background-color: #000;
+  		}
+  		.main-menu li:hover > a {
+  			color:  #262626;
+  			border-radius: 3px;
+  			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+  		}
+
+	  }
+
+	  /* Medium Devices, Desktops */
+	  @media (min-width : 992px) {
+
+	  }
+
+	  /* Large Devices, Wide Screens */
+	  @media (min-width : 1200px) {
+
+	  }
+
+
+/*h3{
+	font-weight: bold;
+	font-size:2em;
+	text-align: center;
+}*/
+
 
 @media only screen and (max-width: 600px) {
     .head-shot{display: none;}
 	.project-content p { margin-bottom: 30px; }
 }
-/* -------------------------------------------------------------------------------- */
-/*	2. Navigation
-/* -------------------------------------------------------------------------------- */
 
-.navigation {
-	background-color: white; /* #242424; */
-	width: 100%;
-	position: fixed;
-	top: 0;
-	text-align: center;
-	z-index:1000;
-}
 
-.main-menu { display: none;}
 
-.nav-toggle {
-	display: block;
-	padding: 16px 0;
-	color: #fff;
-}
-
-.nav-toggle .bars {
-	margin: 0 auto;
-	height: 12px;
-	width: 20px;
-	position: relative;
-}
-
-.nav-toggle .bar {
-	height: 2px;
-	background: black;
-	border-radius: 2px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
-	-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
-	-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
-	transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
-}
-
-.nav-toggle .bar:nth-child(1) { top: 0px; }
-.nav-toggle .bar:nth-child(2) { top: 5px; }
-.nav-toggle .bar:nth-child(3) { top: 10px; }
-
-.nav-toggle:hover { cursor: pointer; }
-
-/* ---------------------Nav toggle-------------------*/
-
-.nav-small a {
-	margin-top: 10px;
-	display: block;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #999;
-	text-transform: uppercase;
-	position: relative;
-	z-index: 100000;
-	text-align: center;
-}
-.nav-small{ margin-left: -40px; }
 
 /* -------------------------------------------------------------------------------- */
 /*	3. Home
@@ -319,13 +580,13 @@ h3{
 /* -------------------------------------------------------------------------------- */
 
 .album {
-  min-height: 50rem; Can be removed; just added for demo purposes
+  min-height: 50rem; /*Can be removed; just added for demo purposes*/
   padding-top: 3rem;
   padding-bottom: 3rem;
   }
 
   .front-album {
-  min-height: 50rem; Can be removed; just added for demo purposes
+  min-height: 50rem;/* Can be removed; just added for demo purposes*/
   padding-top: -3rem;
   padding-bottom: 3rem;
   }
@@ -447,7 +708,7 @@ form input{
  }
 
 
- form textarea{ height: 150px;}
+form textarea{ height: 150px;}
 
 form input[type=submit]{
 	 background-color: #320d2d;
@@ -459,13 +720,9 @@ form input[type=submit]{
 	 width: 50%;
 	 margin-top: 15px;
 }
-
-
-
 .rows{
 	width: 95%;
 	margin-bottom:10px;
-
 }
 
 .rows.fa-2x{
@@ -475,10 +732,7 @@ form input[type=submit]{
 	z-index: 100;
 	color: #0c3c40;
 }
-
 .box{
-	/* color: white; */
-	/* text-align: center; */
 	padding: 2%;
 	margin-bottom: 50px;
  }
@@ -686,47 +940,7 @@ animation-fill-mode: forwards; */
 	.project-content{ width: 45%; float: left;}
 	.full-height-vh{height: 100vh;}
 
-/* --------------------------------Navigation */
-	.nav-toggle { display: none; }
 
-
-	.main-menu {
-		display: inline-block;
-
-
-	}
-
-	.main-menu li { position: relative; }
-
-	.main-menu > li { display: inline-block; }
-
-	.main-menu > li + li { margin-left: 40px; }
-
-	.main-menu > li + li:before {
-		content: "|";
-		font-size: 14px;
-		color: #3d3d3d;
-		position: absolute;
-		top: 50%;
-		margin-top: -7px;
-		left: -25px;
-	}
-
-	.main-menu a {
-		display: block;
-		padding: 23px 0;
-		font-size: 18px;
-		color:  #999;
-		text-transform: uppercase;
-		position: relative;
-		z-index: 10000;
-	}
-
-	.main-menu li.on > a { color: black; font-size: 1.35em; }
-	.main-menu li:hover > a { color: rgb(109, 108, 108); }
-
-	.nav-small li.on > a { color: black; }
-	.nav-small li:hover > a { color: rgb(109, 108, 108); }
 
 
 
@@ -755,10 +969,10 @@ animation-fill-mode: forwards; */
 @media screen and ( max-width: 450px ){
 	/*.logo{ text-shadow: 1px 2px 2px white;}*/
 	/*.home-logo{ border: none; }*/
-	#jumbotron .logo2{
+/*	#jumbotron .logo2{
 	top: -2px;
 	left:60px;
 	font-size: .7em;
-	}
+	}*/
 }
 
