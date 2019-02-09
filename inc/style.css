@@ -399,6 +399,7 @@ box-sizing: inherit;
 		    padding: 10px;
 		    margin: 5px 0;
 		    font-size: 16px;
+		    letter-spacing: .3px;
 		    color: #262626;
 		    text-transform: uppercase;
 		    position: relative;
@@ -492,14 +493,14 @@ box-sizing: inherit;
 }
 .full-width{ width: 100vw; }
 .height{ height: 100vw; }
-.vertical-cut{
+/*.vertical-cut{
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 50%;
 
 	background-color: #320d2d;
-}
+}*/
 .half-box{width: 100%;}
 
 .full-height{height: 100%;}
@@ -590,15 +591,15 @@ box-sizing: inherit;
   padding-top: -3rem;
   padding-bottom: 3rem;
   }
-.portfolio{
-/* 	margin-right: -15px;
-    margin-left: -15px; */
+/*.portfolio{
+ 	margin-right: -15px;
+    margin-left: -15px;
     display: flex;
     flex-wrap: wrap;
     margin-left: -40px;
  }
-
-.card {
+*/
+/*.card {
 
   width: 100%;
   padding: .75rem 2rem;
@@ -614,7 +615,7 @@ box-sizing: inherit;
 }
 .card-text {
   font-size: 85%;
-}
+}*/
 
 /* ----------------------------------Gallery on Project Page */
 
@@ -891,7 +892,7 @@ animation-fill-mode: forwards; */
 
 
 @media screen and ( min-width: 760px ) {
-	.card {width: 50%;}
+/*	.card {width: 50%;}*/
 	.project{width: 50%; display: inline-block;
 	}
 	.half-box{width: 50%; height: 50%;}
