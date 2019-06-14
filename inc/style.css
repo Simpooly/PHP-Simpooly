@@ -817,8 +817,8 @@ animation-fill-mode: forwards; */
 .footer p { text-align: center; }
 
 .footer{
-	bottom:0;
-    position:fixed;
+/*	bottom:0;
+    position:fixed;*/
 	background-color: white;
 	height:65px;
 	width:100%;
