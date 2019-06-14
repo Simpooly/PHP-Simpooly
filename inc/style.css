@@ -106,7 +106,7 @@ box-sizing: inherit;
 
 
 	  /*----------------------------------------------Core Layout*/
-	  .home-page .jumbotron h2{
+	  .home-page .jumbotron h1{
         color:  #320d2d;
         font-weight: 500;
         background-color: #fff;
@@ -114,7 +114,7 @@ box-sizing: inherit;
         font-family: 'Milonga', cursive;
         text-align:center;
 	  }
-	  .home-page .jumbotron h3{
+	  .home-page .jumbotron h2{
 	    margin: 0px;
 	  }
 	  .home-page .jumbotron{
@@ -190,10 +190,10 @@ box-sizing: inherit;
 
 	  /*----------------------------------------------Text Styles*/
 
-	  .home-page h2{
+	  .home-page h1{
 	    color: #320d2d;
 	  }
-	  .home-page h3{
+	  .home-page h2{
 	    color: #4F6D3C;
 	  }
 	  .home-page h4{
@@ -294,7 +294,7 @@ box-sizing: inherit;
 	    .home-page .jumbotron{
 	      height: 100vh;
 	    }
-	    .home-page .jumbotron h2{
+	    .home-page .jumbotron h1{
         font-size: 16vw;
 	    }
 	    .home-page .wrapper-logo{
@@ -307,7 +307,7 @@ box-sizing: inherit;
         text-align:center;
         border: 1px solid #303030;
 	    }
-	    .home-page .jumbotron h3{
+	    .home-page .jumbotron h2{
 				font-size: 2.8vw;
 				text-transform: uppercase;
 				font-weight: bold;
@@ -358,12 +358,12 @@ box-sizing: inherit;
         padding: 20px;
         background-color: #fff;
 	    }
-	    .home-page .jumbotron h2{
+	    .home-page .jumbotron h1{
         font-size: 90px;
         margin-bottom: -5px;
         letter-spacing: 1px;
 	    }
-	    .home-page .jumbotron h3{
+	    .home-page .jumbotron h2{
         font-size: 15px;
         text-transform: uppercase;
         font-weight: bold;
@@ -437,7 +437,7 @@ box-sizing: inherit;
 	  }
 
 
-/*h3{
+/*h2{
 	font-weight: bold;
 	font-size:2em;
 	text-align: center;
@@ -547,7 +547,7 @@ box-sizing: inherit;
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.service h2 {
+.service h1 {
   text-align: center;
   font-weight: 400;
   padding: 30px;
@@ -625,7 +625,7 @@ box-sizing: inherit;
 /* -------------------------------------------------------------------------------- */
 .about-quote{ color: #20041c;  font-size: 3em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold; padding-top: 40px;}
 
-   .about h2{ color: white; font-size: 4.5em; }
+   .about h1{ color: white; font-size: 4.5em; }
    .about h4{ color: white; font-size: 2.5em; }
 
 .head-shot img{
@@ -651,7 +651,7 @@ box-sizing: inherit;
      text-align: center;
  }
  .report-card{ margin-bottom: 100px; }
- .report-card h2,
+ .report-card h1,
  .report-card p { display: none; }
 
  .about p{margin-top: 85px; line-height: 1.6;}
@@ -949,7 +949,7 @@ animation-fill-mode: forwards; */
 @media screen and ( min-width: 450px )and (max-width: 960px ) {
 
 
-/*	.name h2 {
+/*	.name h1 {
 	    font-size: 3.75em;}
 	    #jumbotron{
 	    	width: 500px;
