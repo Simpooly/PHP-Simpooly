@@ -38,6 +38,9 @@ include('inc/header.php');
     margin-left: 0px;
     margin-right: 0px;
   }
+  .h1, .h2, .h3, .h4, h1, h2, h3, h4{
+    margin: 0;
+  }
 
   /*----------------------------------------------Core Layout*/
 
@@ -147,12 +150,21 @@ include('inc/header.php');
         line-height: 13vw;
         top: 5vw;
     }
+    .services .text-box{
+        height: 80vw;
+        justify-content: flex-start;
+    }
   }
 
   /* Extra Small Devices, Phones */
   @media (min-width : 481px) {
     .home-page .mobile-col{
         flex-direction: column;
+    }
+    .services .text-box{
+        height: 220px;
+        padding: 15px;
+        justify-content: flex-start;
     }
   }
 
@@ -176,6 +188,10 @@ include('inc/header.php');
         text-align: right;
         align-items: flex-end;
     }
+    .services .box-wrap{
+        margin-bottom: 45px;
+    }
+
 
 
   }
@@ -200,12 +216,20 @@ include('inc/header.php');
     color: #fff;
     transition: .2s ease;
     }
+    .services .text-box{
+        height: 300px;
+        padding: 25px;
+        justify-content: center;
+    }
   }
 
   /* Large Devices, Wide Screens */
   @media (min-width : 1200px) {
     .home-page .wrapper{
         max-width: 1300px;
+    }
+    .services .text-box{
+        height: 350px;
     }
   }
 
@@ -238,10 +262,12 @@ include('inc/header.php');
                     Services
                 </div>
             </h3>
-            <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p class="paragraph-text" style=" margin: 25px 25px 35px 25px; text-align: center;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
             <!-- <h3>At your Service</h3> -->
             <div class="flex column full-width">
-                <div class="flex mobile-col dektop-row full-width">
+                <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="col-xs-12 col-md-6 image-box">
                         <img src="inc/img/Responsive.jpg" alt="" class="responsive">
                     </div>
@@ -250,7 +276,7 @@ include('inc/header.php');
                         <p class="paragraph-text test1 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                 </div>
-                <div class="flex mobile-col dektop-row full-width">
+                <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="flex column col-xs-12 hidden-xs col-md-6 text-box col-md-push-1" id="text-box2">
                         <h4 class="bold-text">Custom<br aria-hidden="true">Websites</h4>
                         <p class="paragraph-text test2 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
@@ -263,7 +289,7 @@ include('inc/header.php');
                         <p class="paragraph-text test2 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                 </div>
-                <div class="flex mobile-col dektop-row full-width">
+                <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="col-xs-12 col-md-6 image-box">
                         <img src="inc/img/CodeComuer.jpg" alt="" class="responsive">
                     </div>
