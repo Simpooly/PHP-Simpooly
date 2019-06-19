@@ -133,7 +133,7 @@ include('inc/header.php');
   .stack-wrap .bottom{
     font-size: 65px;
     line-height: 65px;
-    color: #f1f1f1;
+    color: #ededed;
     font-family: 'Rubik Mono One', sans-serif;
   }
   /* Small devices (Phones, under 480px) */
@@ -154,6 +154,9 @@ include('inc/header.php');
         height: 80vw;
         justify-content: flex-start;
     }
+    .home-page .services h3{
+        margin: 20px auto 15px;
+    }
   }
 
   /* Extra Small Devices, Phones */
@@ -165,6 +168,9 @@ include('inc/header.php');
         height: 220px;
         padding: 15px;
         justify-content: flex-start;
+    }
+    .home-page .services h3{
+        margin: 75px auto 5px;
     }
   }
 
@@ -189,7 +195,7 @@ include('inc/header.php');
         align-items: flex-end;
     }
     .services .box-wrap{
-        margin-bottom: 45px;
+        margin-bottom: 65px;
     }
 
 
@@ -218,7 +224,7 @@ include('inc/header.php');
     }
     .services .text-box{
         height: 300px;
-        padding: 25px;
+        padding: 45px;
         justify-content: center;
     }
   }
@@ -226,7 +232,7 @@ include('inc/header.php');
   /* Large Devices, Wide Screens */
   @media (min-width : 1200px) {
     .home-page .wrapper{
-        max-width: 1300px;
+        max-width: 1200px;
     }
     .services .text-box{
         height: 350px;
@@ -246,11 +252,11 @@ include('inc/header.php');
     </div>
   </section>
 
- <section class="motto">
+<!--  <section class="motto">
      <div class="Wrapper flex">
        <h3>We've got what you need</h3>
      </div>
-   </section>
+   </section> -->
 
     <section class="services">
         <div class="Wrapper flex column">
@@ -262,7 +268,7 @@ include('inc/header.php');
                     Services
                 </div>
             </h3>
-            <p class="paragraph-text" style=" margin: 25px 25px 35px 25px; text-align: center;">
+            <p class="paragraph-text" style=" margin: 25px 25px 45px 25px; text-align: center;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <!-- <h3>At your Service</h3> -->

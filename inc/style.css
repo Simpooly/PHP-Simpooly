@@ -194,7 +194,8 @@ box-sizing: inherit;
 	    color: #320d2d;
 	  }
 	  .home-page h2{
-	    color: #4F6D3C;
+	    color: #16a9ba;
+	    font-family: 'Open Sans', sans-serif;
 	  }
 	  .home-page h4{
 	    color: #999;
@@ -292,13 +293,13 @@ box-sizing: inherit;
 
 			/*Jumbotron*/
 	    .home-page .jumbotron{
-	      height: 100vh;
+	      height: 80vh;
 	    }
 	    .home-page .jumbotron h1{
-        font-size: 16vw;
+        font-size: 18vw;
 	    }
 	    .home-page .wrapper-logo{
-        padding: 5vw;
+        padding: 4vw;
         background-color: #fff;
 	    }
 	    .home-page .jumbotron .logo{
@@ -308,13 +309,15 @@ box-sizing: inherit;
         border: 1px solid #303030;
 	    }
 	    .home-page .jumbotron h2{
-				font-size: 2.8vw;
-				text-transform: uppercase;
-				font-weight: bold;
-				text-align: center;
-				position: relative;
-				bottom: 2vw;
-				left: 12.5vw;
+	    	font-size: 4vw;
+	    	    text-transform: uppercase;
+	    	    font-weight: bold;
+	    	    text-align: center;
+	    	    position: relative;
+	    	    /* bottom: 2vw; */
+	    	    letter-spacing: 1px;
+	    	    left: 15.5vw;
+	    	    top: 2vw;
 	    }
 	  }
 
@@ -345,12 +348,12 @@ box-sizing: inherit;
 	  	/*Jumbotron*/
 	    .home-page .jumbotron .logo{
         background-color: #fff;
-        padding: 7px;
+        padding: 13px;
         text-align:center;
         border: 1px solid #303030;
 	    }
 	    .home-page .jumbotron{
-	      height: 55%;
+	      height: 70%;
 	      margin-top: 20px;
 	      padding: 0px;
 	    }
@@ -364,18 +367,34 @@ box-sizing: inherit;
         letter-spacing: 1px;
 	    }
 	    .home-page .jumbotron h2{
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        bottom: 3px;
-        left: 71px;
+	    	font-size: 15px;
+	    	text-transform: uppercase;
+	    	font-weight: bold;
+	    	text-align: center;
+	    	position: relative;
+	    	letter-spacing: .5px;
+	    	bottom: 3px;
+	    	left: 73px;
 	    }
 	  }
 
 	  /* Small Devices, Tablets */
 	  @media (min-width : 768px) {
+	  		    .home-page .jumbotron h1{
+	  	        font-size: 110px;
+	  	        margin-bottom: -5px;
+	  	        letter-spacing: 1px;
+	  		    }
+	  		    .home-page .jumbotron h2{
+	  		    	font-size: 18px;
+	  		    	text-transform: uppercase;
+	  		    	font-weight: bold;
+	  		    	text-align: center;
+	  		    	position: relative;
+	  		    	letter-spacing: .5px;
+	  		    	bottom: 3px;
+	  		    	left: 85px;
+	  		    }
 
   		/*Navigation*/
   		.nav-toggle { display: none; }
@@ -675,12 +694,14 @@ box-sizing: inherit;
 .message{ margin: 30px auto; }
 
 .email-me{
-	font-family: 'Abril Fatface', cursive;
-	text-shadow: 1px 1px 7px rgb(194, 193, 193);
-	font-weight: 600;
-	font-size: 5.5em;
-	margin: 0 0 -25px 15px;
+	/*font-family: 'Abril Fatface', cursive;*/
+	font-family: 'Rubik Mono One', sans-serif;
+	/*text-shadow: 1px 1px 7px rgb(194, 193, 193);*/
+	/*font-weight: 600;*/
+	font-size: 4.25em;
+	margin: 55px -20px -25px 10px;;
 	color: #320d2d;
+	line-height: 55px;
 }
 
 form{
@@ -691,11 +712,11 @@ form{
  form label{
 	position: relative;
 	top: 25px;
-	color: black;
+/*	color: black;
 	font-weight: bold;
 	font-size: 1.25em;
 	padding-bottom: 3px;
-	padding-left: 35px;
+	padding-left: 35px;*/
  }
 form textarea,
 form input{
@@ -703,9 +724,9 @@ form input{
 	 padding: 10px;
 	 width: 100%;
 	 border-radius: 3px;
-	 -webkit-box-shadow: 0 8px 6px -6px black;
-	    -moz-box-shadow: 0 8px 6px -6px black;
-	         box-shadow: 0 8px 6px -6px black;
+	 -webkit-box-shadow: 0 5px 5px -5px black;
+	    -moz-box-shadow: 0 5px 5px -5px black;
+	         box-shadow: 0 5px 5px -5px black;
  }
 
 
@@ -719,11 +740,11 @@ form input[type=submit]{
 	 cursor: pointer;
 	 color: white;
 	 width: 50%;
-	 margin-top: 15px;
+	 margin-top: 25px;
 }
 .rows{
-	width: 95%;
-	margin-bottom:10px;
+	width: 88%;
+	margin-bottom:5px;
 }
 
 .rows.fa-2x{
