@@ -36,7 +36,7 @@ blockquote:before, blockquote:after { content:""; }
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 html {
-	font-size: 16px;
+	font-size: 15px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -45,7 +45,8 @@ html {
 html p{
 	line-height: 140%;
 	letter-spacing: 1px;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
 	word-spacing: 1;
 	font-size: 1.25em;
 }

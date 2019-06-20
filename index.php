@@ -74,14 +74,16 @@ include('inc/header.php');
     text-align: left;
   }
   .home-page .services .paragraph-text{
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
     color: #000;
+    margin-top: 5px;
   }
   .home-page .services .text-box .paragraph-text{
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
     color: #000;
+    margin-top: 5px;
     text-align: left;
   }
   .bold-text{
@@ -197,6 +199,9 @@ include('inc/header.php');
     .services .box-wrap{
         margin-bottom: 65px;
     }
+    .home-page .services .text-box .paragraph-text{
+      text-align: inherit;
+    }
 
 
 
@@ -275,24 +280,45 @@ include('inc/header.php');
             <div class="flex column full-width">
                 <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="col-xs-12 col-md-6 image-box">
-                        <img src="inc/img/Responsive.jpg" alt="" class="responsive">
+                        <img src="inc/img/Custom.jpg" alt="" class="responsive">
                     </div>
                     <div class="flex column col-xs-12 col-md-6 text-box col-md-pull-1" id="text-box1">
-                        <h4 class="bold-text">Responsive<br aria-hidden="true">Design</h4>
-                        <p class="paragraph-text test1 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <h4 class="bold-text">Research</h4>
+                        <p class="paragraph-text test1 hide-desktop">
+                            Understanding the client’s subject matter completely and building
+                            <br>
+                            uponthe knowledge related to it, is our top priority. When we
+                            <br>
+                            become intimately familiar with the intentions and thoughts
+                            <br>
+                            of thesubject matter it allows us to determine methods to
+                            <br>
+                            address the customer’s specific needs and requirements.
+                        </p>
                     </div>
                 </div>
                 <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="flex column col-xs-12 hidden-xs col-md-6 text-box col-md-push-1" id="text-box2">
-                        <h4 class="bold-text">Custom<br aria-hidden="true">Websites</h4>
-                        <p class="paragraph-text test2 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <h4 class="bold-text">Designs</h4>
+                        <p class="paragraph-text test2 hide-desktop">
+                        Attracting the attention of target market audiences can enhance
+                        <br>
+                        the quality of the messages that are being portrayed. Through
+                        <br>
+                        simple and responsive design we strive to use effective
+                        <br>
+                        techniques that adds value and creates an
+                        <br>
+                        innovative atmosphere.</p>
                     </div>
                     <div class="col-xs-12 col-md-6 image-box">
-                        <img src="inc/img/Custom.jpg" alt="" class="responsive">
+
+                        <img src="inc/img/Responsive.jpg" alt="" class="responsive">
                     </div>
                     <div class="flex column col-xs-12 visible-xs col-md-6 text-box col-md-push-1" id="text-box2">
-                        <h4 class="bold-text">Custom<br aria-hidden="true">Websites</h4>
-                        <p class="paragraph-text test2 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <h4 class="bold-text">Designs</h4>
+                        <p class="paragraph-text test2 hide-desktop">
+                        Attracting the attention of target market audiences can enhance the quality of the messages that are being portrayed. Through simple and responsive design we strive to use effective techniques that adds value and creates an innovative atmosphere.</p>
                     </div>
                 </div>
                 <div class="flex mobile-col dektop-row full-width box-wrap">
@@ -300,8 +326,17 @@ include('inc/header.php');
                         <img src="inc/img/CodeComuer.jpg" alt="" class="responsive">
                     </div>
                     <div class="flex column col-xs-12 col-md-6 text-box col-md-pull-1" id="text-box3">
-                        <h4 class="bold-text">Something<br aria-hidden="true">Else</h4>
-                        <p class="paragraph-text test3 hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <h4 class="bold-text">Develop</h4>
+                        <p class="paragraph-text test3 hide-desktop">
+                            Our findings from our research and design phases are integrated
+                            <br>
+                            into the development and production process of the website.
+                            <br>
+                            Our up to date understanding of technology allows for
+                            <br>
+                            clean effective coding that produce commercial
+                            <br>
+                            products for the customer.</p>
                     </div>
                 </div>
             </div>
