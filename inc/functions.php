@@ -17,7 +17,7 @@
 
 function get_item_html($id, $item){
    $output = "<li><a href='project.php?id="
-   . $id . "'><img src='"
+   . $id . "'><img class='responsive' src='"
                 . $item["img"] ."' alt='"
                 . $item["title"] ."'/><a/>"
                 ."<a href='project.php?id="
@@ -31,7 +31,7 @@ function get_item_html($id, $item){
 // For Portfolio
 function get_item_detail($id, $item){
     $output = "<li class='col-lg-4 col-sm-6 card'><a href='project.php?id="
-    . $id . "'><img src='"
+    . $id . "'><img class='responsive' src='"
                  . $item["img"] ."' alt='"
                  . $item["title"] ."'/><a/>"
                  ."<a href='project.php?id="

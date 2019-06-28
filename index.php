@@ -153,8 +153,9 @@ include('inc/header.php');
         top: 5vw;
     }
     .services .text-box{
-        height: 80vw;
-        justify-content: flex-start;
+      height: auto;
+      justify-content: flex-start;
+      padding: 5vw;
     }
     .home-page .services h3{
         margin: 20px auto 15px;
@@ -167,12 +168,15 @@ include('inc/header.php');
         flex-direction: column;
     }
     .services .text-box{
-        height: 220px;
+        height: auto;
         padding: 15px;
         justify-content: flex-start;
     }
     .home-page .services h3{
         margin: 75px auto 5px;
+    }
+    .home-page .carosel h3{
+        margin: 45px auto;
     }
   }
 
@@ -180,6 +184,11 @@ include('inc/header.php');
   @media (min-width : 768px) {
     .home-page .dektop-row{
         flex-direction: row;
+    }
+    .services .text-box{
+        height: 220px;
+        padding: 15px;
+        justify-content: flex-start;
     }
     .home-page .services h4{
       text-align: inherit;
@@ -274,7 +283,11 @@ include('inc/header.php');
                 </div>
             </h3>
             <p class="paragraph-text" style=" margin: 25px 25px 45px 25px; text-align: center;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            At Simpooly our web development expertise shines with creating fully customizable 
+            <br class=" hidden-xs ">
+            websites for your buisness and personal use. Focusing on simple web designs,
+            <br class=" hidden-xs">
+             useablility, and user experience.
             </p>
             <!-- <h3>At your Service</h3> -->
             <div class="flex column full-width">
@@ -286,29 +299,29 @@ include('inc/header.php');
                         <h4 class="bold-text">Research</h4>
                         <p class="paragraph-text test1 hide-desktop">
                             Understanding the client’s subject matter completely and building
-                            <br>
-                            uponthe knowledge related to it, is our top priority. When we
-                            <br>
+                            <br class=" visible-lg">
+                            upon the knowledge related to it, is our top priority. When we
+                            <br class=" visible-lg">
                             become intimately familiar with the intentions and thoughts
-                            <br>
-                            of thesubject matter it allows us to determine methods to
-                            <br>
+                            <br class=" visible-lg">
+                            of the subject matter it allows us to determine methods to
+                            <br class=" visible-lg">
                             address the customer’s specific needs and requirements.
                         </p>
                     </div>
                 </div>
                 <div class="flex mobile-col dektop-row full-width box-wrap">
                     <div class="flex column col-xs-12 hidden-xs col-md-6 text-box col-md-push-1" id="text-box2">
-                        <h4 class="bold-text">Designs</h4>
+                        <h4 class="bold-text">Design</h4>
                         <p class="paragraph-text test2 hide-desktop">
                         Attracting the attention of target market audiences can enhance
-                        <br>
+                        <br class=" visible-lg">
                         the quality of the messages that are being portrayed. Through
-                        <br>
+                        <br class=" visible-lg">
                         simple and responsive design we strive to use effective
-                        <br>
+                        <br class=" visible-lg">
                         techniques that adds value and creates an
-                        <br>
+                        <br class=" visible-lg">
                         innovative atmosphere.</p>
                     </div>
                     <div class="col-xs-12 col-md-6 image-box">
@@ -316,7 +329,7 @@ include('inc/header.php');
                         <img src="inc/img/Responsive.jpg" alt="" class="responsive">
                     </div>
                     <div class="flex column col-xs-12 visible-xs col-md-6 text-box col-md-push-1" id="text-box2">
-                        <h4 class="bold-text">Designs</h4>
+                        <h4 class="bold-text">Design</h4>
                         <p class="paragraph-text test2 hide-desktop">
                         Attracting the attention of target market audiences can enhance the quality of the messages that are being portrayed. Through simple and responsive design we strive to use effective techniques that adds value and creates an innovative atmosphere.</p>
                     </div>
@@ -329,13 +342,13 @@ include('inc/header.php');
                         <h4 class="bold-text">Develop</h4>
                         <p class="paragraph-text test3 hide-desktop">
                             Our findings from our research and design phases are integrated
-                            <br>
+                            <br class=" visible-lg">
                             into the development and production process of the website.
-                            <br>
+                            <br class=" visible-lg">
                             Our up to date understanding of technology allows for
-                            <br>
+                            <br class=" visible-lg">
                             clean effective coding that produce commercial
-                            <br>
+                            <br class=" visible-lg">
                             products for the customer.</p>
                     </div>
                 </div>
@@ -364,6 +377,36 @@ include('inc/header.php');
         </h3>
      </div>
    </section>
+
+   <section class="vertical-cut">
+    <div class="front-album text-muted full-width">
+        <div class="container front-gallery">
+            <ul class="row">
+                <?php
+                $random = array_rand($project, 3);
+
+                    foreach($random as $id){
+                        echo get_item_detail($id, $project[$id]);
+                    }
+                ?>
+            </ul>
+            <!-- <button type="button" class="btn btn-secondary btn-lg secondary"><a href="portfolio.php">View More</a></button> -->
+        </div>
+    </div>
+</section>
+
+   <!-- <section class="carosel">
+     <div class="Wrapper flex">
+        <h3 class=" text-uppercase cx-heavy-brand-font flex text-center vertical-center stack-wrap">
+            <div aria-hidden="true" class="top">
+                Gallery
+            </div>
+            <div  class="bottom">
+                Gallery
+            </div>
+        </h3>
+     </div>
+   </section> -->
 
  </div>
 
