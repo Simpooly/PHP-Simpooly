@@ -27,7 +27,11 @@ $company_name = 'Simpooly';
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- font awesome -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Milonga|Palanquin|Playfair+Display|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik+Mono+One&display=swap" rel="stylesheet"><!-- newest styles -->
+    <meta charset="utf-8">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

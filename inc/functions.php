@@ -42,3 +42,8 @@ function get_item_detail($id, $item){
     return $output;
 }
 
+// Homepage Slider
+// function get_image_slider($id, $item){
+// <?php if($counter <= 1){echo 'active'; } ?>
+// }
+

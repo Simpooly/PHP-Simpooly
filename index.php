@@ -365,8 +365,8 @@ include('inc/header.php');
      </div>
    </section>
 
-   <section class="carosel">
-     <div class="Wrapper flex">
+   <section class="carosel-wrap">
+     <div class="Wrapper flex column">
         <h3 class=" text-uppercase cx-heavy-brand-font flex text-center vertical-center stack-wrap">
             <div aria-hidden="true" class="top">
                 Gallery
@@ -375,25 +375,60 @@ include('inc/header.php');
                 Gallery
             </div>
         </h3>
+
+        <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <ul class="carousel-inner" style="padding: 0;">
+      <li class="item active">
+        <img src="inc/img/screenshot/101/01.png" alt="Los Angeles" style="width:100%;">
+      </li>
+
+      <li class="item">
+        <img src="inc/img/screenshot/102/01.png" alt="Chicago" style="width:100%;">
+      </li>
+    
+      <li class="item">
+        <img src="inc/img/screenshot/103/01.png" alt="New york" style="width:100%;">
+      </li>
+    </ul>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
      </div>
    </section>
 
-   <section class="vertical-cut">
+   <!-- <section class="vertical-cut">
     <div class="front-album text-muted full-width">
         <div class="container front-gallery">
             <ul class="row">
-                <?php
+             <?php
                 $random = array_rand($project, 3);
 
                     foreach($random as $id){
                         echo get_item_detail($id, $project[$id]);
                     }
-                ?>
+            ?> 
             </ul>
-            <!-- <button type="button" class="btn btn-secondary btn-lg secondary"><a href="portfolio.php">View More</a></button> -->
         </div>
     </div>
-</section>
+</section> -->
 
    <!-- <section class="carosel">
      <div class="Wrapper flex">
