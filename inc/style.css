@@ -90,7 +90,7 @@ box-sizing: inherit;
 	/*  3. CSS New Code
 	/* -------------------------------------------------------------------------------- */
 
-	 .active-card {
+	 /* .active-card {
 	    z-index: 1;
 	    box-shadow: 0 5px 15px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.24);
 	  }
@@ -103,11 +103,11 @@ box-sizing: inherit;
 	  .home-page a:hover,
 	  .home-page a:focus {
 	    text-decoration: none;
-	  }
+	  } */
 
 
 	  /*----------------------------------------------Core Layout*/
-	  .home-page .jumbotron h1{
+	  /* .home-page .jumbotron h1{
         color:  #320d2d;
         font-weight: 500;
         background-color: #fff;
@@ -117,8 +117,8 @@ box-sizing: inherit;
 	  }
 	  .home-page .jumbotron h2{
 	    margin: 0px;
-	  }
-	  .home-page .jumbotron{
+	  } */
+	  /* .home-page .jumbotron{
 	    background: rgb(50,13,45);
 	    background: -moz-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
 	    background: -webkit-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
@@ -156,7 +156,7 @@ box-sizing: inherit;
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	  }
+	  } */
 
 	  /*------------------------------------General Button Styles*/
 
@@ -191,7 +191,7 @@ box-sizing: inherit;
 
 	  /*----------------------------------------------Text Styles*/
 
-	  .home-page h1{
+	  /* .home-page h1{
 	    color: #320d2d;
 	  }
 	  .home-page h2{
@@ -211,7 +211,7 @@ box-sizing: inherit;
 	    font-size: 16px;
 	    line-height: 18px;
 	    color: #999;
-	  }
+	  } */
 	  /* -------------------------------------------------------------------------------- */
 	  /*	2. Navigation
 	  /* -------------------------------------------------------------------------------- */
@@ -347,7 +347,7 @@ box-sizing: inherit;
 
 
 	  	/*Jumbotron*/
-	    .home-page .jumbotron .logo{
+	    /* .home-page .jumbotron .logo{
         background-color: #fff;
         padding: 13px;
         text-align:center;
@@ -377,11 +377,11 @@ box-sizing: inherit;
 	    	bottom: 3px;
 	    	left: 73px;
 	    }
-	  }
+	  } */
 
 	  /* Small Devices, Tablets */
 	  @media (min-width : 768px) {
-	  		    .home-page .jumbotron h1{
+	  		    /* .home-page .jumbotron h1{
 	  	        font-size: 110px;
 	  	        margin-bottom: -5px;
 	  	        letter-spacing: 1px;
@@ -395,7 +395,7 @@ box-sizing: inherit;
 	  		    	letter-spacing: .5px;
 	  		    	bottom: 3px;
 	  		    	left: 85px;
-	  		    }
+	  		    } */
 
   		/*Navigation*/
   		.nav-toggle { display: none; }
@@ -465,9 +465,9 @@ box-sizing: inherit;
 
 
 @media only screen and (max-width: 600px) {
-    .head-shot{display: none;}
+    /* .head-shot{display: none;}
 	.project-content p { margin-bottom: 30px; }
-}
+} */
 
 
 
@@ -475,13 +475,13 @@ box-sizing: inherit;
 /* -------------------------------------------------------------------------------- */
 /*	3. Home
 /* -------------------------------------------------------------------------------- */
-.primary{ background-color: #30142d; }
+/* .primary{ background-color: #30142d; }
 .secondary{background-color:  #441a3f;}
 .light{ background-color: #562f51; }
-.accent{background:  #4F6D3C; }/* background: linear-gradient( to right, #4F6D3C 60%, #ffffff); */
-.dark{ background-color: #20041c; }
+.accent{background:  #4F6D3C; }
+.dark{ background-color: #20041c; } */
 
-#background{
+/* #background{
 	background-color: white;
 	width: 100%;
 	height: 800px;
@@ -493,7 +493,6 @@ box-sizing: inherit;
 .border{
 	border: 1px solid grey;
 	width: 100%;
-	/* height: 100%; */
 }
 .border-front{
 	border: 1px solid grey;
@@ -512,7 +511,7 @@ box-sizing: inherit;
 	background-color: #320d2d;
 }
 .full-width{ width: 100vw; }
-.height{ height: 100vw; }
+.height{ height: 100vw; } */
 /*.vertical-cut{
 	position: relative;
 	top: 0;
@@ -521,11 +520,11 @@ box-sizing: inherit;
 
 	background-color: #320d2d;
 }*/
-.half-box{width: 100%;}
+/* .half-box{width: 100%;}
 
 .full-height{height: 100%;}
 .full-height-vh{height: 100v;}
-#jumbotron{
+#jumbotron{ */
 /*	position: relative;
 	top: 50%;
 	left: 100%;
@@ -549,7 +548,7 @@ box-sizing: inherit;
     width:100%;
     vertical-align: middle;
 }*/
-#jumbotron .logo2{
+/* #jumbotron .logo2{
 	display: none;
 	color: #777;
 	text-transform: uppercase;
@@ -559,11 +558,11 @@ box-sizing: inherit;
 	left: 100px;
 
 	z-index: 100;
-}
+} */
 
-.center{ margin: 0 auto; }
+/* .center{ margin: 0 auto; } */
 /* Center align the text within the three columns below the carousel */
-.service .col-lg-4 {
+/* .service .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -575,8 +574,8 @@ box-sizing: inherit;
 .service .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
-}
-.service-inner{ padding-top: 10%; color: #777; }
+} */
+/* .service-inner{ padding-top: 10%; color: #777; }
 .work-together svg:not(:root).svg-inline--fa:hover { color: #4c4c4c; }
 
 .container i{ color:  #111e6c; }
@@ -593,24 +592,24 @@ box-sizing: inherit;
 .flex-item-3 {order: 4;}
 .flex-item-4 {order: 3;}
 .flex-item-5 {order: 5;}
-.flex-item-6 {order: 6;}
+.flex-item-6 {order: 6;} */
 
 
 /* -------------------------------------------------------------------------------- */
 /*	4. Gallery
 /* -------------------------------------------------------------------------------- */
 
-.album {
-  min-height: 50rem; /*Can be removed; just added for demo purposes*/
+/* .album {
+  min-height: 50rem; 
   padding-top: 3rem;
   padding-bottom: 3rem;
   }
 
   .front-album {
-  min-height: 50rem;/* Can be removed; just added for demo purposes*/
+  min-height: 50rem;
   padding-top: -3rem;
   padding-bottom: 3rem;
-  }
+  } */
 /*.portfolio{
  	margin-right: -15px;
     margin-left: -15px;
@@ -643,7 +642,7 @@ box-sizing: inherit;
 /* -------------------------------------------------------------------------------- */
 /*	5. About
 /* -------------------------------------------------------------------------------- */
-.about-quote{ color: #20041c;  font-size: 3em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold; padding-top: 40px;}
+/* .about-quote{ color: #20041c;  font-size: 3em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold; padding-top: 40px;}
 
    .about h1{ color: white; font-size: 4.5em; }
    .about h4{ color: white; font-size: 2.5em; }
@@ -674,7 +673,7 @@ box-sizing: inherit;
  .report-card h1,
  .report-card p { display: none; }
 
- .about p{margin-top: 85px; line-height: 1.6;}
+ .about p{margin-top: 85px; line-height: 1.6;} */
 
 
 
@@ -682,13 +681,13 @@ box-sizing: inherit;
 /*	4. project page
 /* -------------------------------------------------------------------------------- */
 
-.project-picture img{width: 100%; padding: 1.75em;}
+/* .project-picture img{width: 100%; padding: 1.75em;}
 .project-picture:hover img {
   opacity: 0.7;
 }
 .project-content{padding: 1.75em; text-align: center; line-height: 1.6; color: #777;}
 .project-page h1{ margin-top: 100px; text-align: center; color: #777;}
-.project-page{ display: inline-block; }
+.project-page{ display: inline-block; } */
 /* -------------------------------------------------------------------------------- */
 /*	5. Form
 /* -------------------------------------------------------------------------------- */
@@ -804,7 +803,7 @@ animation-fill-mode: forwards; */
 
 /* ---------Social Media Buttons------------- */
 
-.buttons.contact{
+/* .buttons.contact{
 	margin-top: 20px;
 	background-color: #320d2d;
 	width: 90%;
@@ -830,7 +829,7 @@ animation-fill-mode: forwards; */
 
 .contact a:hover{
 	color:  #777;
-}
+} */
 
 
 /* -------------------------------------------------------------------------------- */
@@ -866,7 +865,7 @@ animation-fill-mode: forwards; */
 /* -------------------------------------------------------------------------------- */
 @media screen and ( min-width: 1200px ) {
 
-	.section-full{
+	/* .section-full{
 		height: 100vh;
 
 	}
@@ -877,7 +876,7 @@ animation-fill-mode: forwards; */
 	.section-small{
 		height: 30vh;
 	}
-	.border-front{ height: 100%; }
+	.border-front{ height: 100%; } */
 
 
 }
@@ -915,7 +914,7 @@ animation-fill-mode: forwards; */
 
 @media screen and ( min-width: 760px ) {
 /*	.card {width: 50%;}*/
-	.project{width: 50%; display: inline-block;
+	/* .project{width: 50%; display: inline-block;
 	}
 	.half-box{width: 50%; height: 50%;}
 	.border{ height: 100%; }
@@ -925,26 +924,26 @@ animation-fill-mode: forwards; */
 	.flex-item-3 {order: 3;}
 	.flex-item-4 {order: 4;}
 	.flex-item-5 {order: 5;}
-	.flex-item-6 {order: 6;}
+	.flex-item-6 {order: 6;} */
 
-	#jumbotron{
+	/* #jumbotron{
 		w/idth: 550px;
-	}
-	#jumbotron .logo{
+	} */
+	/* #jumbotron .logo{ */
 		/* top: 82px;
 		left: 50px; */
 		/*font-size: 5.5em;
 		padding: 0 15px;*/
-	}
-	#jumbotron .logo2{
+	/* } */
+	/* #jumbotron .logo2{ */
 	/*left: 215px;
 	top: -50px;
 	font-size: 1.05em;*/
-	}
+	/* } */
 
 		/* -----------------------------------------------About */
 
-	.quote-phrase{     margin: 0 auto;
+	/* .quote-phrase{     margin: 0 auto;
     width: 75%;
     position: relative;
     bottom: 35px; }
@@ -955,13 +954,13 @@ animation-fill-mode: forwards; */
  	.about p{ width: 80%;}
 
  	.about{position: relative;
- 	    top: 50%;}
+ 	    top: 50%;} */
 
 	/* --------------------------------project page */
-
+/* 
 	.project-picture {width: 50%; float: right;}
 	.project-content{ width: 45%; float: left;}
-	.full-height-vh{height: 100vh;}
+	.full-height-vh{height: 100vh;} */
 
 
 
@@ -976,16 +975,16 @@ animation-fill-mode: forwards; */
 	    #jumbotron{
 	    	width: 500px;
 	    }*/
-	#jumbotron .logo{
+	/* #jumbotron .logo{ */
 	/* top: 72px;
 	left: 10px; */
 		/*font-size: 4.5em;*/
-	}
-	#jumbotron .logo2{
+	/* } */
+	/* #jumbotron .logo2{ */
 /*	left: 178px;
 	top: -43px;
 	font-size: .9em;*/
-	}
+	/* } */
 
 }
 

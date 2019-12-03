@@ -42,6 +42,19 @@ function get_item_detail($id, $item){
     return $output;
 }
 
+// For Portfolio
+function get_image_project($id, $item){
+    $output = "<li class='item active'><a href='project.php?id="
+    . $id . "'><img class='responsive' src='"
+                 . $item["img"] ."' alt='"
+                 . $item["title"] ."'/><a/>"
+                 ."<a href='project.php?id="
+                 . $id . "'>"
+                 . "<div class='port-content'><h3>" . $item["title"] . "</h3>"
+                 . "<p>" . $item["goal"] . "</p>"
+                 . "</div></a></li>";
+    return $output;
+}
 // Homepage Slider
 // function get_image_slider($id, $item){
 // <?php if($counter <= 1){echo 'active'; } ?>

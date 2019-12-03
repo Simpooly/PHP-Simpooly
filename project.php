@@ -23,29 +23,12 @@
     include('inc/header.php');
 ?>
 
-
-
-
-<section class="vertical-cut full-height-vh">
-    <div class="full-width project-page">
-        <h1><?php echo $pageTitle; ?></h1>
-           <div class="project-picture">
-
-                <a class="general" href="<?php echo $item['url']; ?>" target="_blank">
-                 <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
-
-                 </a>
-            </div>
-            <!-- For a link to the page -->
-            <!-- <a class="general" href="<?php echo $item["url"]; ?>" target="_blank">view</a> -->
-
-
-            <div class="project-content">
-
-                    <h3>Description</h3>
-                    <p class =" content"><?php echo $item["discription"]; ?></p><br>
-
-            </div>
-    </div>
+<section>
+    <h1><?php echo $pageTitle; ?></h1>
+        <a href="<?php echo $item['url']; ?>" target="_blank">
+            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
+            <p ><?php echo $item["discription"]; ?></p>
+        </a>
 </section>
+
 <?php include('inc/footer.php'); ?>
