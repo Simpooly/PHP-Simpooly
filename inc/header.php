@@ -16,22 +16,13 @@ $company_name = 'Simpooly';
     <meta name="author" content="Krista Jekel">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
-
+    <!-- Updated Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Allow responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="http://www.southeastpsych.com/wp-content/uploads/2015/05/s-no-background-1024x1024.png"><!--  Tab Icon -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Bootstrap -->
     <link rel="stylesheet" href="inc/style.css" type="text/css"> <!-- Stylesheet -->
     <link rel="stylesheet" href="inc/reportcard/css/badges.css"> <!-- treehouse badges -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--  Jquery -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script><!-- Jquery -->
-    <link rel="stylesheet" href="inc/img/font-awesome-4.7.0/css/font-awesome.min.css"> font awesome
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- font awesome -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Milonga|Palanquin|Playfair+Display|Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik+Mono+One&display=swap" rel="stylesheet"><!-- newest styles -->
-    <meta charset="utf-8">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
