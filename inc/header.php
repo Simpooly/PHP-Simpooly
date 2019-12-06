@@ -21,7 +21,7 @@ $company_name = 'Simpooly';
     <!-- Allow responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="http://www.southeastpsych.com/wp-content/uploads/2015/05/s-no-background-1024x1024.png"><!--  Tab Icon -->
-    <link rel="stylesheet" href="inc/style.css" type="text/css"> <!-- Stylesheet -->
+    <link rel="stylesheet" href="inc/style.css" type="text/css"> Stylesheet
     <link rel="stylesheet" href="inc/reportcard/css/badges.css"> <!-- treehouse badges -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -30,6 +30,29 @@ $company_name = 'Simpooly';
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MWR8HLS');</script>
     <!-- End Google Tag Manager -->
+    <style>
+    .center { 
+		margin: 0 auto; 
+	}
+	.d-flex { 
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		align-content: center; 
+	}
+	.center-text { 
+		text-align: center; 
+	}
+	.page-wrap {
+        max-width: 1350px;
+		margin: 54px auto 0;
+	}
+	.responsive-img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+    </style>
 </head>
 
 

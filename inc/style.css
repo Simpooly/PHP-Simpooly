@@ -1,4 +1,3 @@
-
 /* -------------------------------------------------------------------------------- */
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
@@ -6,8 +5,7 @@
 
 html, body { margin:0; padding:0;}
 
-h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img,
-, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
 	margin:0;
 	padding:0;
 	border:0;
@@ -66,9 +64,6 @@ html,body
 	box-sizing: inherit;
 	}
 
-body {
-
-}
 *, *:before, *:after {
 -webkit-box-sizing: inherit;
 -moz-box-sizing: inherit;
@@ -86,610 +81,93 @@ box-sizing: inherit;
    opacity: 0.7;
  }
 
-	/* -------------------------------------------------------------------------------- */
-	/*  3. CSS New Code
-	/* -------------------------------------------------------------------------------- */
-
-	 /* .active-card {
-	    z-index: 1;
-	    box-shadow: 0 5px 15px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.24);
-	  }
-	  .passive-card{
-	    margin: 0 7.5px 15px;
-	    background-color: #fff;
-	    box-shadow: 0 0 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.24);
-	  }
-
-	  .home-page a:hover,
-	  .home-page a:focus {
-	    text-decoration: none;
-	  } */
-
-
-	  /*----------------------------------------------Core Layout*/
-	  /* .home-page .jumbotron h1{
-        color:  #320d2d;
-        font-weight: 500;
-        background-color: #fff;
-        margin: 0px;
-        font-family: 'Milonga', cursive;
-        text-align:center;
-	  }
-	  .home-page .jumbotron h2{
-	    margin: 0px;
-	  } */
-	  /* .home-page .jumbotron{
-	    background: rgb(50,13,45);
-	    background: -moz-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
-	    background: -webkit-linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
-	    background: linear-gradient(90deg, rgba(50,13,45,1) 51%, rgba(255,255,255,1) 50%);
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#320d2d",endColorstr="#ffffff",GradientType=1);
-	    border-bottom: 1px solid #ebebeb;
-	  }
-	  .home-page .jumbotron .logo{
-        background-color: #fff;
-        padding: 7px;
-        text-align:center;
-        border: 1px solid #303030;
-	  }
-	  .home-page .wrapper{
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    align-content: center;
-	    width: 980px;
-	    margin: 0 auto;
-	  }
-	  .home-page .flex-row {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    flex-direction: row;
-	  }
-	  .home-page .flex-column {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    flex-direction: column;
-	  }
-	  .home-page .center-content{
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	  } */
-
-	  /*------------------------------------General Button Styles*/
-
-	/*  .home-page a:hover .cx-button,
-	  .home-page a:focus .cx-button {
-	  .home-page .cx-button:hover,
-	  .home-page .cx-button:focus {
-	    color: #fff;
-	    background-color: #804068;
-	    border-color: #804068;
-	  }
-	  .home-page .cx-button {
-	    color: #804068;
-	    background-color: #fff;
-	    border-color: #804068;
-	    text-align: center;
-	    font-size: 16px;
-	    padding: 12px 0px 12px 0px;
-	    border-width: 2px;
-	    line-height: 1.0;
-	  }
-	  .home-page .btn {
-	    padding-left: 5px;
-	    padding-right: 5px;
-	  }
-	  .home-page .btn-overall {
-	    display: flex;
-	    justify-content: center;
-	    flex-wrap: wrap;
-	    align-items: center;
-	  }*/
-
-	  /*----------------------------------------------Text Styles*/
-
-	  /* .home-page h1{
-	    color: #320d2d;
-	  }
-	  .home-page h2{
-	    color: #16a9ba;
-	    font-family: 'Open Sans', sans-serif;
-	  }
-	  .home-page h4{
-	    color: #999;
-	  }
-	  .home-page .text-title{
-	    font-size: 18px;
-	    line-height: 20px;
-	    color: #999;
-	    font-weight: 700;
-	  }
-	  .home-page .text-description{
-	    font-size: 16px;
-	    line-height: 18px;
-	    color: #999;
-	  } */
-	  /* -------------------------------------------------------------------------------- */
-	  /*	2. Navigation
-	  /* -------------------------------------------------------------------------------- */
-
-	  .navigation {
-	  	background-color: white; /* #242424; */
-	  	width: 100%;
-	  	position: fixed;
-	  	top: 0;
-	  	text-align: center;
-	  	z-index:1000;
-	  }
-	  .main-menu { display: none;}
-	  .nav-toggle {
-	  	display: block;
-	  	padding: 16px 0;
-	  	color: #fff;
-	  }
-	  .nav-toggle .bars {
-	  	margin: 0 auto;
-	  	height: 12px;
-	  	width: 20px;
-	  	position: relative;
-	  }
-	  .nav-toggle .bar {
-	  	height: 2px;
-	  	background: black;
-	  	border-radius: 2px;
-	  	position: absolute;
-	  	left: 0;
-	  	right: 0;
-	  	-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
-	  	-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
-	  	-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
-	  	transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
-	  }
-
-	  .nav-toggle .bar:nth-child(1) { top: 0px; }
-	  .nav-toggle .bar:nth-child(2) { top: 5px; }
-	  .nav-toggle .bar:nth-child(3) { top: 10px; }
-
-	  .nav-toggle:hover { cursor: pointer; }
-	  .nav-small li.on > a {
-	  	color: #fff;
-	  	/*border-radius: 3px;*/
-	  	background: rgb(176,176,176);
-	  	background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-	  	background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-	  	background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-	  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
-	  }
-	  .nav-small li:hover > a {
-	  	color:  #262626;
-	  	border-radius: 3px;
-	  	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
-	  }
-
-	  /* Small devices (Phones, under 480px) */
-	  @media (max-width: 480px) {
-
-			/*Navigation*/
-			.nav-small {
-				margin-top: 15px;}
-	  	.nav-small a {
-	  		/*margin-top: 10px;*/
-	  		display: block;
-	  		padding: 10px 0;
-	  		font-size: 16px;
-	  		color: #262626;
-	  		text-transform: uppercase;
-	  		position: relative;
-	  		z-index: 100000;
-	  		text-align: center;
-	  	}
-	  	.nav-small li.on:hover > a {
-	  		color: #fff;
-	  		background-color: #000;
-	  	}
-	  	.nav-small{ margin-left: -40px; }
-
-			/*Jumbotron*/
-	    .home-page .jumbotron{
-	      height: 80vh;
-	    }
-	    .home-page .jumbotron h1{
-        font-size: 18vw;
-	    }
-	    .home-page .wrapper-logo{
-        padding: 4vw;
-        background-color: #fff;
-	    }
-	    .home-page .jumbotron .logo{
-        background-color: #fff;
-        padding: 3vw;
-        text-align:center;
-        border: 1px solid #303030;
-	    }
-	    .home-page .jumbotron h2{
-	    	font-size: 4vw;
-	    	    text-transform: uppercase;
-	    	    font-weight: bold;
-	    	    text-align: center;
-	    	    position: relative;
-	    	    /* bottom: 2vw; */
-	    	    letter-spacing: 1px;
-	    	    left: 15.5vw;
-	    	    top: 2vw;
-	    }
-	  }
-
-	  /* Extra Small Devices, Phones */
-	  @media (min-width : 481px) {
-
-			/*Navigation*/
-			.nav-small {
-				margin-top: 15px;}
-	  	.nav-small a {
-	  		/*margin-top: 10px;*/
-	  		display: block;
-	  		padding: 10px 0;
-	  		font-size: 16px;
-	  		color: #262626;
-	  		text-transform: uppercase;
-	  		position: relative;
-	  		z-index: 100000;
-	  		text-align: center;
-	  	}
-	  	.nav-small li.on:hover > a {
-	  		color: #fff;
-	  		background-color: #000;
-	  	}
-	  	.nav-small{ margin-left: -40px; }
-
-
-	  	/*Jumbotron*/
-	    /* .home-page .jumbotron .logo{
-        background-color: #fff;
-        padding: 13px;
-        text-align:center;
-        border: 1px solid #303030;
-	    }
-	    .home-page .jumbotron{
-	      height: 70%;
-	      margin-top: 20px;
-	      padding: 0px;
-	    }
-	    .home-page .wrapper-logo{
-        padding: 20px;
-        background-color: #fff;
-	    }
-	    .home-page .jumbotron h1{
-        font-size: 90px;
-        margin-bottom: -5px;
-        letter-spacing: 1px;
-	    }
-	    .home-page .jumbotron h2{
-	    	font-size: 15px;
-	    	text-transform: uppercase;
-	    	font-weight: bold;
-	    	text-align: center;
-	    	position: relative;
-	    	letter-spacing: .5px;
-	    	bottom: 3px;
-	    	left: 73px;
-	    }
-	  } */
-
-	  /* Small Devices, Tablets */
-	  @media (min-width : 768px) {
-	  		    /* .home-page .jumbotron h1{
-	  	        font-size: 110px;
-	  	        margin-bottom: -5px;
-	  	        letter-spacing: 1px;
-	  		    }
-	  		    .home-page .jumbotron h2{
-	  		    	font-size: 18px;
-	  		    	text-transform: uppercase;
-	  		    	font-weight: bold;
-	  		    	text-align: center;
-	  		    	position: relative;
-	  		    	letter-spacing: .5px;
-	  		    	bottom: 3px;
-	  		    	left: 85px;
-	  		    } */
-
-  		/*Navigation*/
-  		.nav-toggle { display: none; }
-  		.main-menu {
-  			display: inline-block;
-				margin: 0px;
-  		}
-  		.main-menu li { position: relative; }
-  		.main-menu > li { display: inline-block; }
-  		.main-menu > li + li { margin-left: 10px; }
-  		.main-menu > li + li:before {
-  			content: "|";
-  			font-size: 16px;
-  			color: #3d3d3d;
-  			position: absolute;
-  			top: 30%;
-  			left: -10px;
-  		}
-  		.main-menu a {
-  			display: block;
-		    padding: 10px;
-		    margin: 5px 0;
-		    font-size: 16px;
-		    letter-spacing: .3px;
-		    color: #262626;
-		    text-transform: uppercase;
-		    position: relative;
-		    z-index: 10000;
-  		}
-  		.main-menu li.on > a {
-  			color: #fff;
-  			border-radius: 3px;
-  			background: rgb(176,176,176);
-  			background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-  			background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-  			background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
-  			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
-  		}
-  		.main-menu li.on:hover > a {
-  			color: #fff;
-  			background-color: #000;
-  		}
-  		.main-menu li:hover > a {
-  			color:  #262626;
-  			border-radius: 3px;
-  			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
-  		}
-
-	  }
-
-	  /* Medium Devices, Desktops */
-	  @media (min-width : 992px) {
-
-	  }
-
-	  /* Large Devices, Wide Screens */
-	  @media (min-width : 1200px) {
-
-	  }
-
-
-/*h2{
-	font-weight: bold;
-	font-size:2em;
-	text-align: center;
-}*/
-
-
-@media only screen and (max-width: 600px) {
-    /* .head-shot{display: none;}
-	.project-content p { margin-bottom: 30px; }
-} */
-
-
-
+/* -------------------------------------------------------------------------------- */
+/*  2. Core Layout
+/* -------------------------------------------------------------------------------- */
+	.center { 
+		margin: 0 auto; 
+	}
+	.d-flex { 
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		align-content: center; 
+	}
+	.center-text { 
+		text-align: center; 
+	}
+	.page-wrap {
+		max-width: 1350px;
+		margin-top: 54px; /* Height of nav */
+		background-color: red;
+	}
+	.responsive-img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
 
 /* -------------------------------------------------------------------------------- */
-/*	3. Home
-/* -------------------------------------------------------------------------------- */
-/* .primary{ background-color: #30142d; }
-.secondary{background-color:  #441a3f;}
-.light{ background-color: #562f51; }
-.accent{background:  #4F6D3C; }
-.dark{ background-color: #20041c; } */
-
-/* #background{
-	background-color: white;
-	width: 100%;
-	height: 800px;
-}
-
-.sec-border{
-	padding: 20px;
-}
-.border{
-	border: 1px solid grey;
-	width: 100%;
-}
-.border-front{
-	border: 1px solid grey;
-	width: 100%;
-
-}
-
-.philosophy{border: 1px solid grey;}
-.horizontal-cut{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 50vh;
-	margin-bottom: 50vh;
-	background-color: #320d2d;
-}
-.full-width{ width: 100vw; }
-.height{ height: 100vw; } */
-/*.vertical-cut{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 50%;
-
-	background-color: #320d2d;
-}*/
-/* .half-box{width: 100%;}
-
-.full-height{height: 100%;}
-.full-height-vh{height: 100v;}
-#jumbotron{ */
-/*	position: relative;
-	top: 50%;
-	left: 100%;
-	transform: translate(-50%, -50%);*/
-/*	padding: 20px;
-	font-size: 1.25em;
-	width: 80%;
-	background-color: white;*/
-}
-/*.home-logo{
-	border: 1px solid grey;
-	display: table-cell;
-}*/
-
-/*#jumbotron .logo{
-	font-size: 2.3em;
-	color:  #320d2d;
-	font-family: 'Milonga', cursive;
- 	display:table-cell;
- 	text-align:center;
-    width:100%;
-    vertical-align: middle;
-}*/
-/* #jumbotron .logo2{
-	display: none;
-	color: #777;
-	text-transform: uppercase;
-	position: relative;
-	font-size: .8em;
-	top:-30px;
-	left: 100px;
-
-	z-index: 100;
-} */
-
-/* .center{ margin: 0 auto; } */
-/* Center align the text within the three columns below the carousel */
-/* .service .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.service h1 {
-  text-align: center;
-  font-weight: 400;
-  padding: 30px;
-}
-.service .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-} */
-/* .service-inner{ padding-top: 10%; color: #777; }
-.work-together svg:not(:root).svg-inline--fa:hover { color: #4c4c4c; }
-
-.container i{ color:  #111e6c; }
-
-.quote{ color: #20041c;  font-size: 2em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold;}
-
-.work-together{ display: block;}
-.offset{ padding-left: 30%; }
-
-.front-gallery{ padding-top: -3rem }
-
-.flex-item-1 {order: 1;}
-.flex-item-2 {order: 2;}
-.flex-item-3 {order: 4;}
-.flex-item-4 {order: 3;}
-.flex-item-5 {order: 5;}
-.flex-item-6 {order: 6;} */
-
-
-/* -------------------------------------------------------------------------------- */
-/*	4. Gallery
+/*	3. Navigation - Unedited
 /* -------------------------------------------------------------------------------- */
 
-/* .album {
-  min-height: 50rem; 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  }
+	.navigation {
+		background-color: white; /* #242424; */
+		width: 100%;
+		position: fixed;
+		top: 0;
+		text-align: center;
+		z-index:1000;
+		}
+	.main-menu { display: none;}
+	.nav-toggle {
+		display: block;
+		padding: 16px 0;
+		color: #fff;
+	}
+	.nav-toggle .bars {
+		margin: 0 auto;
+		height: 12px;
+		width: 20px;
+		position: relative;
+	}
+	.nav-toggle .bar {
+		height: 2px;
+		background: black;
+		border-radius: 2px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		-webkit-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -webkit-transform 0.2s linear 0s;
+		-moz-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -moz-transform 0.2s linear 0s;
+		-o-transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, -o-transform 0.2s linear 0s;
+		transition: opacity 0.2s linear 0.2s, top 0.2s linear 0.2s, transform 0.2s linear 0s;
+	}
 
-  .front-album {
-  min-height: 50rem;
-  padding-top: -3rem;
-  padding-bottom: 3rem;
-  } */
-/*.portfolio{
- 	margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -40px;
- }
-*/
-/*.card {
+	.nav-toggle .bar:nth-child(1) { top: 0px; }
+	.nav-toggle .bar:nth-child(2) { top: 5px; }
+	.nav-toggle .bar:nth-child(3) { top: 10px; }
 
-  width: 100%;
-  padding: .75rem 2rem;
-  margin-bottom: 2rem;
-  border: 0;
-}
-
-.card > img {
-  margin-bottom: .75rem
-}
-.card img {
-  width:100%;
-}
-.card-text {
-  font-size: 85%;
-}*/
-
-/* ----------------------------------Gallery on Project Page */
-
-
-/* -------------------------------------------------------------------------------- */
-/*	5. About
-/* -------------------------------------------------------------------------------- */
-/* .about-quote{ color: #20041c;  font-size: 3em; font-family: 'Milonga', cursive; font-style: italic; font-weight: bold; padding-top: 40px;}
-
-   .about h1{ color: white; font-size: 4.5em; }
-   .about h4{ color: white; font-size: 2.5em; }
-
-.head-shot img{
-	width: 45%;
-	border: 1px solid grey;
-	padding: 20px;
-	background-color: white;
-
- }
- .name{  padding:20px; color: #777; }
-
- .flex-container{
- 	display: flex;
- 	flex-wrap: wrap;
- 	align-items: center;
- 	justify-content: center;
- }
-
- .inner {
-
-
-     width: 75%;
-     text-align: center;
- }
- .report-card{ margin-bottom: 100px; }
- .report-card h1,
- .report-card p { display: none; }
-
- .about p{margin-top: 85px; line-height: 1.6;} */
-
-
+	.nav-toggle:hover { 
+		cursor: pointer; 
+	}
+	.nav-small li.on > a {
+		color: #fff;
+		/*border-radius: 3px;*/
+		background: rgb(176,176,176);
+		background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+		background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
+	}
+	.nav-small li:hover > a {
+		color:  #262626;
+		border-radius: 3px;
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+	}
 
 /* -------------------------------------------------------------------------------- */
-/*	4. project page
-/* -------------------------------------------------------------------------------- */
-
-/* .project-picture img{width: 100%; padding: 1.75em;}
-.project-picture:hover img {
-  opacity: 0.7;
-}
-.project-content{padding: 1.75em; text-align: center; line-height: 1.6; color: #777;}
-.project-page h1{ margin-top: 100px; text-align: center; color: #777;}
-.project-page{ display: inline-block; } */
-/* -------------------------------------------------------------------------------- */
-/*	5. Form
+/*	5. Form - unedited
 /* -------------------------------------------------------------------------------- */
 .message{ margin: 30px auto; }
 
@@ -801,200 +279,124 @@ animation-fill-mode: forwards; */
   	margin: 30px auto;
   }
 
-/* ---------Social Media Buttons------------- */
-
-/* .buttons.contact{
-	margin-top: 20px;
-	background-color: #320d2d;
-	width: 90%;
-	margin: 0 auto;
-}
-.buttons.contact a{
-	display: block;
-}
-.link p,
-.face p,
-.git p{
-	display: inline-block;
-	position: relative;
-	left: 20px;
-	bottom: 20px;
-	color: white;
-	font-size: 16px;
-}
-
-.contact a{
-	color: white;
-}
-
-.contact a:hover{
-	color:  #777;
-} */
+/* -------------------------------------------------------------------------------- */
+/*	6. footer
+/* -------------------------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------------------------- */
-/*	5. footer
+/*	7. Resppnsive
 /* -------------------------------------------------------------------------------- */
-.footer p { text-align: center; }
 
-.footer{
-/*	bottom:0;
-    position:fixed;*/
-	background-color: white;
-	height:65px;
-	width:100%;
-	text-align: center;
-	z-index: 100;
 
-}
-.buttons a {
-	padding: 7px 15px;
-}
-.social{
-	display: inline-block;
-	padding: 5px 5px 5px 5px;
-	margin: 0 1%;
-}
+	@media (max-width: 480px) {
 
-.footer a{ color: #777; }
-.footer a: active{ color: #241035; }
-.footer a:hover{ color: #320d2d; }
+		/*------------------------------------Navigation*/
+		.nav-small {
+			margin-top: 15px;
+		}
+		.nav-small a {
+			/*margin-top: 10px;*/
+			display: block;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #262626;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 100000;
+			text-align: center;
+		}
+		.nav-small li.on:hover > a {
+			color: #fff;
+			background-color: #000;
+		}
+		.nav-small{ 
+			margin-left: -40px; 
+		}
+	}
 
-/* -------------------------------------------------------------------------------- */
-/*	1. Responsive
-/* -------------------------------------------------------------------------------- */
-@media screen and ( min-width: 1200px ) {
+	@media (min-width : 481px) {
 
-	/* .section-full{
-		height: 100vh;
+		/*------------------------------------------Navigation*/
+		.nav-small {
+			margin-top: 15px;
+		}
+		.nav-small a {
+			/*margin-top: 10px;*/
+			display: block;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #262626;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 100000;
+			text-align: center;
+		}
+		.nav-small li.on:hover > a {
+			color: #fff;
+			background-color: #000;
+		}
+		.nav-small{ margin-left: -40px; }
+	}
+	
+
+	@media (min-width : 768px) {
+
+		/*-----------------------------------------Navigation*/
+		.nav-toggle { display: none; }
+		.main-menu {
+			display: inline-block;
+				margin: 0px;
+		}
+		.main-menu li { position: relative; }
+		.main-menu > li { display: inline-block; }
+		.main-menu > li + li { margin-left: 10px; }
+		.main-menu > li + li:before {
+			content: "|";
+			font-size: 16px;
+			color: #3d3d3d;
+			position: absolute;
+			top: 30%;
+			left: -10px;
+		}
+		.main-menu a {
+			display: block;
+			padding: 10px;
+			margin: 5px 0;
+			font-size: 16px;
+			letter-spacing: .3px;
+			color: #262626;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 10000;
+		}
+		.main-menu li.on > a {
+			color: #fff;
+			border-radius: 3px;
+			background: rgb(176,176,176);
+			background: -moz-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+			background: -webkit-linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+			background: linear-gradient(180deg, rgba(176,176,176,1) 0%, rgba(102,102,103,1) 42%, rgba(0,0,0,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#000000",GradientType=1);
+		}
+		.main-menu li.on:hover > a {
+			color: #fff;
+			background-color: #000;
+		}
+		.main-menu li:hover > a {
+			color:  #262626;
+			border-radius: 3px;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+		}
 
 	}
 
-	.section-half{
-		height: 50vh;
-	}
-	.section-small{
-		height: 30vh;
-	}
-	.border-front{ height: 100%; } */
+	@media (min-width : 992px) {
 
-
-}
-@media screen and ( min-width: 1060px ) {
-	.home-button button { margin-left: 55px; }
-
-	/* ------------Email Form----------- */
-	.email{
-		display: flex;
-	}
-	.box form{
-		max-width: 65%;
 	}
 
-	.contact{
-		padding-top: 30px; /* fix when you get a font for email us */
-	}
-	.buttons.contact{
-		width: 35%;
+	@media (min-width : 1200px) {
+
 	}
 
-
-
-
-	.float-l{ float: left;
-	width: 85%; }
-	.float-r{ float: right; }
-
-	.quote{ font-size: 3em; }
-	.quote-top{	width: 80%;}
-	.quote-bottom{ width: 10%; }
-	.work-together{ flex-direction: column; display: inline-block;}
-}
-
-
-@media screen and ( min-width: 760px ) {
-/*	.card {width: 50%;}*/
-	/* .project{width: 50%; display: inline-block;
-	}
-	.half-box{width: 50%; height: 50%;}
-	.border{ height: 100%; }
-
-	.flex-item-1 {order: 1;}
-	.flex-item-2 {order: 2;}
-	.flex-item-3 {order: 3;}
-	.flex-item-4 {order: 4;}
-	.flex-item-5 {order: 5;}
-	.flex-item-6 {order: 6;} */
-
-	/* #jumbotron{
-		w/idth: 550px;
-	} */
-	/* #jumbotron .logo{ */
-		/* top: 82px;
-		left: 50px; */
-		/*font-size: 5.5em;
-		padding: 0 15px;*/
-	/* } */
-	/* #jumbotron .logo2{ */
-	/*left: 215px;
-	top: -50px;
-	font-size: 1.05em;*/
-	/* } */
-
-		/* -----------------------------------------------About */
-
-	/* .quote-phrase{     margin: 0 auto;
-    width: 75%;
-    position: relative;
-    bottom: 35px; }
-	.head-shot img{
-	float: right;
- 	}
- 	.name{ float: left; width: 50%; }
- 	.about p{ width: 80%;}
-
- 	.about{position: relative;
- 	    top: 50%;} */
-
-	/* --------------------------------project page */
-/* 
-	.project-picture {width: 50%; float: right;}
-	.project-content{ width: 45%; float: left;}
-	.full-height-vh{height: 100vh;} */
-
-
-
-
-
-
-@media screen and ( min-width: 450px )and (max-width: 960px ) {
-
-
-/*	.name h1 {
-	    font-size: 3.75em;}
-	    #jumbotron{
-	    	width: 500px;
-	    }*/
-	/* #jumbotron .logo{ */
-	/* top: 72px;
-	left: 10px; */
-		/*font-size: 4.5em;*/
-	/* } */
-	/* #jumbotron .logo2{ */
-/*	left: 178px;
-	top: -43px;
-	font-size: .9em;*/
-	/* } */
-
-}
-
-@media screen and ( max-width: 450px ){
-	/*.logo{ text-shadow: 1px 2px 2px white;}*/
-	/*.home-logo{ border: none; }*/
-/*	#jumbotron .logo2{
-	top: -2px;
-	left:60px;
-	font-size: .7em;
-	}*/
-}
-
+	

@@ -4,14 +4,15 @@
   include('inc/functions.php');
   include('inc/header.php');
 ?>
+  <div class="homepage">
+    <div class="page-wrap d-flex flex-column">
 
-<div>
+      <section class="d-flex center-text">
+        <h1>Homepage</h>
+      </section>
 
-  <section>
-    <h1>Homepage</h>
-  </section>
-
-</div>
+    </div>
+  </div>
 
 <script type="text/javascript">
     $("#text-box1").hover(function() {

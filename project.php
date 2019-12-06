@@ -22,13 +22,16 @@
 
     include('inc/header.php');
 ?>
-
-<section>
-    <h1><?php echo $pageTitle; ?></h1>
-        <a href="<?php echo $item['url']; ?>" target="_blank">
-            <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
-            <p ><?php echo $item["discription"]; ?></p>
-        </a>
-</section>
+<div class="project">
+    <div class="page-wrap d-flex flex-column">
+        <section>
+            <h1><?php echo $pageTitle; ?></h1>
+                <a href="<?php echo $item['url']; ?>" target="_blank">
+                    <img src="<?php echo $item["img"] ?>" alt="<?php echo $item["title"] ?>">
+                    <p ><?php echo $item["discription"]; ?></p>
+                </a>
+        </section>
+    </div>
+</div>
 
 <?php include('inc/footer.php'); ?>
