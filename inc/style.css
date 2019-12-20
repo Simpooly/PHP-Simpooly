@@ -165,7 +165,62 @@ box-sizing: inherit;
 		border-radius: 3px;
 		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 	}
+/*Arrow Button*/
+.btn-arrow a{
+    color: #ff8a00;
+}
+.btn-arrow {
+    background-color: #da1b60;
+    color: #ff8a00;
+    border:  2px solid #ff8a00;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn-arrow:hover{
+    background-color: #da1b60;
+    color: #ff8a00;
+    border:  2px solid #ff8a00;
+    text-decoration: none;
+}
 
+.btn-arrow span {
+    /*cursor: pointer;*/
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-arrow span:after {
+    /*content: '\00bb'; yes*/
+    /*content: '\2192'; Yes*/
+    /*content: '\21DD';*/
+    /*content: '\21DB';*/
+    /*content: '\21E2';maybe larger*/
+    /*content: '\21E8'; Maybe*/
+    /*content: '\21FE';*/
+    /*content: '\22D9';*/
+    /*content: '\25B7';*/
+    content: '\276F';
+    /*content: '\27A1';*/
+    /*content: '\27A3';*/
+    /*content: '\27A6';*/
+    /*content: '\27AA';*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-arrow:hover span {
+    padding-right: 25px;
+}
+
+.btn-arrow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /* -------------------------------------------------------------------------------- */
 /*	5. Form - unedited
 /* -------------------------------------------------------------------------------- */
