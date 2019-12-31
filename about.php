@@ -10,8 +10,8 @@ include('inc/header.php');
 	include('inc/functions.php');
 	include('inc/header.php');
 ?>
-<div class="about">
-    <div class="page-wrapper">
+<div class="about d-flex">
+    <div class="page-wrap d-flex">
 		<section>
 			<h1>Krista Jekel</h1>
 		</section>

@@ -22,7 +22,7 @@
 
     include('inc/header.php');
 ?>
-<div class="project">
+<div class="project d-flex">
     <div class="page-wrap d-flex flex-column">
         <section>
             <h1><?php echo $pageTitle; ?></h1>

@@ -97,6 +97,7 @@ box-sizing: inherit;
 		text-align: center; 
 	}
 	.page-wrap {
+		width: 100%;
 		max-width: 1350px;
 		margin-top: 54px; /* Height of nav */
 		background-color: red;

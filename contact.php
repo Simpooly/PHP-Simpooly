@@ -62,7 +62,7 @@ include('inc/header.php');
 
 
 
-<div class="contact">
+<div class="contact d-flex">
     <div class="page-wrap d-flex flex-column">
 
         <!-- <h1><?php echo $pageTitle; ?></h1> -->

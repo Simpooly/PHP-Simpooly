@@ -8,7 +8,7 @@ include('inc/header.php');
 ?>
 
 
-<div class="portfolio-page">
+<div class="portfolio-page d-flex">
     <div class="page-wrap d-flex flex-column">
 
         <section>

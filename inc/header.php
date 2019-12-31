@@ -30,29 +30,6 @@ $company_name = 'Simpooly';
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MWR8HLS');</script>
     <!-- End Google Tag Manager -->
-    <style>
-    .center { 
-		margin: 0 auto; 
-	}
-	.d-flex { 
-		display: flex; 
-		align-items: center; 
-		justify-content: center; 
-		align-content: center; 
-	}
-	.center-text { 
-		text-align: center; 
-	}
-	.page-wrap {
-        max-width: 1350px;
-		margin: 54px auto 0;
-	}
-	.responsive-img{
-		max-width: 100%;
-		height: auto;
-		display: block;
-	}
-    </style>
 </head>
 
 

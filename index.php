@@ -4,7 +4,7 @@
   include('inc/functions.php');
   include('inc/header.php');
 ?>
-  <div class="homepage">
+  <div class="homepage d-flex">
     <div class="page-wrap d-flex flex-column">
 
       <section class="d-flex center-text">
